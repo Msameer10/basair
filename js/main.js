@@ -56,3 +56,11 @@ function wireThemeToggle() {
   wireThemeToggle();
   setFooterYear();
 })();
+
+
+// footer year
+document.addEventListener("DOMContentLoaded", function () {
+  const y = new Date().getFullYear();
+  const el = document.getElementById("cprtxt");
+  if (el) el.textContent = y;
+});
