@@ -11,6 +11,9 @@
   letter-spacing: 0.2px;
 }
 
+*{
+  font-family: "Times New Roman", serif;
+}
 
 .navbar-brand{
   font-family: "Cormorant", serif;
