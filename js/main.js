@@ -57,10 +57,11 @@ function wireThemeToggle() {
   setFooterYear();
 })();
 
-
-// footer year
-document.addEventListener("DOMContentLoaded", function () {
-  const y = new Date().getFullYear();
-  const el = document.getElementById("cprtxt");
-  if (el) el.textContent = y;
-});
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = new Date().getFullYear();
+    const copyrightYearElement = document.getElementById("cprtxt");
+    
+    if (copyrightYearElement) {
+      copyrightYearElement.textContent = currentYear;
+    }
+  });
