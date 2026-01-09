@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+
 /* Slightly nicer reading width */
 .content-narrow {
   max-width: 860px;
@@ -6,4 +8,10 @@
 /* Simple “encyclopedia” vibe */
 .page-title {
   letter-spacing: 0.2px;
+}
+
+
+.navbar-brand{
+  font-family: "Cormorant Unicase", serif;
+  font-size: 15px;
 }
