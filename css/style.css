@@ -1,0 +1,9 @@
+/* Slightly nicer reading width */
+.content-narrow {
+  max-width: 860px;
+}
+
+/* Simple “encyclopedia” vibe */
+.page-title {
+  letter-spacing: 0.2px;
+}

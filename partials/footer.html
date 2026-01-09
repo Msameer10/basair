@@ -1,0 +1,19 @@
+<footer class="border-top bg-body">
+  <div class="container py-4 d-flex flex-column flex-md-row gap-2 justify-content-between align-items-md-center">
+    <div class="small text-body-secondary">
+        <p class="mb-5 pb-5 ftrtxt"><span class="subtxt1">Neocyclopedia</span><span> x </span><a href="https://www.sameerion.com" style="text-decoration: none;"><span class="subtxt2">Sameerion</span></a></p>
+  <p>Copyright &copy; <span id="cprtxt" style="font-family: Arial, sans-serif;"></span> <span class="subtxt1">Neocyclopedia</span>. All rights reserved.</p>
+    </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = new Date().getFullYear();
+    const copyrightYearElement = document.getElementById("cprtxt");
+    
+    if (copyrightYearElement) {
+      copyrightYearElement.textContent = currentYear;
+    }
+  });
+</script>
+
+</footer>
