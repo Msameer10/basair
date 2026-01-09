@@ -11,6 +11,12 @@
   letter-spacing: 0.2px;
 }
 
+/* Force true black text in light mode */
+[data-bs-theme="light"] {
+  --bs-body-color: #000000;
+  --bs-heading-color: #000000;
+}
+
 .navbar-brand{
   font-family: "Cormorant", serif;
   font-size: 30px;
