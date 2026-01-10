@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lugrasimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /* Slightly nicer reading width */
 .content-narrow {
@@ -48,11 +50,10 @@
 
 
 .p{
-  font-family: "Times New Roman", serif;
-}
+  font-family: "Noto Serif" , "Times New Roman", serif;
 
 .p_about {
-  font-family: "Times New Roman", serif;
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
 }
 
@@ -70,7 +71,6 @@
   font-size: 1.3em;
   direction: rtl;
   unicode-bidi: plaintext;
-  text-align: justify;                 /* mushaf-like line filling */
   line-height: 2.2;                    /* roomy for harakat */
   letter-spacing: 0;                   /* don’t space Arabic letters */
   word-spacing: 0.08em;                /* slight mushaf feel */
