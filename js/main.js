@@ -56,3 +56,45 @@ function wireThemeToggle() {
   wireThemeToggle();
   setFooterYear();
 })();
+
+// ------------------------
+
+function makeSearchableList({ inputId, clearId, listId, emptyId }) {
+  const input = document.getElementById(inputId);
+  const clearBtn = document.getElementById(clearId);
+  const list = document.getElementById(listId);
+  const empty = document.getElementById(emptyId);
+
+  if (!input || !clearBtn || !list || !empty) return;
+
+  const items = Array.from(list.querySelectorAll(".list-group-item"));
+
+  function filter() {
+    const q = input.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    items.forEach((li) => {
+      const haystack = (li.getAttribute("data-search") || li.textContent || "").toLowerCase();
+      const show = q === "" || haystack.includes(q);
+      li.classList.toggle("d-none", !show);
+      if (show) visibleCount += 1;
+    });
+
+    empty.classList.toggle("d-none", visibleCount !== 0);
+  }
+
+  input.addEventListener("input", filter);
+
+  clearBtn.addEventListener("click", () => {
+    input.value = "";
+    input.focus();
+    filter();
+  });
+
+  // initial state
+  filter();
+}
+
+// Call these AFTER your header/footer partials are loaded (same place you wire other stuff)
+makeSearchableList({ inputId: "searchA", clearId: "clearA", listId: "listA", emptyId: "emptyA" });
+makeSearchableList({ inputId: "searchB", clearId: "clearB", listId: "listB", emptyId: "emptyB" });
