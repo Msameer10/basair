@@ -48,13 +48,12 @@ function wireThemeToggle() {
 
 // ---- Boot sequence ----
 (async function init() {
-  applyTheme(getPreferredTheme());
+  applyTheme(getPreferredTheme()); // sets data-bs-theme early
 
-  loadPartial("#siteHeader", "partials/header.html");
-  loadPartial("#siteFooter", "partials/footer.html");
+  await loadPartial("#siteHeader", "partials/header.html");
+  await loadPartial("#siteFooter", "partials/footer.html");
 
-
-  wireThemeToggle();
+  wireThemeToggle(); // button exists now
   setFooterYear();
 })();
 
