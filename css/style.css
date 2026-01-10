@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
 
 /* Slightly nicer reading width */
 .content-narrow {
@@ -52,6 +53,10 @@
 .p_about {
   font-family: "Times New Roman", serif;
   font-size: 20px;
+}
+
+.amiri{
+  font-family: "Amiri Quran", serif;
 }
 
 /*---------------------------------------------*/
