@@ -46,6 +46,7 @@
 /* Tabs container */
 .nav-tabs {
   border-bottom: 1px solid var(--bs-border-color);
+  justify-content: center;
 }
 
 /* Tab buttons */
