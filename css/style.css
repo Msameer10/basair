@@ -19,7 +19,7 @@
 
 .navbar-brand{
   font-family: "Cormorant", serif;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 [data-bs-theme="light"] .navbar-brand {
