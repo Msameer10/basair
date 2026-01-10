@@ -50,8 +50,9 @@ function wireThemeToggle() {
 (async function init() {
   applyTheme(getPreferredTheme());
 
-  await loadPartial("#siteHeader", "partials/header.html");
-  await loadPartial("#siteFooter", "partials/footer.html");
+  loadPartial("#siteHeader", "partials/header.html");
+  loadPartial("#siteFooter", "partials/footer.html");
+
 
   wireThemeToggle();
   setFooterYear();
