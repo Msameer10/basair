@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lugrasimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
 
 /* Slightly nicer reading width */
 .content-narrow {
@@ -61,6 +62,29 @@
 
 .basmalah{
   font-size: 1.4em;
+  color: #432DD7;
+}
+
+.arabic{
+  font-family: "Scheherazade New", "Amiri Quran", serif;
+  font-size: 1.3em;
+  direction: rtl;
+  unicode-bidi: plaintext;
+  text-align: justify;                 /* mushaf-like line filling */
+  line-height: 2.2;                    /* roomy for harakat */
+  letter-spacing: 0;                   /* don’t space Arabic letters */
+  word-spacing: 0.08em;                /* slight mushaf feel */
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+}
+
+.arabic .ayah-num {
+  font-size: 0.9em;
+  margin-inline: 0.25em;
+  opacity: 0.85;
+}
+
+.theme_color{
   color: #432DD7;
 }
 
