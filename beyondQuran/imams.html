@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basāʾir</title>
+  <base href="/basair/">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your site CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-body">
+  <!-- Shared header loads here -->
+  <div id="siteHeader"></div>
+
+<main class="flex-grow-1">
+  <!-- page content here -->
+
+<!-- Mermaid (Diagram) -->
+<div class="diagram-wrap">
+  <div id="isnadDiagram" class="mermaid">
+
+flowchart TB
+
+%% ===================== ROOT =====================
+P["Prophet ﷺ"]:::root
+
+P --> MK["MAKKAH"]:::city
+P --> MD["MADĪNAH"]:::city
+P --> KF["KŪFA"]:::city
+
+%% ===================== SAHABA =====================
+subgraph S1["Sahābah (by city)"]
+direction LR
+
+subgraph MK_S["Makkah"]
+direction TB
+MKIBA["Ibn ʿAbbās"]:::sahabi
+end
+
+subgraph MD_S["Madīnah"]
+direction TB
+MDAB["Abū Bakr"]:::sahabi
+MDUM["ʿUmar"]:::sahabi
+MDUT["ʿUthmān"]:::sahabi
+MDIU["Ibn ʿUmar"]:::sahabi
+MDAI["ʿĀʾishah"]:::sahabi
+MDZT["Zayd b. Thābit"]:::sahabi
+MDUB["Ubayy b. Kaʿb"]:::sahabi
+end
+
+subgraph KF_S["Kūfa"]
+direction TB
+KFIBM["ʿAbdullāh b. Masʿūd"]:::sahabi
+KFALI["ʿAlī b. Abī Ṭālib"]:::sahabi
+KFAMA["Abū Mūsā al-Ashʿarī"]:::sahabi
+end
+
+end
+
+%% City labels to their Sahaba blocks (visual anchoring)
+MK --> MKIBA
+MD --> MDAB
+MD --> MDUM
+MD --> MDUT
+MD --> MDIU
+MD --> MDAI
+MD --> MDZT
+MD --> MDUB
+KF --> KFIBM
+KF --> KFALI
+KF --> KFAMA
+
+%% ===================== TAABI'UN =====================
+subgraph S2["Tābiʿūn (assumed taught by all Sahābah in the city)"]
+direction LR
+
+subgraph MK_T["Makkah Tābiʿūn"]
+direction TB
+MKMUJ["Mujāhid"]:::tabi
+MKATA["ʿAṭāʾ"]:::tabi
+MKIKR["ʿIkrimah"]:::tabi
+end
+
+subgraph MD_T["Madīnah Tābiʿūn"]
+direction TB
+MDUBD["ʿUbaydullāh"]:::tabi
+MDURW["ʿUrwah b. al-Zubayr"]:::tabi
+MDQAS["al-Qāsim"]:::tabi
+MDSAI["Saʿīd b. al-Musayyib"]:::tabi
+MDKHA["Khārijah"]:::tabi
+MDSAL["Sālim b. ʿAbdullāh b. ʿUmar"]:::tabi
+end
+
+subgraph KF_T["Kūfa Tābiʿūn"]
+direction TB
+KFSHU["Shurayḥ"]:::tabi
+KFMAS["Masrūq"]:::tabi
+KFASW["al-Aswad b. Yazīd"]:::tabi
+KFALQ["ʿAlqamah"]:::tabi
+end
+
+end
+
+%% Sahaba -> ALL Taabi'un (your assumption)
+
+%% Makkah: Ibn Abbas -> (all)
+MKIBA --> MKMUJ
+MKIBA --> MKATA
+MKIBA --> MKIKR
+
+%% Madinah: every Sahabi -> every Taabi'
+MDAB --> MDUBD & MDURW & MDQAS & MDSAI & MDKHA & MDSAL
+MDUM --> MDUBD & MDURW & MDQAS & MDSAI & MDKHA & MDSAL
+MDUT --> MDUBD & MDURW & MDQAS & MDSAI & MDKHA & MDSAL
+MDIU --> MDUBD & MDURW & MDQAS & MDSAI & MDKHA & MDSAL
+MDAI --> MDUBD & MDURW & MDQAS & MDSAI & MDKHA & MDSAL
+MDZT --> MDUBD & MDURW & MDQAS & MDSAI & MDKHA & MDSAL
+MDUB --> MDUBD & MDURW & MDQAS & MDSAI & MDKHA & MDSAL
+
+%% Kufa: every Sahabi -> every Taabi'
+KFIBM --> KFSHU & KFMAS & KFASW & KFALQ
+KFALI --> KFSHU & KFMAS & KFASW & KFALQ
+KFAMA --> KFSHU & KFMAS & KFASW & KFALQ
+
+%% ===================== TABA' TAABI'UN =====================
+subgraph S3["Tabaʿ Tābiʿūn (assumed taught by all Tābiʿūn in the city)"]
+direction LR
+
+subgraph MK_TT["Makkah"]
+direction TB
+MKSUF["Sufyān b. ʿUyaynah"]:::taba
+end
+
+subgraph MD_TT["Madīnah"]
+direction TB
+MDYAH["Yaḥyā b. Saʿīd"]:::taba
+MDRAB["Rabīʿah al-Raʾī"]:::taba
+MDAZ["Abū al-Zinād"]:::taba
+MDZUH["al-Zuhrī"]:::taba
+MDNAF["Nāfiʿ"]:::taba
+MDHUM["ʿAbdullāh b. Ḥumūz"]:::taba
+end
+
+subgraph KF_TT["Kūfa"]
+direction TB
+KFIBR["Ibrāhīm al-Nakhaʿī"]:::taba
+KFAMR["ʿĀmir al-Shaʿbī"]:::taba
+end
+
+end
+
+%% Taabi'un -> ALL Taba Taabi'un (your assumption)
+
+%% Makkah Taabi'un -> Sufyan
+MKMUJ --> MKSUF
+MKATA --> MKSUF
+MKIKR --> MKSUF
+
+%% Madinah Taabi'un -> ALL Madinah Taba Taabi'un
+MDUBD --> MDYAH & MDRAB & MDAZ & MDZUH & MDNAF & MDHUM
+MDURW --> MDYAH & MDRAB & MDAZ & MDZUH & MDNAF & MDHUM
+MDQAS --> MDYAH & MDRAB & MDAZ & MDZUH & MDNAF & MDHUM
+MDSAI --> MDYAH & MDRAB & MDAZ & MDZUH & MDNAF & MDHUM
+MDKHA --> MDYAH & MDRAB & MDAZ & MDZUH & MDNAF & MDHUM
+MDSAL --> MDYAH & MDRAB & MDAZ & MDZUH & MDNAF & MDHUM
+
+%% Kufa Taabi'un -> both (Ibrahim, Amir)
+KFSHU --> KFIBR & KFAMR
+KFMAS --> KFIBR & KFAMR
+KFASW --> KFIBR & KFAMR
+KFALQ --> KFIBR & KFAMR
+
+%% ===================== IMAMS + SPECIAL LINKS =====================
+
+%% Madinah Taba Taabi'un -> Imam Malik
+MAL["Imām Mālik"]:::imam
+MDYAH --> MAL
+MDRAB --> MAL
+MDAZ  --> MAL
+MDZUH --> MAL
+MDNAF --> MAL
+MDHUM --> MAL
+
+%% Kufa Taba Taabi'un -> Hammad -> Abu Hanifah
+KFHAM["Ḥammād b. Sulaymān"]:::taba
+AHN["Imām Abū Ḥanīfah"]:::imam
+
+KFIBR --> KFHAM
+KFAMR --> KFHAM
+KFHAM --> AHN
+
+%% Students of Malik
+IW["Ibn Wahb"]:::student
+IQ["Ibn al-Qāsim"]:::student
+ASH["Ashhab"]:::student
+ABD["ʿAbdullāh"]:::student
+YBY["Yaḥyā b. Yaḥyā"]:::student
+
+MAL --> IW & IQ & ASH & ABD & YBY
+
+%% Students of Abu Hanifah
+ZUF["Zufar"]:::student
+AYQ["Abū Yūsuf al-Qāḍī"]:::student
+AHN --> ZUF & AYQ
+
+%% Muhammad b. al-Hasan taught by BOTH Malik & Abu Hanifah (per your statement)
+MBH["Muḥammad b. al-Ḥasan"]:::student
+MAL --> MBH
+AHN --> MBH
+
+%% All students of Malik INCLUDING MBH -> Imam al-Shafi'i
+SHF["Imām al-Shāfiʿī"]:::imam
+IW --> SHF
+IQ --> SHF
+ASH --> SHF
+ABD --> SHF
+YBY --> SHF
+MBH --> SHF
+
+%% Teachers of Imam Ahmad
+AHM["Imām Aḥmad b. Ḥanbal"]:::imam
+MKSUF --> AHM
+SHF  --> AHM
+AYQ  --> AHM
+
+%% ===================== STYLES =====================
+classDef root fill:#111827,color:#fff,stroke:#111827,stroke-width:2px;
+classDef city fill:#0f172a,color:#fff,stroke:#0f172a,stroke-width:2px;
+classDef sahabi fill:#1f2a60,color:#fff,stroke:#1f2a60;
+classDef tabi fill:#1f4d2e,color:#fff,stroke:#1f4d2e;
+classDef taba fill:#2e5f6b,color:#fff,stroke:#2e5f6b;
+classDef student fill:#3b3b3b,color:#fff,stroke:#3b3b3b;
+classDef imam fill:#6b1b1b,color:#fff,stroke:#6b1b1b,stroke-width:2px;
+
+
+  </div>
+
+<a href="images/imams.jpg">Image Form (Bayyinah)</a>
+
+</div>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+  const el = document.getElementById("isnadDiagram");
+  const source = el.textContent.trim();  // store once, forever
+
+  function currentTheme() {
+    return document.body.classList.contains("dark") ? "dark" : "default";
+  }
+
+  let rendering = false;
+
+  async function renderMermaid() {
+    if (rendering) return;
+    rendering = true;
+
+    // Create a fresh node so Mermaid never "half-parses" old state
+    const fresh = document.createElement("div");
+    fresh.id = "isnadDiagram";
+    fresh.className = "mermaid";
+    fresh.textContent = source;
+
+    el.replaceWith(fresh);
+
+    // Initialize once per render with current theme
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: currentTheme(),
+      securityLevel: "loose",
+      flowchart: {
+        curve: "linear"
+      },
+      themeVariables: {
+        fontSize: "40px",        // ← try 16px, 18px, or 20px
+        fontFamily: "Times New Roman, serif",
+        nodeTextColor: "#000"
+      }
+
+    });
+
+    try {
+      await mermaid.run({ nodes: [fresh] });
+    } finally {
+      rendering = false;
+    }
+  }
+
+  // Initial render
+  renderMermaid();
+
+  // Re-render when body class changes (debounced)
+  let t = null;
+  new MutationObserver(() => {
+    clearTimeout(t);
+    t = setTimeout(renderMermaid, 50);
+  }).observe(document.body, { attributes: true, attributeFilter: ["class"] });
+</script>
+  
+</main>
+
+  <!-- Shared footer loads here -->
+  <div id="siteFooter"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your site JS (partials + theme) -->
+  <script src="js/main.js"></script>
+</body>
+</html>

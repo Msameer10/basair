@@ -69,7 +69,7 @@
 /* Tab buttons */
 .nav-tabs .nav-link {
   color: var(--bs-body-color);
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.3em;
   border: none;
   border-bottom: 2px solid transparent;

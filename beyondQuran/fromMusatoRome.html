@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basāʾir</title>
+  <base href="/basair/">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your site CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-body">
+  <!-- Shared header loads here -->
+  <div id="siteHeader"></div>
+
+<main class="flex-grow-1">
+  <!-- page content here -->
+
+<div class="pdf-article mt-4 mb-5">
+
+  <h2 class="text-center mb-4">Biblical–Abrahamic Historical Timeline</h2>
+
+  <h4>Timeline</h4>
+  <ul>
+    <li>Moses and the Exodus from Egypt → Wandering in Sinai (40 years)</li>
+    <li>Moses views the Promised Land from afar and dies outside it</li>
+    <li>Joshua succeeds Moses and leads the Conquest of Canaan</li>
+    <li>Period of the Judges → Samuel emerges as prophet</li>
+    <li>Saul becomes first king; David defeats Goliath and captures Jerusalem</li>
+    <li>Solomon builds the First Temple; Ark of the Covenant placed inside</li>
+    <li>Kingdom splits: Israel (north) and Judah (south)</li>
+    <li>Assyria destroys Northern Kingdom (Israel)</li>
+    <li>Babylon destroys Judah and the First Temple; Exile</li>
+    <li>Cyrus of Persia allows return; Second Temple built</li>
+    <li>Alexander the Great conquers the region; Hellenistic rule</li>
+    <li>Maccabean revolt leads to independent Jewish kingdom</li>
+    <li>Roman conquest; Second Temple destroyed (70 CE); Diaspora</li>
+  </ul>
+
+  <h4 class="mt-4">Illustrative Timeline Markers (schematic)</h4>
+  <p class="mb-4">
+    Moses and Aaron → Exodus → Joshua → David → Temple I → Exile → Temple II → Rome
+  </p>
+
+  <hr>
+
+  <div class="pdf-figure">
+    <img src="images/musa_to_arrum_1.jpg" alt="The Exodus From Egypt map">
+    <div class="pdf-caption">
+      The Exodus From Egypt — route map (schematic).
+    </div>
+  </div>
+
+  <div class="pdf-figure">
+    <img src="images/musa_to_arrum_2.jpg" alt="Kingdom of Israel and Judah map">
+    <div class="pdf-caption">
+      Map showing Kingdom of Israel (north) and Kingdom of Judah (south) in the Levant.
+    </div>
+  </div>
+
+  <div class="pdf-figure">
+    <img src="images/musa_to_arrum_3.jpg" alt="Babylonian Exile map">
+    <div class="pdf-caption">
+      Babylonian Exile — schematic map showing movement toward Babylon.
+    </div>
+  </div>
+
+  <!-- Page 5 image -->
+  <div class="pdf-figure">
+    <img src="images/musa_to_arrum_4.jpg" alt="United Kingdom of Israel map">
+    <div class="pdf-caption">
+      United Kingdom of Israel around the time of Saul and David (schematic).
+    </div>
+  </div>
+
+<a href="docs/musa_to_arrum.pdf">Document Form</a>
+
+</div>
+
+<style>
+  /* Integrated PDF content block (no special page container) */
+.pdf-article h2{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+
+.pdf-article h4{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  margin-top: 1.25rem;
+}
+
+.pdf-figure{
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.pdf-figure img{
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Optional: caption styling */
+.pdf-caption{
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* Optional: make list spacing nicer */
+.pdf-article ul{
+  margin-top: 0.75rem;
+}
+
+.pdf-article ul, p {
+  font-size: 20px;
+}
+
+------------------------------------------------------------s
+/* Diagram area */
+.diagram-wrap{
+  width: 100%;
+  overflow-x: auto;              /* allow scroll instead of shrinking */
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Important: don't auto-shrink the SVG */
+.diagram-wrap svg{
+  width: max-content;            /* keep natural width */
+  height: auto;
+  display: block;
+  margin: 0 auto;               /* center if it fits */
+}
+
+/* Give the SVG a minimum readable width (tweak this number) */
+.diagram-wrap svg{
+  min-width: 1250px;            /* <- adjust: 1100 / 1200 / 1400 */
+}
+
+
+/* Optional: constrain max size on large screens */
+@media (min-width: 1200px){
+  .diagram-wrap svg{
+    max-width: 1200px;
+  }
+}
+</style>
+
+  
+</main>
+
+  <!-- Shared footer loads here -->
+  <div id="siteFooter"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your site JS (partials + theme) -->
+  <script src="js/main.js"></script>
+</body>
+</html>
