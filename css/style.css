@@ -22,6 +22,19 @@
   font-size: 30px;
 }
 
+[data-bs-theme="light"] .navbar-brand {
+  color: #432DD7;
+}
+
+[data-bs-theme="dark"] .navbar-brand {
+  color: #ffffff;
+}
+
+/* Prevent Bootstrap hover overrides */
+.navbar-brand:hover {
+  color: inherit;
+}
+
 .subtxt1{
   font-family: "Cormorant", serif;
   font-size: 20px;
@@ -60,8 +73,9 @@
 
 /* Active tab */
 .nav-tabs .nav-link.active {
-  border-bottom-color: #000;
+  border-bottom-color: var(--bs-border-color);
   background: transparent;
+  color: #432DD7;
 }
 
 /* Hover */
