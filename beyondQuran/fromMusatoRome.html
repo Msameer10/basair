@@ -21,7 +21,7 @@
 
 <main class="flex-grow-1 container">
   <!-- page content here -->
-<p class="amiri basmalah mt-1 text-center">بِسۡمِ ٱللّٰهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</p>
+<p class="amiri basmalah mt-2 text-center">بِسۡمِ ٱللّٰهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</p>
 <div class="pdf-article mt-4 mb-5">
 
   <h2 class="text-center mb-4">Biblical–Abrahamic Historical Timeline</h2>
@@ -123,35 +123,11 @@
   font-size: 20px;
 }
 
-------------------------------------------------------------s
-/* Diagram area */
-.diagram-wrap{
-  width: 100%;
-  overflow-x: auto;              /* allow scroll instead of shrinking */
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+.basmalah{
+  font-size: 1.4em;
+  color: #432DD7;
 }
 
-/* Important: don't auto-shrink the SVG */
-.diagram-wrap svg{
-  width: max-content;            /* keep natural width */
-  height: auto;
-  display: block;
-  margin: 0 auto;               /* center if it fits */
-}
-
-/* Give the SVG a minimum readable width (tweak this number) */
-.diagram-wrap svg{
-  min-width: 1250px;            /* <- adjust: 1100 / 1200 / 1400 */
-}
-
-
-/* Optional: constrain max size on large screens */
-@media (min-width: 1200px){
-  .diagram-wrap svg{
-    max-width: 1200px;
-  }
-}
 </style>
 
   
