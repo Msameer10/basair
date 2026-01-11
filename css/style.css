@@ -54,6 +54,10 @@
   font-size: 0.8rem;
 }
 
+.noto{
+  font-family: "Noto Serif", "Times New Roman", serif;
+}
+
 .p_about {
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
