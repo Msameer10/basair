@@ -72,7 +72,7 @@
   letter-spacing: 10px;
 }
 
-.arabic{
+.ayah{
   font-family: "Scheherazade New", "Amiri Quran", serif;
   direction: rtl;
   unicode-bidi: plaintext;
@@ -81,10 +81,11 @@
   word-spacing: 0.08em;                /* slight mushaf feel */
   font-variant-ligatures: common-ligatures;
   font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+  font-size: 1.8em;
 }
 
-.ayah{
-  font-size: 1.8em;
+.arabic{
+  font-family: "Scheherazade New", "Amiri Quran", serif;
 }
 
 .arabic .ayah-num {
