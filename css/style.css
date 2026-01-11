@@ -69,7 +69,7 @@
 
 .arabic{
   font-family: "Scheherazade New", "Amiri Quran", serif;
-  font-size: 1.5em;
+  font-size: 1.1em;
   direction: rtl;
   unicode-bidi: plaintext;
   line-height: 2.2;                    /* roomy for harakat */
@@ -77,6 +77,10 @@
   word-spacing: 0.08em;                /* slight mushaf feel */
   font-variant-ligatures: common-ligatures;
   font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+}
+
+.ayah{
+  font-size: 1.5em;
 }
 
 .arabic .ayah-num {
