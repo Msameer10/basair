@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap');
 
 
 /* Slightly nicer reading width */
@@ -67,9 +68,12 @@
   font-family: "Amiri Quran", serif;
 }
 
+.naskh{
+  font-family: "Noto Naskh Arabic", serif;
+}
+
 .basmalah{
   font-size: 1.1em;
-  letter-spacing: 10px;
 }
 
 .ayah{
