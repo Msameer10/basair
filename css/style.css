@@ -69,7 +69,6 @@
 
 .arabic{
   font-family: "Scheherazade New", "Amiri Quran", serif;
-  font-size: 1.1em;
   direction: rtl;
   unicode-bidi: plaintext;
   line-height: 2.2;                    /* roomy for harakat */
