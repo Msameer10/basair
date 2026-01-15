@@ -38,6 +38,12 @@
         Beyond the Qur'an
       </button>
     </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-c-btn" data-bs-toggle="tab" data-bs-target="#tab-c"
+        type="button" role="tab" aria-controls="tab-c" aria-selected="false">
+        Lexicon
+      </button>
+    </li>
   </ul>
 
   <div class="tab-content border border-top-0 rounded-bottom p-3" id="topicTabsContent">
@@ -51,8 +57,8 @@
       </div>
 
       <ul id="listA" class="list-group">
-        <li class="list-group-item" data-search="1. Al-Fatiha"><a href="quranStudies/001alFatihah.html">1. Al-Fātiḥah&emsp;<span class="arabic">سُورَةُ ٱلْفَاتِحَةِ</span></a></li>
-        <li class="list-group-item" data-search="1. Al-Fatiha"><a href="quranStudies/087arRahman.html">87. Ar-Raḥmān&emsp;<span class="arabic">سُورَةُ ٱلرَّحْمَٰنِ</span></a></li>
+        <li class="list-group-item" data-search="1. Al-Fatihah"><a href="quranStudies/001alFatihah.html">1. Al-Fātiḥah&emsp;<span class="arabic">سُورَةُ ٱلْفَاتِحَةِ</span></a></li>
+        <li class="list-group-item" data-search="55. Ar-Rahman"><a href="quranStudies/055arRahman.html">55. Ar-Raḥmān&emsp;<span class="arabic">سُورَةُ ٱلرَّحْمَٰنِ</span></a></li>
       </ul>
 
       <p id="emptyA" class="small text-body-secondary mt-3 d-none">No results found.</p>
@@ -74,6 +80,22 @@
       </ul>
 
       <p id="emptyB" class="small text-body-secondary mt-3 d-none">No results found.</p>
+    </div>
+
+    <!-- TAB C -->
+    <div class="tab-pane fade" id="tab-c" role="tabpanel" aria-labelledby="tab-c-btn" tabindex="0">
+      <div class="d-flex flex-column flex-sm-row gap-2 align-items-sm-center mb-3">
+        <label class="visually-hidden" for="searchC">Search Lexicon</label>
+        <input id="searchC" class="form-control" type="search" placeholder="Search Lexicon…">
+        <button id="clearC" class="btn btn-outline-secondary" type="button">Clear</button>
+      </div>
+
+      <ul id="listC" class="list-group">
+        <li class="list-group-item" data-search="Rabb"><a href="lexicon/rabb.html">Rabb</a></li>
+        <li class="list-group-item" data-search="ar Rahman"><a href="lexicon/arRahman.html">Rabb</a></li>
+      </ul>
+
+      <p id="emptyC" class="small text-body-secondary mt-3 d-none">No results found.</p>
     </div>
 
   </div>

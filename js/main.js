@@ -98,3 +98,4 @@ function makeSearchableList({ inputId, clearId, listId, emptyId }) {
 // Call these AFTER your header/footer partials are loaded (same place you wire other stuff)
 makeSearchableList({ inputId: "searchA", clearId: "clearA", listId: "listA", emptyId: "emptyA" });
 makeSearchableList({ inputId: "searchB", clearId: "clearB", listId: "listB", emptyId: "emptyB" });
+makeSearchableList({ inputId: "searchC", clearId: "clearC", listId: "listC", emptyId: "emptyC" });
