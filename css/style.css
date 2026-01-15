@@ -35,6 +35,10 @@
   color: #ffffff;
 }
 
+#library{
+  font-size: 1.2em;
+}
+
 /* Prevent Bootstrap hover overrides */
 .navbar-brand:hover {
   color: inherit;
