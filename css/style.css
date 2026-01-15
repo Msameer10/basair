@@ -150,6 +150,25 @@
   border-radius: 0 0 6px 6px;
 }
 
+@media (max-width: 768px) {
+  #topicTabs {
+    flex-wrap: nowrap;          /* force single row */
+  }
+
+  #topicTabs .nav-item {
+    flex: 1 1 0;                /* equal width tabs */
+    text-align: center;
+  }
+
+  #topicTabs .nav-link {
+    width: 100%;
+    padding: 0.5rem 0.25rem;    /* tighter padding */
+    font-size: 0.9rem;          /* slightly smaller text */
+    white-space: nowrap;        /* prevent text wrapping */
+  }
+}
+
+
 /* Search input */
 input[type="search"] {
   border-radius: 6px;
