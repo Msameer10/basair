@@ -59,6 +59,10 @@
   font-size: 1em;
 }
 
+.p a{
+  text-decoration: none;
+}
+
 .noto{
   font-family: "Noto Serif", "Times New Roman", serif;
 }
