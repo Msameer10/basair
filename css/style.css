@@ -112,6 +112,29 @@
 
 /*---------------------------------------------*/
 
+.hr-flourish{
+  border: 0;
+  height: 1px;
+  margin: 2rem 0;
+  position: relative;
+  background: currentColor;
+  opacity: .65;
+}
+
+.hr-flourish::after{
+  content: "❦";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  padding: 0 .9rem;
+  background: var(--hr-bg, #fff); /* set to your page bg */
+  font-size: 1.25rem;
+  letter-spacing: .05em;
+  opacity: .9;
+}
+
+
 .list-container{
   font-family: serif;
 }
