@@ -248,3 +248,8 @@ input[type="search"]:focus {
 [data-bs-theme="dark"] .list-group-item:hover {
   background: rgba(255, 255, 255, 0.04);
 }
+
+
+footer{
+  margin-top: 20px;
+}
