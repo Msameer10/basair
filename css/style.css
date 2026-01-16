@@ -111,24 +111,15 @@
 }
 
 /*---------------------------------------------*/
-hr.style-eight {
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
+.hr-arabesque{
+  border: 0;
+  height: 10px;
+  margin: 2rem 0;
+  opacity: .75;
+  background:
+    radial-gradient(circle at 10px 50%, currentColor 2px, transparent 3px) 0 0/20px 10px repeat-x,
+    linear-gradient(currentColor, currentColor) 0 50%/100% 1px no-repeat;
 }
-hr.style-eight:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
-}
-
 
 .list-container{
   font-family: serif;
