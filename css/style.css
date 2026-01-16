@@ -111,27 +111,22 @@
 }
 
 /*---------------------------------------------*/
-
-.hr-flourish{
-  border: 0;
-  height: 1px;
-  margin: 2rem 0;
-  position: relative;
-  background: currentColor;
-  opacity: .65;
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
 }
-
-.hr-flourish::after{
-  content: "❦";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -55%);
-  padding: 0 .9rem;
-  background: var(--hr-bg, #fff); /* set to your page bg */
-  font-size: 1.25rem;
-  letter-spacing: .05em;
-  opacity: .9;
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
 
 
