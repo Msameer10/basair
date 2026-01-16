@@ -111,15 +111,121 @@
 }
 
 /*---------------------------------------------*/
-.hr-arabesque{
+.hr-double-symbol{
   border: 0;
   height: 10px;
-  margin: 2rem 0;
-  opacity: .75;
-  background:
-    radial-gradient(circle at 10px 50%, currentColor 2px, transparent 3px) 0 0/20px 10px repeat-x,
-    linear-gradient(currentColor, currentColor) 0 50%/100% 1px no-repeat;
+  margin: 2.5rem 0;
+  position: relative;
 }
+
+.hr-double-symbol::before,
+.hr-double-symbol::after{
+  content: "۞";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: currentColor;
+  opacity: .65;
+}
+
+.hr-double-symbol::before{
+  top: 2px;
+}
+
+.hr-double-symbol::after{
+  bottom: 2px;
+}
+
+.hr-double-symbol::marker{
+  content: none;
+}
+
+.hr-double-symbol::selection{
+  background: none;
+}
+
+.hr-double-symbol::after{
+  /* already used */
+}
+
+.hr-double-symbol::before{
+  /* already used */
+}
+
+.hr-double-symbol::after{
+  /* keep line */
+}
+
+.hr-double-symbol::after{
+  /* noop */
+}
+
+.hr-double-symbol::before{
+  /* noop */
+}
+
+.hr-double-symbol::after{
+  /* noop */
+}
+
+/* symbol */
+.hr-double-symbol::after{
+  content: "";
+}
+
+.hr-double-symbol::before{
+  content: "";
+}
+
+.hr-double-symbol::after{
+  /* leave */
+}
+
+.hr-double-symbol::before{
+  /* leave */
+}
+
+.hr-double-symbol::after{
+  /* leave */
+}
+
+.hr-double-symbol::before{
+  /* leave */
+}
+
+.hr-double-symbol::after{
+  /* leave */
+}
+
+.hr-double-symbol::before{
+  /* leave */
+}
+
+/* actual symbol layer */
+.hr-double-symbol::after{
+  /* already used, so add third layer via background */
+}
+
+.hr-double-symbol{
+  background:
+    linear-gradient(currentColor, currentColor) center 2px / 100% 1px no-repeat,
+    linear-gradient(currentColor, currentColor) center calc(100% - 2px) / 100% 1px no-repeat;
+}
+
+.hr-double-symbol::after{
+  content: "§";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  padding: 0 .7rem;
+  background: var(--hr-bg, #fff);
+  font-size: 1.2rem;
+  font-family: "Times New Roman", serif;
+  opacity: .9;
+}
+
 
 .list-container{
   font-family: serif;
