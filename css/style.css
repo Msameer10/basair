@@ -116,21 +116,14 @@ i{
 /*---------------------------------------------*/
 .hr-double-symbol{
   border: none;
-  height: 10px;
+  height: 10px;              /* distance between the two lines */
   margin: 2.5rem 0;
   position: relative;
-
   background:
-    linear-gradient(
-      rgba(0,0,0,.7),
-      rgba(0,0,0,.7)
-    ) center 2px / 100% 1px no-repeat,
-    linear-gradient(
-      rgba(0,0,0,.7),
-      rgba(0,0,0,.7)
-    ) center calc(100% - 2px) / 100% 1px no-repeat;
+    linear-gradient(currentColor, currentColor) center 2px / 100% 1px no-repeat,
+    linear-gradient(currentColor, currentColor) center calc(100% - 2px) / 100% 1px no-repeat;
+  opacity: 0.7;
 }
-
 
 .hr-double-symbol::after{
   content: "۞";
@@ -140,10 +133,22 @@ i{
   transform: translate(-50%, -55%);
   padding: 0 0.7rem;
   background: var(--hr-bg, #fff); /* match page background */
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-family: "EB Garamond", "Cormorant Garamond", serif;
   opacity: 0.9;
 }
+
+/* Dark mode override */
+[data-bs-theme="dark"] .hr-double-symbol {
+  color: #ffffff;          /* makes the lines white */
+  opacity: 0.8;
+}
+
+[data-bs-theme="dark"] .hr-double-symbol::after {
+  color: #ffffff;          /* makes the symbol white */
+  background: var(--bs-body-bg); /* matches dark background */
+}
+
 /*-----------------------------------------*/
 
 
