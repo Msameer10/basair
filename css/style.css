@@ -17,8 +17,8 @@
 }
 
 /* Pure black dark mode */
-[data-bs-theme="dark"] {
-  --bs-body-bg: #000000;
+[data-bs-theme="dark"] body{
+  --bs-body-bg: #000000 !important;
   --bs-body-color: #ffffff;
 
   --bs-secondary-bg: #000000;
