@@ -259,3 +259,7 @@ input[type="search"]:focus {
 footer{
   margin-top: 20px;
 }
+
+[data-bs-theme="dark"] body {
+  background: #000000;
+}
