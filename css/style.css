@@ -17,14 +17,12 @@
 }
 
 /* Pure black dark mode */
-[data-bs-theme="dark"] body{
-  --bs-body-bg: #000000 !important;
-  --bs-body-color: #ffffff;
-
-  --bs-secondary-bg: #000000;
-  --bs-tertiary-bg: #000000;
-
-  --bs-border-color: rgba(255, 255, 255, 0.15);
+[data-bs-theme="dark"] body,
+[data-bs-theme="dark"] main,
+[data-bs-theme="dark"] .bg-body,
+[data-bs-theme="dark"] .container,
+[data-bs-theme="dark"] .container-fluid {
+  background-color: #000000 !important;
 }
 
 /* Force true black text in light mode */
