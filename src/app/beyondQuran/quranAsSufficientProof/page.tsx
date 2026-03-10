@@ -1,0 +1,444 @@
+export default function QuranAsSufficientProofPage() {
+  return (
+    <div className="container">
+      <p className="naskh basmalah mt-3 text-center">
+        بِسۡمِ ٱللّٰهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+      </p>
+      <div className="doc-page">
+        <h1 className="doc-title">
+          The Qurʾān as Sufficient Proof:
+          <br /> Rethinking Divine Signs, Miracles, and Epistemic
+          Responsibility
+        </h1>
+
+        <h2 className="doc-section">Disclaimer</h2>
+        <p className="doc-p">
+          This thought process reflects a personal theological and intellectual
+          understanding developed through sustained engagement with the Qurʾān
+          and its internal logic. It does not claim to represent a definitive
+          or exclusive interpretation of Islamic doctrine, nor does it seek to
+          invalidate classical or contemporary scholarly approaches. Rather, it
+          aims to articulate one coherent Qurʾānic framework for understanding
+          divine signs, miracles, and belief, while recognizing that sincere
+          readers may arrive at alternative conclusions through equally
+          legitimate interpretive paths.
+        </p>
+
+        <h2 className="doc-section">
+          Preface: Contextual Miracles and the Qurʾānic Reframing of Proof
+        </h2>
+        <p className="doc-p">
+          Islamic scripture presents miracles (muʿjizāt) not as arbitrary
+          manifestations of divine power, but as signs deliberately suited to
+          the intellectual, cultural, and psychological conditions of the
+          societies to which prophets were sent. These signs addressed what a
+          given people considered the highest expression of human capability,
+          confronting prevailing certainties from within their own epistemic
+          frameworks.
+        </p>
+
+        <p className="doc-p">
+          The mission of Mūsā (peace be upon him) illustrates this principle
+          with particular clarity. Banī Isrāʾīl lived under a civilization in
+          which magic, illusion, and ritualized spectacle functioned as
+          instruments of both cultural authority and political dominance. The
+          signs granted to Mūsā—especially the transformation of his staff and
+          the exposure of the magicians’ craft—did not merely surpass sorcery
+          in power, but invalidated it categorically (Q 7:117–122).
+          Significantly, it was the magicians themselves who immediately
+          recognized this distinction, affirming that what they witnessed lay
+          beyond the scope of human artifice.
+        </p>
+
+        <p className="doc-p">
+          A similar pattern emerges in the mission of Ṣāliḥ (peace be upon him)
+          to the people of Thamūd. Renowned for their architectural mastery and
+          their sense of permanence carved into stone, they were confronted with
+          a living sign that directly challenged their assumptions of control,
+          entitlement, and continuity. The she-camel was not ambiguous in its
+          meaning; rather, its rejection reflected resistance to the ethical
+          demand it imposed (Q 7:73).
+        </p>
+
+        <p className="doc-p">
+          The miracles of ʿĪsā (peace be upon him) addressed yet another
+          civilizational context. In a world shaped by Greco-Roman medical
+          thought and advancing practices of healing, his signs transcended the
+          limits of treatment and entered the domain of creation itself. Healing
+          congenital blindness, curing leprosy, and restoring life by God’s
+          permission represented acts that no accumulation of technical
+          knowledge could reproduce (Q 3:49). These miracles drew a clear
+          boundary between human skill and divine intervention.
+        </p>
+
+        <p className="doc-p">
+          In each of these cases, miracles were sensory, immediate, and
+          temporally bound. They addressed specific peoples at specific moments,
+          and when rejected, often marked the conclusion of the period of trial.
+          Belief, after such signs, ceased to be a matter of uncertainty and
+          became a matter of defiance.
+        </p>
+
+        <p className="doc-p">
+          Against this backdrop, the revelation of the Qurʾān introduces a
+          decisive reorientation of proof. The Arabs to whom Prophet Muḥammad ﷺ
+          was sent did not primarily define their superiority through material
+          power or technical sciences, but through language—especially
+          eloquence, poetry, and rhetorical mastery. In this context, the
+          Qurʾān did not merely exceed Arabic expression; it redefined discourse
+          itself. It issued a sustained linguistic and conceptual challenge that
+          resisted imitation despite complete accessibility (Q 2:23; Q 17:88).
+        </p>
+
+        <p className="doc-p">
+          Unlike previous miracles, the Qurʾān was not confined to a moment nor
+          exhausted by observation. It presented itself as a living sign (āyah)
+          and a clear proof (bayyinah)—one that engages reason, conscience, and
+          reflection across generations without compelling belief. From this
+          Qurʾānic reorientation of proof—away from spectacle and toward
+          enduring guidance—the following discussion proceeds.
+        </p>
+
+        <h2 className="doc-section">Introduction: The Persistent Demand for Signs</h2>
+        <p className="doc-p">
+          One of the recurring themes in the Qurʾān is the demand made by the
+          opponents of Prophet Muḥammad ﷺ for extraordinary signs to validate
+          his message. These demands ranged from angels descending visibly, to
+          scriptures falling physically from the sky, to dramatic
+          transformations of natural features into material wealth (Q 17:90–93).
+          Such requests framed belief as conditional upon overwhelming empirical
+          spectacle.
+        </p>
+
+        <p className="doc-p">
+          At the same time, the Qurʾān consistently presents itself as a sign
+          (āyah) and a clear proof (bayyinah) (Q 2:99; Q 29:49). This raises a
+          central theological question: if the Qurʾān itself functions as a
+          sign, why are additional signs demanded, and why are such demands
+          repeatedly refused? This article argues that the Qurʾān deliberately
+          redefines what constitutes proof, shifting belief away from coercive
+          miracles toward a mode of guidance that preserves moral agency,
+          responsibility, and the integrity of the human trial.
+        </p>
+
+        <h2 className="doc-section">
+          Āyah and Bayyinah: The Qurʾānic Concept of Proof
+        </h2>
+        <p className="doc-p">
+          In the Qurʾānic worldview, an āyah is not restricted to supernatural
+          events. The term encompasses revelation, natural phenomena, historical
+          patterns, and moral realities (Q 41:53). When the Qurʾān describes
+          itself as an āyah and a bayyinah, it asserts that revelation itself
+          constitutes evidence—clear enough to guide, yet open enough to allow
+          rejection.
+        </p>
+
+        <p className="doc-p">
+          This distinction is critical. The Qurʾān does not claim to overwhelm
+          the human intellect into submission; rather, it presents itself as
+          illumination (Q 5:15–16). Guidance (hudā) is offered, not imposed (Q
+          2:256). Proof, in the Qurʾānic sense, does not eliminate doubt
+          entirely, but removes legitimate excuses for denial while preserving
+          moral freedom.
+        </p>
+
+        <h2 className="doc-section">
+          The Psychology of Demanding Miracles
+        </h2>
+        <p className="doc-p">
+          The Qurʾān portrays miracle-demands not as neutral inquiries, but as
+          manifestations of resistance. Those who demand signs frequently do so
+          conditionally, postponing belief until increasingly dramatic proof is
+          presented (Q 6:109). Yet the Qurʾān repeatedly notes that even when
+          clear signs are shown, rejection persists through rationalization—
+          accusations of sorcery, illusion, or deception (Q 6:7; Q 15:14–15).
+        </p>
+
+        <p className="doc-p">
+          This recurring pattern suggests that the issue is not the absence of
+          evidence, but an unwillingness to accept its implications.
+          Miracle-demands thus function less as a genuine path to faith and
+          more as a strategy of delay.
+        </p>
+
+        <h2 className="doc-section">
+          Why Shown Signs Lead to Punishment, Not Guidance
+        </h2>
+        <p className="doc-p">
+          A consistent Qurʾānic principle emerges in the narratives of earlier
+          nations: when decisive and unmistakable miracles were granted and then
+          rejected, destruction followed swiftly (Q 7:96; Q 29:40). These signs
+          were not merely invitations to belief; they marked the conclusion of
+          the trial period.
+        </p>
+
+        <p className="doc-p">
+          Once certainty becomes unavoidable, belief no longer constitutes
+          repentance but mere submission to inevitability (Q 6:158). Punishment,
+          therefore, is not arbitrary but logically consequent. From this
+          perspective, the refusal to grant coercive miracles to the
+          contemporaries of the Prophet ﷺ can be understood as an act of mercy,
+          preserving the space for repentance (Q 35:45).
+        </p>
+
+        <h2 className="doc-section">
+          The Prophet’s Role and the Limits of Proof
+        </h2>
+        <p className="doc-p">
+          The Qurʾān repeatedly reminds the Prophet ﷺ that his role is
+          conveyance, not compulsion (Q 5:99; Q 42:48). He is instructed that
+          even if he were able to employ extraordinary means—digging into the
+          earth or ascending into the sky—such efforts would not compel belief,
+          for guidance ultimately rests with God alone (Q 6:35; Q 28:56).
+        </p>
+
+        <p className="doc-p">
+          This emphasis establishes a clear boundary between the responsibility
+          of the messenger and the moral agency of the audience. Proof, by
+          itself, does not generate faith, nor can responsibility for belief be
+          transferred to the Prophet. In this way, the Qurʾān explicitly
+          rejects a transactional model of belief—“show us, then we will
+          believe”—and replaces it with an ethical framework in which
+          accountability remains intact.
+        </p>
+
+        <h2 className="doc-section">
+          Reconsidering Scientific Miracles in the Qurʾān
+        </h2>
+        <p className="doc-p">
+          In modern discourse, significant effort has been devoted to
+          identifying scientific facts allegedly embedded in the Qurʾān long
+          before their discovery. While such approaches are often
+          well-intentioned, they raise methodological concerns.
+        </p>
+
+        <p className="doc-p">
+          Retrofitting contemporary scientific frameworks onto polyvalent
+          Qurʾānic language risks subordinating revelation to external
+          validation and renders faith contingent upon the stability of
+          scientific paradigms. Moreover, such approaches inadvertently mirror
+          the epistemic posture critiqued by the Qurʾān itself: the demand for
+          belief through externally compelling proof (Q 10:101). The Qurʾān does
+          not present itself as a scientific textbook, nor does it ground its
+          authority in predictive accuracy, but in guidance addressing the human
+          condition.
+        </p>
+
+        <h2 className="doc-section">The Qurʾān as an Enduring Miracle</h2>
+        <p className="doc-p">
+          Unlike physical miracles bound to specific moments in history, the
+          Qurʾān presents itself as a living, enduring sign (Q 38:87). Its
+          challenge is not merely to be witnessed, but to be engaged—
+          linguistically, morally, intellectually, and existentially (Q 12:111).
+          Its inimitability extends beyond form to coherence, depth of insight
+          into human behavior, and its sustained relevance across cultures and
+          eras.
+        </p>
+
+        <p className="doc-p">
+          The miracle of the Qurʾān lies not in compelling belief, but in
+          preserving belief as meaningful while holding rejection morally
+          accountable.
+        </p>
+
+        <h2 className="doc-section">Conclusion: Faith Without Spectacle</h2>
+        <p className="doc-p">
+          The Qurʾān’s refusal to comply with demands for spectacular miracles
+          is not a weakness in its claim, but a defining feature of its
+          epistemology. By presenting itself as a sufficient āyah and bayyinah,
+          it reframes proof as guidance rather than domination.
+        </p>
+
+        <p className="doc-p">
+          In this light, the enduring miracle of the Qurʾān lies not in
+          competing with past prophetic signs or anticipating future scientific
+          discoveries, but in its capacity to address the human condition across
+          time—leaving belief meaningful, rejection deliberate, and
+          accountability intact.
+        </p>
+
+        <hr className="doc-divider" />
+
+        <h2 className="doc-section">References</h2>
+        <div className="refs-subtitle">Qurʾānic References</div>
+        <p className="refs-note">
+          The following Qurʾānic passages are cited in this article. Arabic
+          excerpts are partial and selective, intended to highlight conceptual
+          relevance rather than function as full translations.
+        </p>
+
+        <ol className="refs-list">
+          <li className="refs-item">
+            <span className="refs-q">Q 2:23</span>
+            <span className="ayah-ar">
+              فَأْتُوا بِسُورَةٍ مِّن مِّثْلِهِ
+            </span>
+            — A challenge to produce a chapter comparable to the Qurʾān,
+            establishing its inimitability as proof of divine origin.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 2:99</span>
+            <span className="ayah-ar">
+              قَدْ أَنزَلْنَا إِلَيْكَ آيَاتٍ بَيِّنَاتٍ
+            </span>
+            — The Qurʾān is described as clear signs, rejected only by those who
+            persist in defiance.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 2:256</span>
+            <span className="ayah-ar">لَا إِكْرَاهَ فِي الدِّينِ</span>
+            — The principle that belief cannot be compelled, preserving moral
+            responsibility.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 3:49</span>
+            <span className="ayah-ar">
+              وَأُحْيِي الْمَوْتَىٰ بِإِذْنِ اللَّهِ
+            </span>
+            — The miracles of ʿĪsā (peace be upon him), including restoring life
+            by God’s permission.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 5:15–16</span>
+            <span className="ayah-ar">
+              قَدْ جَاءَكُم مِّنَ اللَّهِ نُورٌ وَكِتَابٌ مُّبِينٌ
+            </span>
+            — Revelation is described as light and a clear book that guides
+            toward peace.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 6:7</span>
+            <span className="ayah-ar">إِنْ هَٰذَا إِلَّا سِحْرٌ مُّبِينٌ</span>
+            — Even a physically delivered scripture would be dismissed as
+            deception.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 6:35</span>
+            <span className="ayah-ar">
+              فَإِنِ اسْتَطَعْتَ أَن تَبْتَغِيَ نَفَقًا فِي الْأَرْضِ
+            </span>
+            — The Prophet ﷺ is reminded that even extraordinary means cannot
+            compel belief.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 6:109</span>
+            <span className="ayah-ar">
+              لَئِن جَاءَتْهُمْ آيَةٌ لَّيُؤْمِنُنَّ بِهَا
+            </span>
+            — Demands for signs are exposed as insincere, not sincere paths to
+            faith.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 6:158</span>
+            <span className="ayah-ar">لَا يَنفَعُ نَفْسًا إِيمَانُهَا</span>
+            — Once decisive signs appear, belief no longer benefits those who
+            delayed.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 7:73</span>
+            <span className="ayah-ar">
+              هَٰذِهِ نَاقَةُ اللَّهِ لَكُمْ آيَةً
+            </span>
+            — The she-camel of Ṣāliḥ (peace be upon him) as a tangible and moral
+            sign.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 7:117–122</span>
+            <span className="ayah-ar">
+              فَأُلْقِيَ السَّحَرَةُ سَاجِدِينَ
+            </span>
+            — Expert magicians immediately recognize the divine nature of
+            Mūsā’s sign.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 10:101</span>
+            <span className="ayah-ar">وَمَا تُغْنِي الْآيَاتُ</span>
+            — Signs do not benefit those unwilling to believe.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 15:14–15</span>
+            <span className="ayah-ar">إِنَّمَا سُكِّرَتْ أَبْصَارُنَا</span>
+            — Even undeniable sensory experiences would be dismissed as
+            illusion.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 17:88</span>
+            <span className="ayah-ar">لَا يَأْتُونَ بِمِثْلِهِ</span>
+            — The collective inability of humans and jinn to replicate the
+            Qurʾān.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 17:90–93</span>
+            <span className="ayah-ar">لَن نُّؤْمِنَ لَكَ حَتَّىٰ</span>
+            — Conditional belief based on demands for spectacular miracles.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 28:56</span>
+            <span className="ayah-ar">
+              إِنَّكَ لَا تَهْدِي مَنْ أَحْبَبْتَ
+            </span>
+            — Guidance ultimately belongs to God alone.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 29:49</span>
+            <span className="ayah-ar">
+              آيَاتٌ بَيِّنَاتٌ فِي صُدُورِ الَّذِينَ أُوتُوا الْعِلْمَ
+            </span>
+            — The Qurʾān as clear signs preserved within the hearts of the
+            learned.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 35:45</span>
+            <span className="ayah-ar">
+              وَلَوْ يُؤَاخِذُ اللَّهُ النَّاسَ
+            </span>
+            — Divine forbearance in delaying punishment.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 38:87</span>
+            <span className="ayah-ar">
+              إِنْ هُوَ إِلَّا ذِكْرٌ لِّلْعَالَمِينَ
+            </span>
+            — The Qurʾān as a reminder for all worlds.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 41:53</span>
+            <span className="ayah-ar">سَنُرِيهِمْ آيَاتِنَا</span>
+            — Signs shown in horizons and within the self until truth becomes
+            clear.
+          </li>
+
+          <li className="refs-item">
+            <span className="refs-q">Q 42:48</span>
+            <span className="ayah-ar">
+              فَإِنَّمَا عَلَيْكَ الْبَلَاغُ
+            </span>
+            — The Messenger’s responsibility is conveyance alone.
+          </li>
+        </ol>
+
+        <a href="/beyondQuran/docs/miracles_of_quran.pdf">Document Form</a>
+      </div>
+    </div>
+  );
+}
+

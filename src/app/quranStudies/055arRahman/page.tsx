@@ -1,0 +1,137 @@
+export default function ArRahmanPage() {
+  return (
+    <div className="container quran-page">
+      <p className="naskh basmalah mt-3 text-center">
+        بِسۡمِ ٱللّٰهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+      </p>
+      <h2 className="text-center noto">Surah Ar-Raḥmān</h2>
+      <h2 className="text-center arabic">سُورَةُ ٱلرَّحْمَٰنِ</h2>
+      <hr className="hr-double-symbol" />
+
+      <p className="arabic theme_color text-center ayah">
+        رَبُّ ٱلْمَشْرِقَيْنِ وَرَبُّ ٱلْمَغْرِبَيْنِ
+        <span className="ayah-num"> (١٧)</span>
+      </p>
+
+      <p className="p">
+        This was one of the first ayahs I revisited after starting my Arabic
+        studies journey. Its translations had always bothered me, mainly
+        because they did not make much sense to me. That discomfort, along with
+        the grammatical knowledge of the Arabic language I have acquired so
+        far, eventually led me to the realization that some ayahs in the
+        Qur’an—even when translated in a grammatically correct way, still
+        require deeper thought and reflection to be properly understood - This
+        ayah is one such example.
+      </p>
+
+      <p className="p">
+        Before trying to understand this ayah in meaning, it helps to look at
+        it grammatically. Broadly speaking, the ayah consists of three main
+        words: <span className="arabic">رَبّ</span>,{" "}
+        <span className="arabic">ٱلْمَشْرِق</span>, and{" "}
+        <span className="arabic">ٱلْمَغْرِب</span>. The word{" "}
+        <span className="arabic">وَ</span> (wāw) can serve several grammatical
+        functions in Arabic; here, it simply means “and.” The word{" "}
+        <a href="/lexicon/rabb" className="theme_color">
+          Rabb
+        </a>{" "}
+        functions less as a descriptive attribute and more as a relational
+        name, describing Allah in His active and ongoing relationship with
+        creation. The <span className="arabic">وَ</span> also serves to link{" "}
+        <span className="arabic">ٱلْمَشْرِق</span> and{" "}
+        <span className="arabic">ٱلْمَغْرِب</span>, effectively chaining them
+        together. In combination with the word Rabb, this construction
+        indicates lordship over both. The forms{" "}
+        <span className="arabic">ٱلْمَشْرِقَيْنِ</span> and{" "}
+        <span className="arabic">ٱلْمَغْرِبَيْنِ</span> end with{" "}
+        <span className="arabic">ـيْنِ</span>, which grammatically signifies a
+        dual form—here indicating two mashriqs and two maghribs.
+      </p>
+
+      <p className="p">
+        The words “Mashriq” and “Maghrib,” depending on context, can carry more
+        than one meaning. Two common contexts are direction and time. In terms
+        of direction, “Mashriq” refers to the direction of sunrise (east),
+        while “Maghrib” refers to the direction of sunset (west). In terms of
+        time, “Mashriq” can refer to sunrise itself, and “Maghrib” to
+        sunset—these being the more commonly understood meanings of the words.
+        With these contexts in mind, the ayah can be translated in two ways:
+      </p>
+
+      <ol
+        style={{
+          fontFamily: '"Noto Serif", "Times New Roman", serif',
+        }}
+      >
+        <li>
+          Direction: <i>“Rabb of the two easts and the two wests.”</i>
+        </li>
+        <li>
+          Time: <i>“Rabb of the two sunrises and the two sunsets.”</i>
+        </li>
+      </ol>
+
+      <p className="p">
+        Grammatically speaking, both translations are correct, and the chosen
+        context determines which translation is preferred. Neither is wrong,
+        though one may be closer to the intended meaning than the other.
+        Grammar, at least in my opinion, can take us only this far. For a more
+        precise understanding, one has to turn to the tafsīr literature.
+        Engaging with those works reveals a remarkable depth and subtlety
+        captured within this short and seemingly simple ayah.
+      </p>
+
+      <p className="p">
+        Classical tafsīr works consistently treat this ayah as emphasizing
+        Allah’s absolute lordship over the full range of the cosmic order,
+        rather than pointing to a single, fixed geographical reference.
+        Scholars such as al-Ṭabarī and Ibn Kathīr explain the dual form—two
+        mashriqs and two maghribs—as referring to the extreme points of sunrise
+        and sunset over the course of the year. As the sun’s rising and setting
+        positions shift daily, they ultimately reach two limits: the furthest
+        north and the furthest south. These limits mark the two “easts” and two
+        “wests,” encompassing all points in between. Other exegetes approach the
+        verse through the lens of time, understanding the two mashriqs and
+        maghribs as the two daily transitions that define the cycle of day and
+        night: sunrise and sunset. This reading is mentioned by commentators
+        such as al-Qurṭubī, who notes that the language allows for both spatial
+        and temporal interpretation, depending on context. In this view, the
+        ayah highlights Allah’s control over the rhythmic movement of time
+        itself, not merely over physical direction.
+        <br />
+        <br />
+        Some tafsīr works also draw attention to how this dual formulation sits
+        between other Qur’anic expressions that speak of a single mashriq and
+        maghrib and others that speak of multiple mashriqs and maghribs. This
+        observation is discussed by scholars like al-Rāzī, who emphasize that
+        these formulations are not contradictory but complementary: the singular
+        points to unity of control, the dual to seasonal limits, and the plural
+        to daily variation. Through these shifts in number, the Qur’an captures
+        different layers of the same physical reality using different
+        grammatical forms.
+        <br />
+        <br />
+        Across these interpretations, commentators agree on a central point: the
+        ayah is not concerned with astronomical detail for its own sake, but
+        with affirming that every movement of light, time, and direction falls
+        under divine lordship. Whether read spatially or temporally, the phrase
+        reinforces the idea that nothing in the created order operates
+        independently of Allah.
+      </p>
+
+      <p className="p">
+        Within the broader context of this sūrah, where Allah repeatedly draws
+        attention to the blessings He has bestowed, I am inclined to understand
+        this ayah as referring to the two mashriqs and two maghribs as the
+        extreme points of sunrise and sunset over the course of the year,
+        namely the summer and winter solstices, while also recognizing that any
+        translation of the Qur’an is necessarily limited and cannot fully
+        convey the depth of the original Arabic. With that in mind, I would
+        translate this ayah as:{" "}
+        <i>“Rabb of two sunrises and two sunsets.”</i>
+      </p>
+    </div>
+  );
+}
+
+
