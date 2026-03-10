@@ -1,10 +1,10 @@
 export default function FromMusaToRomePage() {
   return (
-    <div className="container">
-      <p className="naskh basmalah mt-3 text-center">
+    <div className="container page-intro-seq">
+      <p className="naskh basmalah mt-3 text-center page-intro-e1">
         بِسۡمِ ٱللّٰهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
       </p>
-      <div className="pdf-article mt-4 mb-5">
+      <div className="pdf-article mt-4 mb-5 page-intro-e4">
         <h2 className="text-center mb-4">
           Biblical–Abrahamic Historical Timeline:
           <br />
@@ -103,4 +103,5 @@ export default function FromMusaToRomePage() {
     </div>
   );
 }
+
 

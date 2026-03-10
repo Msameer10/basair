@@ -4,36 +4,30 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t bg-[var(--bs-body-bg)]">
-      <div className="footer text-center mt-3 py-4">
-        <p className="ftrtxt">
+    <footer className="site-footer border-t bg-[var(--bs-body-bg)]">
+      <div className="container footer-inner text-center">
+        <p className="ftrtxt footer-brandline">
           <span className="subtxt1">Basaʾir</span>
-          <span> x </span>
+          <span className="footer-divider">x</span>
           <a
             href="https://www.sameerion.com"
-            style={{ textDecoration: "none" }}
+            className="footer-sameerion"
             target="_blank"
             rel="noreferrer"
           >
             <span className="subtxt2">Sameerion</span>
           </a>
         </p>
-        <span>
-          <Link href="/contact" className="p" style={{ textDecoration: "none" }}>
-            Contact
-          </Link>
-        </span>
-        <p>
-          Copyright &copy;{" "}
-          <span
-            style={{ fontFamily: "Arial, sans-serif", fontSize: "0.9rem" }}
-          >
-            {year}
-          </span>{" "}
+
+        <Link href="/contact" className="footer-contact p">
+          Contact
+        </Link>
+
+        <p className="footer-copyright">
+          Copyright &copy; <span className="footer-year">{year}</span>{" "}
           <span className="subtxt1">Basaʾir</span>. All rights reserved.
         </p>
       </div>
     </footer>
   );
 }
-

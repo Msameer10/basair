@@ -480,7 +480,7 @@ input[type="search"]:focus {
   background: rgba(255, 255, 255, 0.04);
 }
 
-footer {
+footer:not(.site-footer) {
   margin-top: 20px;
 }
 
@@ -775,8 +775,7 @@ footer {
 }
 
 .library-item {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding: 0;
 }
 
 @media (min-width: 640px) {
@@ -798,7 +797,7 @@ footer {
 .quran-page .p,
 .lexicon-page .p,
 .lexicon-page .p_about {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
 }
 
 /* Subtle motion for library interactions */
@@ -830,12 +829,31 @@ footer {
   animation-delay: 80ms;
 }
 
-.library-item a:hover {
-  color: #432dd7;
+
+
+
+
+.library-item-link {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 0;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 6px;
 }
 
-.library-item:hover {
-  transform: translateX(2px);
+.library-item:hover .library-item-link,
+.library-item:focus-within .library-item-link {
+  background: color-mix(in srgb, var(--ui-panel-bg) 92%, #432dd7 8%);
+}
+
+.library-item-link:focus-visible {
+  outline: 1px solid color-mix(in srgb, #432dd7 72%, var(--ui-panel-border) 28%);
+  outline-offset: 1px;
+}
+
+.library-item-link:hover {
+  color: #432dd7;
 }
 
 @keyframes libraryPaneIn {
@@ -872,5 +890,261 @@ footer {
   .search-input,
   .search-clear {
     transition: none;
+  }
+}
+
+/* ---------------------------------------
+   Controlled Refinement Pass 3
+---------------------------------------- */
+
+.site-footer {
+  margin-top: 10px;
+}
+
+
+.footer-inner {
+  padding-top: 0.78rem;
+  padding-bottom: 0.72rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.12rem;
+}
+
+.footer-brandline {
+  margin: 0;
+  line-height: 1.15;
+}
+
+.footer-divider {
+  display: inline-block;
+  margin: 0 0.4rem;
+  opacity: 0.68;
+}
+
+.footer-sameerion {
+  text-decoration: none;
+  color: #3d76ff;
+  transition: color 180ms ease;
+}
+
+.footer-sameerion:hover {
+  color: #5e8cff;
+}
+
+.footer-contact {
+  text-decoration: none;
+  line-height: 1.1;
+  color: var(--bs-body-color);
+  opacity: 0.9;
+  padding: 0.1rem 0.42rem;
+  border-radius: 9999px;
+  transition: background-color 180ms ease, color 180ms ease, opacity 180ms ease;
+}
+
+.footer-contact:hover {
+  background: rgba(67, 45, 215, 0.12);
+  color: #432dd7;
+  opacity: 1;
+}
+
+.footer-copyright {
+  margin: 0.02rem 0 0;
+  font-size: 0.98rem;
+  line-height: 1.2;
+  opacity: 0.92;
+}
+
+.footer-year {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+
+/* ---------------------------------------
+   Controlled Refinement Pass 4 (Brand Intro)
+---------------------------------------- */
+
+.intro-shell {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1 1 auto;
+  opacity: 1;
+  transition: opacity 420ms ease;
+}
+
+.intro-active .intro-content {
+  opacity: 0;
+}
+
+.intro-reveal .intro-content {
+  opacity: 1;
+}
+
+.brand-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 360ms ease;
+}
+
+.intro-reveal .brand-intro {
+  opacity: 0;
+}
+
+.brand-intro {
+  background: #f7f8fb;
+}
+
+html[data-bs-theme="dark"] .brand-intro {
+  background: #050607;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-bs-theme]) .brand-intro {
+    background: #050607;
+  }
+}
+
+.brand-intro-wordmark {
+  position: fixed;
+  left: 50vw;
+  top: min(38vh, 320px);
+  transform: translate(-50%, -50%);
+  font-family: "Cormorant", serif;
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  will-change: transform, opacity;
+}
+
+.brand-intro-wordmark {
+  color: #432dd7;
+}
+
+html[data-bs-theme="dark"] .brand-intro-wordmark {
+  color: #f2f4f8;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-bs-theme]) .brand-intro-wordmark {
+    color: #f2f4f8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-content,
+  .brand-intro {
+    transition: none;
+  }
+}
+
+
+
+
+
+
+/* ---------------------------------------
+   Controlled Refinement Pass 5 (Article Intro Stagger)
+---------------------------------------- */
+
+.page-intro-seq .page-intro-e1,
+.page-intro-seq .page-intro-e2,
+.page-intro-seq .page-intro-e3,
+.page-intro-seq .page-intro-e4 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.75, 0.18, 1);
+}
+
+.page-intro-seq .page-intro-e1 {
+  animation-name: introRevealRtl;
+  animation-duration: 260ms;
+  animation-delay: 30ms;
+}
+
+.page-intro-seq .page-intro-e2 {
+  animation-name: introFadeDown;
+  animation-duration: 280ms;
+  animation-delay: 130ms;
+}
+
+.page-intro-seq .page-intro-e3 {
+  animation-name: introDividerOut;
+  animation-duration: 240ms;
+  animation-delay: 220ms;
+  transform-origin: center;
+}
+
+.page-intro-seq .page-intro-e4 {
+  animation-name: introFadeDownSoft;
+  animation-duration: 320ms;
+  animation-delay: 310ms;
+}
+
+@keyframes introRevealRtl {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes introFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes introDividerOut {
+  from {
+    opacity: 0;
+    transform: scaleX(0.35);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes introFadeDownSoft {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-intro-seq .page-intro-e1,
+  .page-intro-seq .page-intro-e2,
+  .page-intro-seq .page-intro-e3,
+  .page-intro-seq .page-intro-e4 {
+    opacity: 1;
+    animation: none;
+    clip-path: none;
+    transform: none;
   }
 }

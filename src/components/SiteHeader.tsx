@@ -11,7 +11,7 @@ export function SiteHeader() {
     <header className="site-header border-b bg-[var(--bs-body-bg)]">
       <nav className="container py-3">
         <div className="flex items-center justify-between">
-          <Link href="/" className="navbar-brand fw-semibold">
+          <Link href="/" className="navbar-brand fw-semibold" data-intro-logo>
             Basaʾir
           </Link>
 
@@ -62,3 +62,4 @@ export function SiteHeader() {
     </header>
   );
 }
+

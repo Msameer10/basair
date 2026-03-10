@@ -1,13 +1,14 @@
 export default function ArRahmanPage() {
   return (
-    <div className="container quran-page">
-      <p className="naskh basmalah mt-3 text-center">
+    <div className="container quran-page page-intro-seq">
+      <p className="naskh basmalah mt-3 text-center page-intro-e1">
         بِسۡمِ ٱللّٰهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
       </p>
-      <h2 className="text-center noto">Surah Ar-Raḥmān</h2>
-      <h2 className="text-center arabic">سُورَةُ ٱلرَّحْمَٰنِ</h2>
-      <hr className="hr-double-symbol" />
+      <div className="page-intro-e2"><h2 className="text-center noto">Surah Ar-Raḥmān</h2>
+      <h2 className="text-center arabic">سُورَةُ ٱلرَّحْمَٰنِ</h2></div>
+      <hr className="hr-double-symbol page-intro-e3" />
 
+      <div className="page-intro-e4">
       <p className="arabic theme_color text-center ayah">
         رَبُّ ٱلْمَشْرِقَيْنِ وَرَبُّ ٱلْمَغْرِبَيْنِ
         <span className="ayah-num"> (١٧)</span>
@@ -130,8 +131,11 @@ export default function ArRahmanPage() {
         translate this ayah as:{" "}
         <i>“Rabb of two sunrises and two sunsets.”</i>
       </p>
+      </div>
     </div>
   );
 }
+
+
 
 

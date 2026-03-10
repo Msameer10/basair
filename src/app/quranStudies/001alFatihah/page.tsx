@@ -1,13 +1,13 @@
 export default function AlFatihahPage() {
   return (
-    <div className="container quran-page">
-      <p className="naskh basmalah mt-3 text-center">
+    <div className="container quran-page page-intro-seq">
+      <p className="naskh basmalah mt-3 text-center page-intro-e1">
         بِسۡمِ ٱللّٰهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
       </p>
-      <h2 className="text-center noto">Surah Al-Fātiḥah</h2>
-      <h2 className="text-center arabic">سُورَةُ ٱلْفَاتِحَةِ</h2>
-      <hr className="hr-double-symbol" />
-      <div>
+      <div className="page-intro-e2"><h2 className="text-center noto">Surah Al-Fātiḥah</h2>
+      <h2 className="text-center arabic">سُورَةُ ٱلْفَاتِحَةِ</h2></div>
+      <hr className="hr-double-symbol page-intro-e3" />
+      <div className="page-intro-e4">
         <p className="p">
           The hadith literature presents al-Fātiḥah not simply as a chapter to
           be recited, but as the structural and conceptual core of the Qur’an
@@ -110,5 +110,7 @@ export default function AlFatihahPage() {
     </div>
   );
 }
+
+
 
 

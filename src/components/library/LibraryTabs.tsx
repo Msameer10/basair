@@ -1,9 +1,16 @@
 'use client';
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type TabId = "A" | "B" | "C";
+const LIBRARY_TAB_KEY = "basair_library_tab";
+
+function getInitialTab(): TabId {
+  if (typeof window === "undefined") return "A";
+  const stored = window.localStorage.getItem(LIBRARY_TAB_KEY);
+  return stored === "A" || stored === "B" || stored === "C" ? stored : "A";
+}
 
 interface LibraryItem {
   href: string;
@@ -106,10 +113,14 @@ const lexiconItems: LibraryItem[] = [
 ];
 
 export function LibraryTabs() {
-  const [activeTab, setActiveTab] = useState<TabId>("A");
+  const [activeTab, setActiveTab] = useState<TabId>(getInitialTab);
   const [searchA, setSearchA] = useState("");
   const [searchB, setSearchB] = useState("");
   const [searchC, setSearchC] = useState("");
+
+  useEffect(() => {
+    window.localStorage.setItem(LIBRARY_TAB_KEY, activeTab);
+  }, [activeTab]);
 
   const filteredA = useFilteredItems(quranStudiesItems, searchA);
   const filteredB = useFilteredItems(beyondQuranItems, searchB);
@@ -279,10 +290,16 @@ function ItemList({ items, emptyText }: ItemListProps) {
     <ul className="list-group library-results">
       {items.map((item) => (
         <li key={item.href} className="list-group-item library-item">
-          <Link href={item.href}>{item.label}</Link>
+          <Link href={item.href} className="library-item-link">
+            {item.label}
+          </Link>
         </li>
       ))}
     </ul>
   );
 }
+
+
+
+
 

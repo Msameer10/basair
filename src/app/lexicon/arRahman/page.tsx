@@ -1,11 +1,12 @@
 export default function ArRahmanLexiconPage() {
   return (
-    <div className="container lexicon-page">
-      <p className="naskh basmalah mt-3 text-center">
+    <div className="container lexicon-page page-intro-seq">
+      <p className="naskh basmalah mt-3 text-center page-intro-e1">
         بِسۡمِ ٱللّٰهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
       </p>
-      <h2 className="text-center arabic">ٱلرَّحْمَٰن</h2>
-      <hr className="hr-double-symbol" />
+      <h2 className="text-center arabic page-intro-e2">ٱلرَّحْمَٰن</h2>
+      <hr className="hr-double-symbol page-intro-e3" />
+      <div className="page-intro-e4">
       <p className="p mt-2">
         The name—or what I prefer to call the attribute—of Allah,{" "}
         <span className="arabic">ٱلرَّحْمَٰن</span> (Ar-Raḥmān), is usually
@@ -36,8 +37,10 @@ export default function ArRahmanLexiconPage() {
         any English translation is because of this deeper and more expansive
         understanding of the name.
       </p>
+      </div>
     </div>
   );
 }
+
 
 

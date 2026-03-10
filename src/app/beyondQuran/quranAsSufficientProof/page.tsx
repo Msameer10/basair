@@ -1,10 +1,10 @@
 export default function QuranAsSufficientProofPage() {
   return (
-    <div className="container">
-      <p className="naskh basmalah mt-3 text-center">
+    <div className="container page-intro-seq">
+      <p className="naskh basmalah mt-3 text-center page-intro-e1">
         بِسۡمِ ٱللّٰهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
       </p>
-      <div className="doc-page">
+      <div className="doc-page page-intro-e4">
         <h1 className="doc-title">
           The Qurʾān as Sufficient Proof:
           <br /> Rethinking Divine Signs, Miracles, and Epistemic
@@ -441,4 +441,5 @@ export default function QuranAsSufficientProofPage() {
     </div>
   );
 }
+
 
