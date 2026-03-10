@@ -18,7 +18,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           precise and character-driven as the portrait painted at the close of
           Surah Al-Furqan. Here, Allah does not merely promise paradise in the
           abstract -- He describes, in vivid moral and spiritual detail, the
-          kind of human being who earns its highest station: al-ghurfa.
+          kind of human being who earns its highest station: Al-Ghurfa.
         </p>
         <p className="doc-p">
           The word ghurfa (ghurfah) means a lofty, elevated room or chamber -- a
