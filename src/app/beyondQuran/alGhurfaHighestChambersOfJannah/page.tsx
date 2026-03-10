@@ -48,7 +48,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
         <p className="doc-p">
           They walk upon the earth with wahn -- gentleness, lowness, and
           modesty. This is not merely a physical description but a reflection of
-          their inner condition. The one who has truly recognized their Lord
+          their inner condition. The one who has truly recognized their Rabb
           does not stride through the world with arrogance; their posture is an
           expression of their aqeedah.
         </p>
@@ -71,7 +71,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
 
         <h2 className="doc-section">4. Du&apos;a for Protection from Hellfire (vv. 65-66)</h2>
         <p className="doc-p">
-          They supplicate earnestly: &quot;Our Lord, avert from us the punishment of
+          They supplicate earnestly: &quot;Our Rabb, avert from us the punishment of
           Jahannam -- indeed its punishment is a lasting torment.&quot; These are
           people of night worship and noble character, yet their defining du&apos;a
           is one of fear, not self-congratulation. They remain acutely conscious
@@ -132,14 +132,14 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
 
         <h2 className="doc-section">11. Attentiveness to the Qur&apos;an (v. 73)</h2>
         <p className="doc-p">
-          When the ayat of their Lord are recited to them, they do not fall upon
+          When the ayat of their Rabb are recited to them, they do not fall upon
           them deaf and blind -- they are present, attentive, moved. The Ibad
           al-Rahman receive revelation with receptivity.
         </p>
 
         <h2 className="doc-section">12. Du&apos;a for Righteous Families (v. 74)</h2>
         <p className="doc-p">
-          They make the supplication: &quot;Our Lord, grant us from our spouses and
+          They make the supplication: &quot;Our Rabb, grant us from our spouses and
           offspring comfort to our eyes, and make us leaders of the righteous.&quot;
           Their concern is not individualistic -- they are oriented toward
           building a righteous legacy through family and community.
@@ -180,7 +180,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
         </p>
         <p className="doc-p">
           The ghurfa is not the reward of a single heroic act. It is the
-          culmination of a life lived patiently in the direction of God.
+          culmination of a life lived patiently in the direction of Allah.
           Classical scholars observed that sabr permeates all of deen. The
           portrait of Ibad al-Rahman is, at its core, a portrait of the patient.
         </p>
@@ -212,7 +212,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           What elevates them is not the rarity of their deeds, but the
           consistency, sincerity, and patience with which they are carried out
           across a lifetime. The ghurfa awaits those who, in every domain of
-          life, choose God.
+          life, choose Allah.
         </p>
 
         <hr className="doc-divider" />
@@ -251,6 +251,8 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
     </div>
   );
 }
+
+
 
 
 
