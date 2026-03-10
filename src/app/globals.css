@@ -1182,3 +1182,203 @@ html[data-bs-theme="dark"] .brand-intro-wordmark {
 
 
 
+
+.imams-page {
+  scroll-margin-top: 2rem;
+}
+
+.imams-intro {
+  margin-bottom: 0.75rem;
+}
+
+.imam-jump-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.75rem 0 2rem;
+  padding: 1rem 0 1.25rem;
+  border-top: 1px solid var(--doc-rule);
+  border-bottom: 1px solid var(--doc-rule);
+}
+
+.imam-jump-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.imam-jump-link,
+.imam-back-link,
+.imam-cross-links-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.imam-jump-link {
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--ui-panel-border);
+  border-radius: 999px;
+  background: var(--ui-panel-bg);
+  box-shadow: var(--ui-panel-shadow);
+}
+
+.imam-jump-link:hover,
+.imam-back-link:hover,
+.imam-cross-links-item a:hover {
+  text-decoration: underline;
+}
+
+.imam-section {
+  scroll-margin-top: 2rem;
+  padding-top: 1.25rem;
+  margin-top: 1.75rem;
+  border-top: 1px solid var(--doc-rule);
+}
+
+.imam-section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.imam-section-title {
+  margin-top: 0;
+}
+
+.imam-section-summary {
+  margin-bottom: 0;
+}
+
+.imam-back-link {
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.imam-lineage {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.imam-lineage-item {
+  position: relative;
+  padding: 0 0 1.25rem 2rem;
+}
+
+.imam-lineage-item::before {
+  content: "";
+  position: absolute;
+  left: 0.38rem;
+  top: 1.05rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  border: 2px solid var(--doc-rule);
+  background: var(--doc-bg);
+}
+
+.imam-lineage-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0.72rem;
+  top: 1.8rem;
+  bottom: 0.15rem;
+  width: 1px;
+  background: var(--doc-rule);
+}
+
+.imam-lineage-card {
+  padding: 0.95rem 1.1rem;
+  border: 1px solid var(--ui-panel-border);
+  border-radius: 10px;
+  background: var(--ui-panel-bg);
+  box-shadow: var(--ui-panel-shadow);
+}
+
+.imam-lineage-stage {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.imam-lineage-name {
+  margin-top: 0.35rem;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.imam-lineage-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.96rem;
+}
+
+.imam-lineage-item-final::before {
+  border-color: #8a6a18;
+  background: #8a6a18;
+}
+
+.imam-lineage-item-final .imam-lineage-card {
+  border-color: rgba(138, 106, 24, 0.45);
+}
+
+[data-bs-theme="dark"] .imam-lineage-item-final::before {
+  border-color: #d8c17a;
+  background: #d8c17a;
+}
+
+[data-bs-theme="dark"] .imam-lineage-item-final .imam-lineage-card {
+  border-color: rgba(216, 193, 122, 0.45);
+}
+
+.imam-cross-links {
+  margin-top: 1.25rem;
+}
+
+.imam-cross-links-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.imam-cross-links-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.imam-cross-links-item {
+  margin-bottom: 0.6rem;
+}
+
+.imam-source-links {
+  margin-top: 1.75rem;
+}
+
+@media (max-width: 767px) {
+  .imam-jump-nav {
+    align-items: flex-start;
+  }
+
+  .imam-jump-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imam-lineage-item {
+    padding-left: 1.6rem;
+  }
+
+  .imam-lineage-item::before {
+    left: 0.1rem;
+  }
+
+  .imam-lineage-item:not(:last-child)::after {
+    left: 0.44rem;
+  }
+}
+
