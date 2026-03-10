@@ -5,10 +5,10 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 type IntroPhase = "playing" | "revealing" | "done";
 
 const INTRO_TIMING = {
-  hold: 180,
-  moveDuration: 820,
-  revealDelay: 400,
-  total: 1080,
+  hold: 360,
+  moveDuration: 1640,
+  revealDelay: 800,
+  total: 2160,
 };
 
 export function IntroShell({ children }: { children: ReactNode }) {
@@ -107,4 +107,5 @@ export function IntroShell({ children }: { children: ReactNode }) {
     </div>
   );
 }
+
 
