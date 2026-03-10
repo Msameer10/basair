@@ -541,6 +541,14 @@ footer:not(.site-footer) {
   text-align: center;
 }
 
+.doc-title-sub {
+  display: block;
+  margin-top: 0.28rem;
+  font-size: 0.72em;
+  font-weight: 500;
+  opacity: 0.92;
+}
+
 .doc-section {
   font-size: 18px;
   font-weight: 700;
@@ -1148,3 +1156,29 @@ html[data-bs-theme="dark"] .brand-intro-wordmark {
     transform: none;
   }
 }
+
+.about-panel {
+  margin: 20px auto 40px;
+  padding: 44px 52px;
+  border-radius: 8px;
+  border-color: color-mix(in srgb, var(--doc-border) 80%, transparent 20%);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.about-panel .doc-title {
+  margin-bottom: 14px;
+}
+
+.about-panel .doc-p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about-panel {
+    padding: 30px 24px;
+    margin: 20px 12px 30px;
+  }
+}
+
+
+

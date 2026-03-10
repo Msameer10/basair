@@ -62,6 +62,12 @@ const beyondQuranItems: LibraryItem[] = [
     search: "From Musa to Rome: A Historical Outline",
   },
   {
+    href: "/beyondQuran/alGhurfaHighestChambersOfJannah",
+    label: <>Al-Ghurfa: the highest chambers of Jannah</>,
+    search: "Al-Ghurfa: the highest chambers of Jannah",
+  },
+
+  {
     href: "/beyondQuran/imams",
     label: <>The Four Great Imams</>,
     search: "The Four Great Imams",
@@ -298,6 +304,9 @@ function ItemList({ items, emptyText }: ItemListProps) {
     </ul>
   );
 }
+
+
+
 
 
 
