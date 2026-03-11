@@ -1,259 +1,373 @@
+﻿import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Al-Ghurfa: The Lofty Chambers of Jannah",
+  description:
+    "Linguistic context and the character of the servants of Ar-Rahman in Surah Al-Furqan 25:63-77.",
+};
+
 export default function AlGhurfaHighestChambersOfJannahPage() {
   return (
     <div className="container page-intro-seq">
       <p className="naskh basmalah mt-3 text-center page-intro-e1">
-        {"\u0628\u0650\u0633\u06e1\u0645\u0650 \u0671\u0644\u0644\u0651\u0670\u0647\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u06e1\u0645\u064e\u0670\u0646\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u0650\u064a\u0645\u0650"}
+        {"\u0628\u0650\u0633\u0652\u0645\u0650 \u0671\u0644\u0644\u064e\u0651\u0670\u0647\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u0652\u0645\u064e\u0670\u0646\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u0650\u064a\u0645\u0650"}
       </p>
 
-      <div className="doc-page page-intro-e4">
+      <article className="doc-page page-intro-e4 article-page article-page-wide">
         <h1 className="doc-title">
-          Al-Ghurfa: the highest chambers of Jannah
-          <br />
-          <span className="doc-title-sub">A Study of Surah Al-Furqan 25:63-77</span>
+          Al-Ghurfa: The Lofty Chambers of Jannah
+          <span className="doc-title-sub">
+            Linguistic Context and the Character of the Servants of Ar-Rahman
+          </span>
+          <span className="doc-title-sub">A Study of Surah Al-Furqan (25:63-77)</span>
         </h1>
 
-        <h2 className="doc-section">Introduction</h2>
-        <p className="doc-p">
-          Among the many descriptions of Jannah found in the Qur&apos;an, few are as
-          precise and character-driven as the portrait painted at the close of
-          Surah Al-Furqan. Here, Allah does not merely promise paradise in the
-          abstract -- He describes, in vivid moral and spiritual detail, the
-          kind of human being who earns its highest station: Al-Ghurfa.
-        </p>
-        <p className="doc-p">
-          The word ghurfa (ghurfah) means a lofty, elevated room or chamber -- a
-          space raised high above the ground. In Qur&apos;anic usage, it refers to
-          the highest dwellings in Jannah, reserved not for a particular lineage
-          or ritual achievement, but for those who embody a specific quality of
-          character across the entirety of their lives.
-        </p>
-        <p className="doc-p">
-          The capstone verse, Al-Furqan 25:75, states: &quot;Those will be rewarded
-          with the highest place (al-ghurfa) because of their patience, and they
-          will be received therein with greetings and salaam.&quot; The passage that
-          precedes this verse -- 25:63 through 25:77 -- is the criterion by
-          which the worthiest servants are identified. They are called Ibad
-          al-Rahman: the servants of the <a href="/lexicon/arRahman">Ar-Rahman</a>.
-        </p>
+        <section>
+          <h2 className="doc-section">Introduction</h2>
+          <p className="doc-p">
+            Among the many descriptions of Jannah in the Qur&apos;an, few are as morally precise and
+            character-driven as the passage found at the close of Surah Al-Furqan. In these verses,
+            the Qur&apos;an does not merely promise paradise in a general sense. Rather, it describes the
+            kind of human being who is granted its highest station: al-ghurfa.
+          </p>
+          <p className="doc-p">
+            The word ghurfa (غرفة) refers to a lofty, elevated chamber. In Qur&apos;anic usage, it
+            signifies the highest dwellings of Paradise, a reward given not for lineage, wealth, or
+            outward status, but for a specific pattern of character embodied across a lifetime.
+          </p>
 
-        <h2 className="doc-section">The Qualities of Ibad al-Rahman</h2>
-        <p className="doc-p">
-          The passage presents between ten and thirteen distinct characteristics,
-          depending on how finely one parses the text. Scholars of tafsir have
-          counted them variously, with many settling on ten core qualities and
-          two to three supplementary ones. The following is a complete survey.
-        </p>
+          <blockquote className="doc-verse-block">
+            <p className="ayah doc-verse-arabic text-center">
+              أُولَٰئِكَ يُجْزَوْنَ الْغُرْفَةَ بِمَا صَبَرُوا وَيُلَقَّوْنَ فِيهَا تَحِيَّةً وَسَلَامًا
+            </p>
+            <p className="doc-verse-translation">
+              “Those will be rewarded with the highest place (al-ghurfa) because of their patience,
+              and they will be received therein with greetings and peace.”
+            </p>
+            <p className="doc-verse-source">Qur&apos;an 25:75</p>
+          </blockquote>
 
-        <h2 className="doc-section">1. Humility in Walk (v. 63)</h2>
-        <p className="doc-p">
-          They walk upon the earth with wahn -- gentleness, lowness, and
-          modesty. This is not merely a physical description but a reflection of
-          their inner condition. The one who has truly recognized their Rabb
-          does not stride through the world with arrogance; their posture is an
-          expression of their aqeedah.
-        </p>
+          <p className="doc-p">
+            The verses preceding this promise (25:63-77) describe the individuals who earn this
+            reward. They are called &apos;Ibad al-Rahman, the servants of{" "}
+            <Link href="/lexicon/arRahman" className="doc-link">
+              Ar-Rahman
+            </Link>
+            .
+          </p>
+          <p className="doc-p">
+            To understand the depth of this promise, it is helpful to examine not only the moral
+            description of these believers but also the historical meaning of the word ghurfa in the
+            society in which the Qur&apos;an was revealed.
+          </p>
+        </section>
 
-        <h2 className="doc-section">2. Dignified Response to Ignorance (v. 63)</h2>
-        <p className="doc-p">
-          When the ignorant address them with hostility or provocation, they
-          respond with salaam -- a word of peace, a graceful disengagement. They
-          do not descend to the level of insult. This restraint is not passivity
-          but spiritual confidence: they have nothing to prove.
-        </p>
+        <section>
+          <h2 className="doc-section">The Contextual Meaning of Ghurfa in 7th-Century Arabia</h2>
 
-        <h2 className="doc-section">3. Night Worship (v. 64)</h2>
-        <p className="doc-p">
-          They spend their nights in sujood and qiyam -- prostration and
-          standing in prayer. The night, when the world is asleep and no
-          audience remains, is when their devotion is most revealed. This is the
-          marker of sincerity: the private deed that no human witnesses.
-        </p>
+          <h3 className="doc-subsection">The Physical Referent</h3>
+          <p className="doc-p">
+            In pre-Islamic and early Islamic Arabic usage, ghurfa referred primarily to an upper
+            chamber built above the main level of a structure. It may be compared loosely to a loft,
+            upper room, or elevated chamber.
+          </p>
+          <p className="doc-p">
+            Domestic architecture in Arabia during the seventh century was generally modest and
+            ground-level. Most homes consisted of simple single-level structures. Because of this,
+            the presence of an upper chamber carried distinct social meaning.
+          </p>
+          <p className="doc-p">A ghurfa was typically associated with several ideas:</p>
+          <ul className="article-list">
+            <li>Wealth and status - building upward required greater resources and craftsmanship.</li>
+            <li>Privacy and separation - the upper chamber was removed from the activity below.</li>
+            <li>Security and refuge - elevation meant distance from noise, intrusion, and dust.</li>
+            <li>Honor and hospitality - distinguished guests could be accommodated there.</li>
+          </ul>
+          <p className="doc-p">
+            For the original audience of the Qur&apos;an, therefore, the word ghurfa immediately evoked
+            the image of the honored space within a household, a place reserved for those of
+            distinction.
+          </p>
+          <p className="doc-p">
+            When the Qur&apos;an promises al-ghurfa as a reward, it is not merely describing a room. It
+            is invoking a familiar social symbol of elevation, dignity, and honor.
+          </p>
 
-        <h2 className="doc-section">4. Du&apos;a for Protection from Hellfire (vv. 65-66)</h2>
-        <p className="doc-p">
-          They supplicate earnestly: &quot;Our Rabb, avert from us the punishment of
-          Jahannam -- indeed its punishment is a lasting torment.&quot; These are
-          people of night worship and noble character, yet their defining du&apos;a
-          is one of fear, not self-congratulation. They remain acutely conscious
-          of accountability.
-        </p>
+          <h3 className="doc-subsection">The Word in Classical Arabic Poetry</h3>
+          <p className="doc-p">
+            The root gh-r-f (غ ر ف) appears in pre-Islamic Arabic poetry with several related
+            meanings. The noun ghurfa refers to the elevated chamber itself. However, the verb
+            gharafa means to scoop or draw water with cupped hands, and ghurfa can also refer to a
+            handful of water.
+          </p>
 
-        <h2 className="doc-section">5. Moderation in Spending (v. 67)</h2>
-        <p className="doc-p">
-          When they spend, they are neither extravagant nor miserly -- they hold
-          to a just middle course. This reveals a balanced relationship with the
-          dunya: neither imprisoned by wealth nor indifferent to it. The word
-          used, qawaaman, suggests an upright equilibrium.
-        </p>
+          <blockquote className="doc-verse-block">
+            <p className="doc-verse-translation">
+              “Except for one who scoops a handful (ghurfa) with his hand.”
+            </p>
+            <p className="doc-verse-source">Qur&apos;an 2:249</p>
+          </blockquote>
 
-        <h2 className="doc-section">6. Tawhid -- Strict Monotheism (v. 68)</h2>
-        <p className="doc-p">
-          They do not call upon any other deity alongside Allah. This is the
-          foundation. Every quality that follows rests upon the integrity of
-          their tawhid. Without it, no deed carries weight; with it, even
-          ordinary life becomes an act of worship.
-        </p>
+          <p className="doc-p">Both senses share a conceptual link: something is lifted upward from below.</p>
+          <ul className="article-list">
+            <li>Water is drawn upward from a well.</li>
+            <li>A chamber is built above the ground.</li>
+            <li>A person is elevated to a higher place.</li>
+          </ul>
+          <p className="doc-p">
+            This linguistic relationship adds richness to the Qur&apos;anic expression. The believer, in a
+            sense, is raised upward, drawn from the level of ordinary existence to a higher station.
+          </p>
 
-        <h2 className="doc-section">7. Inviolability of Life (v. 68)</h2>
-        <p className="doc-p">
-          They do not take a life that Allah has made sacred, except by right --
-          through just legal means. They hold human life as a divine trust. The
-          deliberate unlawful taking of life is listed alongside shirk and zina,
-          underscoring the gravity of the sanctity of the human person.
-        </p>
+          <h3 className="doc-subsection">The Social Contrast the First Audience Would Have Felt</h3>
+          <p className="doc-p">
+            Arabian society in the seventh century possessed a clear awareness of social
+            stratification, reflected even in architecture. The ground level of a house was associated
+            with daily labor, animals, and ordinary activity. The upper chamber was associated with
+            authority, privacy, and honor.
+          </p>
+          <p className="doc-p">Against this background, the Qur&apos;an presents a striking reversal.</p>
+          <p className="doc-p">Those who are promised al-ghurfa are described not as socially powerful individuals, but as people who:</p>
+          <ul className="article-list">
+            <li>walk humbly on the earth,</li>
+            <li>respond to insult with peace,</li>
+            <li>spend their nights in worship,</li>
+            <li>exercise restraint and patience.</li>
+          </ul>
+          <p className="doc-p">
+            The rhetorical force of the passage would have been immediately understood. Those who
+            lower themselves in humility in this world are raised to the highest chambers in the next.
+            Humility in life becomes elevation in eternity.
+          </p>
 
-        <h2 className="doc-section">8. Avoidance of Zina (v. 68)</h2>
-        <p className="doc-p">
-          They guard their chastity. Fornication and adultery are named
-          alongside shirk and murder -- not to equate them in degree, but to
-          mark them as sins of catastrophic community-fracturing nature. The
-          Ibad al-Rahman are distinguished by moral discipline in private life
-          as much as in worship.
-        </p>
+          <h3 className="doc-subsection">Distinction from Other Qur&apos;anic Terms for Dwelling</h3>
+          <p className="doc-p">
+            The Qur&apos;an uses several words to describe dwellings or places of residence. Each carries
+            its own nuance.
+          </p>
+          <ul className="article-list">
+            <li><strong>Dar (دار)</strong> - A general word for house or abode, used broadly for the afterlife.</li>
+            <li><strong>Qasr (قصر)</strong> - A palace or fortress, conveying grandeur and magnificence.</li>
+            <li><strong>Khayma (خيمة)</strong> - A tent or pavilion, often mentioned in hadith descriptions.</li>
+            <li><strong>Ghurfa (غرفة)</strong> - A specific elevated chamber, intimate, distinguished, and high above the rest.</li>
+          </ul>
+          <p className="doc-p">
+            The word ghurfa therefore emphasizes height, honor, and selectivity, rather than merely
+            size or luxury.
+          </p>
+        </section>
 
-        <h2 className="doc-section">9. Sincere Tawbah After Sin (v. 70)</h2>
-        <p className="doc-p">
-          Crucially, the passage does not depict the Ibad al-Rahman as sinless.
-          Rather, it identifies their relationship with sin: they repent,
-          believe, and do righteous deeds. The promise is extraordinary -- Allah
-          will replace their evil deeds with good. This offers a theology of
-          transformation rather than permanence of error.
-        </p>
+        <section>
+          <h2 className="doc-section">The Qualities of the Servants of Ar-Rahman</h2>
+          <p className="doc-p">
+            Surah Al-Furqan then describes the people who will receive this reward. The passage
+            outlines a series of moral characteristics that together form a portrait of the &apos;Ibad
+            al-Rahman. Scholars of tafsir have identified between ten and thirteen qualities within
+            these verses.
+          </p>
 
-        <h2 className="doc-section">10. Avoidance of False Witness and Vain Speech (v. 72)</h2>
-        <p className="doc-p">
-          They do not give false testimony, and when they pass by laghw -- vain,
-          frivolous, or morally base speech or conduct -- they pass by with
-          dignity. They neither participate nor make a performance of their
-          avoidance. Their disengagement from the trivial is quiet and natural.
-        </p>
+          <h3 className="doc-subsection">1. Humility in Walk (25:63)</h3>
+          <p className="doc-p">
+            They walk upon the earth gently and modestly. This humility is not merely physical but
+            spiritual. One who recognizes the greatness of Allah cannot move through the world with
+            arrogance.
+          </p>
 
-        <h2 className="doc-section">Supplementary Characteristics</h2>
+          <h3 className="doc-subsection">2. Dignified Response to Ignorance (25:63)</h3>
+          <p className="doc-p">
+            When confronted by hostility or provocation, they respond with salaam, words of peace and
+            disengagement. Their restraint reflects inner confidence and moral composure.
+          </p>
 
-        <h2 className="doc-section">11. Attentiveness to the Qur&apos;an (v. 73)</h2>
-        <p className="doc-p">
-          When the ayat of their Rabb are recited to them, they do not fall upon
-          them deaf and blind -- they are present, attentive, moved. The Ibad
-          al-Rahman receive revelation with receptivity.
-        </p>
+          <h3 className="doc-subsection">3. Night Worship (25:64)</h3>
+          <p className="doc-p">
+            They spend their nights standing and prostrating before their{" "}
+            <Link href="/lexicon/rabb" className="doc-link">
+              Rabb
+            </Link>
+            . When the world sleeps and no audience remains, their devotion becomes most evident.
+          </p>
 
-        <h2 className="doc-section">12. Du&apos;a for Righteous Families (v. 74)</h2>
-        <p className="doc-p">
-          They make the supplication: &quot;Our Rabb, grant us from our spouses and
-          offspring comfort to our eyes, and make us leaders of the righteous.&quot;
-          Their concern is not individualistic -- they are oriented toward
-          building a righteous legacy through family and community.
-        </p>
+          <h3 className="doc-subsection">4. Supplication for Protection from Hellfire (25:65-66)</h3>
+          <p className="doc-p">Despite their worship and righteousness, they pray:</p>
+          <blockquote className="doc-verse-block">
+            <p className="doc-verse-translation">“Our Rabb, avert from us the punishment of Hell.”</p>
+          </blockquote>
+          <p className="doc-p">
+            Their defining attitude is not self-satisfaction, but humility before divine judgment.
+          </p>
 
-        <h2 className="doc-section">13. Aspiration to Lead the Righteous (v. 74)</h2>
-        <p className="doc-p">
-          Some scholars count the second half of the du&apos;a in verse 74
-          separately: the petition to be made &quot;imams of the muttaqin.&quot; This is
-          not a request for worldly prestige, but for the spiritual weight of
-          being a positive example.
-        </p>
+          <h3 className="doc-subsection">5. Moderation in Spending (25:67)</h3>
+          <p className="doc-p">
+            They are neither extravagant nor miserly. Their financial conduct reflects balance and
+            discipline.
+          </p>
 
-        <h2 className="doc-section">Summary of the Characteristics</h2>
-        <ol className="refs-list">
-          <li className="refs-item">Humility in walk and bearing upon the earth.</li>
-          <li className="refs-item">Dignified, peaceful response to the ignorant.</li>
-          <li className="refs-item">Night worship in sujood and qiyam.</li>
-          <li className="refs-item">Sincere du&apos;a for protection from the Fire.</li>
-          <li className="refs-item">Moderation and balance in spending.</li>
-          <li className="refs-item">Strict tawhid -- no association with Allah.</li>
-          <li className="refs-item">Inviolability of life -- no unlawful killing.</li>
-          <li className="refs-item">Avoidance of zina -- guarding chastity.</li>
-          <li className="refs-item">Sincere tawbah and return to Allah after sin.</li>
-          <li className="refs-item">Avoidance of false witness and vain speech.</li>
-          <li className="refs-item">Receptive, attentive engagement with the Qur&apos;an.</li>
-          <li className="refs-item">Du&apos;a for righteous, spiritually healthy families.</li>
-          <li className="refs-item">Aspiration to be a leader and example of the righteous.</li>
-        </ol>
+          <h3 className="doc-subsection">6. Pure Tawhid (25:68)</h3>
+          <p className="doc-p">
+            They do not associate partners with Allah. All other virtues rest upon this foundation.
+          </p>
 
-        <h2 className="doc-section">The Unifying Thread: Sabr</h2>
-        <p className="doc-p">
-          Verse 75 attributes the reward of the ghurfa specifically to patience:
-          &quot;because of their patience (bima sabaru).&quot; Nearly every
-          characteristic listed demands sustained sabr -- patience in worship,
-          restraint from sin, dignified response to provocation, moderation, and
-          maintaining tawhid in a world of competing loyalties.
-        </p>
-        <p className="doc-p">
-          The ghurfa is not the reward of a single heroic act. It is the
-          culmination of a life lived patiently in the direction of Allah.
-          Classical scholars observed that sabr permeates all of deen. The
-          portrait of Ibad al-Rahman is, at its core, a portrait of the patient.
-        </p>
+          <h3 className="doc-subsection">7. Sanctity of Human Life (25:68)</h3>
+          <p className="doc-p">
+            They do not take a life unjustly. The Qur&apos;an places this prohibition alongside shirk and
+            zina, underscoring its seriousness.
+          </p>
 
-        <h2 className="doc-section">A Note on the Word Ghurfa</h2>
-        <p className="doc-p">
-          The term appears in two forms across the Qur&apos;an. In Al-Furqan 25:75,
-          it is in the singular -- al-ghurfa -- suggesting a unified, supremely
-          elevated station. In Saba&apos; 34:37, the plural form ghurafat is used.
-        </p>
-        <p className="doc-p">
-          The relationship between al-ghurfa and the broader concept of Firdaws
-          al-A&apos;la is a matter of scholarly discussion. Some scholars treat them
-          as overlapping descriptions of the same supreme station; others
-          distinguish them as related but distinct designations. Across usages,
-          the connotation remains height, elevation, and exclusivity.
-        </p>
+          <h3 className="doc-subsection">8. Guarding Chastity (25:68)</h3>
+          <p className="doc-p">
+            They avoid adultery and fornication, recognizing the social and moral harm these acts
+            cause.
+          </p>
 
-        <h2 className="doc-section">Conclusion</h2>
-        <p className="doc-p">
-          The closing verses of Surah Al-Furqan constitute one of the most
-          complete ethical and spiritual portraits in the Qur&apos;an. Allah does
-          not paint Ibad al-Rahman as extraordinary ascetics performing feats
-          beyond ordinary capacity. He describes people who walk gently, speak
-          carefully, pray at night, spend moderately, guard their character,
-          return to Him after failure, and pray for their families.
-        </p>
-        <p className="doc-p">
-          What elevates them is not the rarity of their deeds, but the
-          consistency, sincerity, and patience with which they are carried out
-          across a lifetime. The ghurfa awaits those who, in every domain of
-          life, choose Allah.
-        </p>
+          <h3 className="doc-subsection">9. Repentance After Sin (25:70)</h3>
+          <p className="doc-p">
+            The Qur&apos;an does not portray the righteous as sinless. Rather, they repent sincerely.
+            Allah promises that their sins may even be transformed into good deeds.
+          </p>
+
+          <h3 className="doc-subsection">10. Avoidance of Falsehood and Vain Speech (25:72)</h3>
+          <p className="doc-p">
+            They do not bear false witness. When confronted with frivolous or immoral behavior, they
+            pass by with dignity.
+          </p>
+
+          <h3 className="doc-subsection">Supplementary Characteristics</h3>
+          <p className="doc-p">Some scholars identify additional traits in the final verses.</p>
+
+          <h3 className="doc-subsection">Attentiveness to Revelation (25:73)</h3>
+          <p className="doc-p">
+            When the verses of Allah are recited, they listen with awareness and sincerity.
+          </p>
+
+          <h3 className="doc-subsection">Prayer for Righteous Families (25:74)</h3>
+          <p className="doc-p">
+            They pray that their spouses and children will be a source of comfort and righteousness.
+          </p>
+
+          <h3 className="doc-subsection">Aspiration to Lead the Righteous (25:74)</h3>
+          <p className="doc-p">
+            They ask Allah to make them examples for the righteous, not for prestige, but to guide
+            others toward goodness.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="doc-section">The Unifying Thread: Patience</h2>
+          <blockquote className="doc-verse-block">
+            <p className="doc-verse-translation">
+              “They will be rewarded with the ghurfa because of their patience.”
+            </p>
+            <p className="doc-verse-source">Qur&apos;an 25:75</p>
+          </blockquote>
+          <p className="doc-p">
+            The Qur&apos;an explicitly links the reward of al-ghurfa to sabr, patience. Nearly every
+            quality described requires patience.
+          </p>
+          <ul className="article-list">
+            <li>patience in worship,</li>
+            <li>patience in resisting sin,</li>
+            <li>patience in responding to insult,</li>
+            <li>patience in maintaining moral balance.</li>
+          </ul>
+          <p className="doc-p">
+            The ghurfa is not granted because of one extraordinary act. It is the culmination of a
+            lifetime lived patiently in the direction of Allah.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="doc-section">A Note on the Word Ghurfa in the Qur&apos;an</h2>
+          <p className="doc-p">The term appears in multiple forms in the Qur&apos;an.</p>
+          <p className="doc-p">
+            In Surah Al-Furqan (25:75) it appears in the singular form, al-ghurfa, suggesting a
+            uniquely elevated station.
+          </p>
+          <blockquote className="doc-verse-block">
+            <p className="doc-verse-translation">
+              “They will be in lofty chambers (ghurafat), safe and secure.”
+            </p>
+            <p className="doc-verse-source">Qur&apos;an 34:37</p>
+          </blockquote>
+          <p className="doc-p">
+            Similarly, Surah Az-Zumar (39:20) describes chambers built upon chambers in Paradise.
+            Across these verses the connotation remains consistent: height, elevation, and honor.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="doc-section">Conclusion</h2>
+          <p className="doc-p">
+            The closing verses of Surah Al-Furqan offer one of the Qur&apos;an&apos;s most complete portraits
+            of righteous character. The &apos;Ibad al-Rahman are not depicted as superhuman ascetics
+            performing rare feats. Instead, they are people who:
+          </p>
+          <ul className="article-list">
+            <li>walk with humility,</li>
+            <li>speak with dignity,</li>
+            <li>worship in private,</li>
+            <li>spend with moderation,</li>
+            <li>guard their moral integrity,</li>
+            <li>repent when they fall short,</li>
+            <li>and care for the spiritual well-being of their families.</li>
+          </ul>
+          <p className="doc-p">
+            Their distinction lies not in dramatic acts but in consistent devotion and patient
+            character across a lifetime.
+          </p>
+          <p className="doc-p">
+            In the society in which the Qur&apos;an was first revealed, the ghurfa represented the
+            elevated chamber of honor within a household. The Qur&apos;an takes this familiar image and
+            projects it onto eternity.
+          </p>
+          <p className="doc-p">
+            Those who lower themselves in humility in this world are raised to the highest chamber
+            in the next. The ghurfa is the dwelling of the honored, reserved for those who lived
+            their lives in quiet, steadfast devotion to their{" "}
+            <Link href="/lexicon/rabb" className="doc-link">
+              Rabb
+            </Link>
+            .
+          </p>
+        </section>
 
         <hr className="doc-divider" />
 
-        <h2 className="doc-section">References</h2>
-        <div className="refs-subtitle">Primary Qur&apos;anic Sources</div>
-        <ol className="refs-list">
-          <li className="refs-item">Al-Qur&apos;an, Surah Al-Furqan (25:63-77) -- the passage on Ibad al-Rahman and al-ghurfa.</li>
-          <li className="refs-item">Al-Qur&apos;an, Surah Saba&apos; (34:37) -- the plural form ghurafat and the condition of those who dwell therein.</li>
-          <li className="refs-item">Al-Qur&apos;an, Surah Az-Zumar (39:20) -- additional reference to ghurafat built upon one another in Jannah.</li>
-        </ol>
+        <section>
+          <h2 className="doc-section">References</h2>
 
-        <div className="refs-subtitle">Classical Tafsir Works</div>
-        <ol className="refs-list">
-          <li className="refs-item">Ibn Kathir. Tafsir al-Qur&apos;an al-&apos;Azim. Commentary on Surah Al-Furqan 25:63-77.</li>
-          <li className="refs-item">Al-Tabari. Jami&apos; al-Bayan fi Tafsir al-Qur&apos;an. Commentary on Ibad al-Rahman.</li>
-          <li className="refs-item">Al-Qurtubi. Al-Jami&apos; li-Ahkam al-Qur&apos;an. Commentary on Al-Furqan 25:63-77.</li>
-          <li className="refs-item">Al-Razi. Mafatih al-Ghayb (Al-Tafsir al-Kabir). Commentary on Al-Furqan.</li>
-          <li className="refs-item">Al-Baghawi. Ma&apos;alim al-Tanzil. Commentary on Al-Furqan.</li>
-        </ol>
+          <div className="refs-subtitle">Primary Qur&apos;anic Sources</div>
+          <ul className="refs-list article-ref-list">
+            <li className="refs-item">Al-Qur&apos;an, Surah Al-Furqan (25:63-77)</li>
+            <li className="refs-item">Al-Qur&apos;an, Surah Saba&apos; (34:37)</li>
+            <li className="refs-item">Al-Qur&apos;an, Surah Az-Zumar (39:20)</li>
+          </ul>
 
-        <div className="refs-subtitle">Works on Jannah and the Afterlife</div>
-        <ol className="refs-list">
-          <li className="refs-item">Ibn al-Qayyim. Hadi al-Arwah ila Bilad al-Afrah (The Garden of the Gnostics).</li>
-          <li className="refs-item">Ibn al-Qayyim. Uddat al-Sabirin wa Dhakhirat al-Shakirin.</li>
-          <li className="refs-item">Al-Suyuti. Al-Budur al-Safira fi Umur al-Akhira.</li>
-        </ol>
+          <div className="refs-subtitle">Classical Tafsir Works</div>
+          <ul className="refs-list article-ref-list">
+            <li className="refs-item">Ibn Kathir, Tafsir al-Qur&apos;an al-&apos;Azim</li>
+            <li className="refs-item">Al-Tabari, Jami&apos; al-Bayan</li>
+            <li className="refs-item">Al-Qurtubi, Al-Jami&apos; li-Ahkam al-Qur&apos;an</li>
+            <li className="refs-item">Al-Razi, Mafatih al-Ghayb</li>
+            <li className="refs-item">Al-Baghawi, Ma&apos;alim al-Tanzil</li>
+          </ul>
 
-        <div className="refs-subtitle">Contemporary and Accessible Works</div>
-        <ol className="refs-list">
-          <li className="refs-item">Nouman Ali Khan. Lectures on Surah Al-Furqan (Bayyinah Institute).</li>
-          <li className="refs-item">Yasir Qadhi. Lectures on Tafsir of Al-Furqan and descriptions of Jannah.</li>
-          <li className="refs-item">Muhammad Asad. The Message of the Qur&apos;an, commentary on Al-Furqan 25:63-77.</li>
-        </ol>
-      </div>
+          <div className="refs-subtitle">Works on Jannah and the Afterlife</div>
+          <ul className="refs-list article-ref-list">
+            <li className="refs-item">Ibn al-Qayyim, Hadi al-Arwah ila Bilad al-Afrah</li>
+            <li className="refs-item">Ibn al-Qayyim, &apos;Uddat al-Sabirin wa Dhakhirat al-Shakirin</li>
+            <li className="refs-item">Al-Suyuti, Al-Budur al-Safira fi Umur al-Akhira</li>
+          </ul>
+
+          <div className="refs-subtitle">Contemporary and Accessible Works</div>
+          <ul className="refs-list article-ref-list">
+            <li className="refs-item">Nouman Ali Khan, lectures on Surah Al-Furqan</li>
+            <li className="refs-item">Yasir Qadhi, lectures on tafsir of Al-Furqan and descriptions of Jannah</li>
+            <li className="refs-item">Muhammad Asad, The Message of the Qur&apos;an</li>
+          </ul>
+        </section>
+      </article>
     </div>
   );
 }
-
-
-
-
-
-
