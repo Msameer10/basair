@@ -33,7 +33,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           will be received therein with greetings and salaam.&quot; The passage that
           precedes this verse -- 25:63 through 25:77 -- is the criterion by
           which the worthiest servants are identified. They are called Ibad
-          al-Rahman: the servants of the Most Merciful.
+          al-Rahman: the servants of the <a href="/lexicon/arRahman">Ar-Rahman</a>.
         </p>
 
         <h2 className="doc-section">The Qualities of Ibad al-Rahman</h2>

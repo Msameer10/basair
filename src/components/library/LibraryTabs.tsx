@@ -1,10 +1,21 @@
-'use client';
+﻿'use client';
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 type TabId = "A" | "B" | "C";
 const LIBRARY_TAB_KEY = "basair_library_tab";
+
+const SURAH_AL_FATIHAH_AR =
+  "\u0633\u064f\u0648\u0631\u064e\u0629\u064f \u0671\u0644\u0652\u0641\u064e\u0627\u062a\u0650\u062d\u064e\u0629\u0650";
+const SURAH_AR_RAHMAN_AR =
+  "\u0633\u064f\u0648\u0631\u064e\u0629\u064f \u0671\u0644\u0631\u064e\u0651\u062d\u0652\u0645\u064e\u0670\u0646\u0650";
+const ALAYHI_AL_SALAM_AR =
+  "\u0639\u064e\u0644\u064e\u064a\u0652\u0647\u0650 \u0671\u0644\u0633\u064e\u0651\u0644\u064e\u0627\u0645\u064f";
+const RABB_AR = "\u0631\u064e\u0628\u0651";
+const AR_RAHMAN_AR = "\u0671\u0644\u0631\u064e\u0651\u062d\u0652\u0645\u064e\u0670\u0646\u0650";
+const AR_RAHEEM_AR = "\u0671\u0644\u0631\u064e\u0651\u062d\u0650\u064a\u0645";
+const ALHAMDU_LILLAH_AR = "\u0627\u0644\u062d\u0645\u062f\u064f \u0644\u0644\u0647\u0650";
 
 function getInitialTab(): TabId {
   if (typeof window === "undefined") return "A";
@@ -23,8 +34,8 @@ const quranStudiesItems: LibraryItem[] = [
     href: "/quranStudies/001alFatihah",
     label: (
       <>
-        1. Al-Fātiḥah&emsp;
-        <span className="arabic">سُورَةُ ٱلْفَاتِحَةِ</span>
+        1. Al-Fatihah&emsp;
+        <span className="arabic">{SURAH_AL_FATIHAH_AR}</span>
       </>
     ),
     search: "1. Al-Fatihah",
@@ -33,8 +44,8 @@ const quranStudiesItems: LibraryItem[] = [
     href: "/quranStudies/055arRahman",
     label: (
       <>
-        55. Ar-Raḥmān&emsp;
-        <span className="arabic">سُورَةُ ٱلرَّحْمَٰنِ</span>
+        55. Ar-Rahman&emsp;
+        <span className="arabic">{SURAH_AR_RAHMAN_AR}</span>
       </>
     ),
     search: "55. Ar-Rahman",
@@ -54,7 +65,7 @@ const beyondQuranItems: LibraryItem[] = [
         From Musa
         <span className="amiri" style={{ fontSize: "0.6em" }}>
           {" "}
-          (عَلَيْهِ ٱلسَّلَامُ)
+          ({ALAYHI_AL_SALAM_AR})
         </span>{" "}
         to Rome: A Historical Outline
       </>
@@ -66,11 +77,10 @@ const beyondQuranItems: LibraryItem[] = [
     label: <>Al-Ghurfa: the highest chambers of Jannah</>,
     search: "Al-Ghurfa: the highest chambers of Jannah",
   },
-
   {
-    href: "/beyondQuran/imams",
-    label: <>The Four Great Imams</>,
-    search: "The Four Great Imams",
+    href: "/beyondQuran/scholars-of-islam",
+    label: <>Scholars of Islam</>,
+    search: "Scholars of Islam",
   },
   {
     href: "/beyondQuran/docs/predestination.pdf",
@@ -84,7 +94,7 @@ const lexiconItems: LibraryItem[] = [
     href: "/lexicon/rabb",
     label: (
       <>
-        Rabb <span className="arabic">رَبّ</span>
+        Rabb <span className="arabic">{RABB_AR}</span>
       </>
     ),
     search: "Rabb",
@@ -93,7 +103,7 @@ const lexiconItems: LibraryItem[] = [
     href: "/lexicon/arRahman",
     label: (
       <>
-        Ar-Raḥmān <span className="arabic"> ٱلرَّحْمَٰنِ </span>
+        Ar-Rahman <span className="arabic">{AR_RAHMAN_AR}</span>
       </>
     ),
     search: "ar Rahman",
@@ -102,19 +112,19 @@ const lexiconItems: LibraryItem[] = [
     href: "/lexicon/arRaheem",
     label: (
       <>
-        Ar-Raḥeem <span className="arabic">ٱلرَّحِيم</span>
+        Ar-Raheem <span className="arabic">{AR_RAHEEM_AR}</span>
       </>
     ),
-    search: "ar Rahman",
+    search: "ar Raheem",
   },
   {
     href: "/lexicon/alhumdulillah",
     label: (
       <>
-        Alḥamdu lillāh <span className="arabic">الحمدُ للهِ</span>
+        Alhamdu lillah <span className="arabic">{ALHAMDU_LILLAH_AR}</span>
       </>
     ),
-    search: "alhumdulillah",
+    search: "alhamdu lillah",
   },
 ];
 
@@ -145,7 +155,7 @@ export function LibraryTabs() {
             aria-selected={activeTab === "A"}
             onClick={() => setActiveTab("A")}
           >
-            Qur’an Studies
+            Qur&apos;an Studies
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -186,7 +196,7 @@ export function LibraryTabs() {
           >
             <SearchRow
               inputId="searchA"
-              placeholder="Search Qur’an Studies…"
+              placeholder="Search Qur&apos;an Studies..."
               value={searchA}
               onChange={setSearchA}
             />
@@ -203,7 +213,7 @@ export function LibraryTabs() {
           >
             <SearchRow
               inputId="searchB"
-              placeholder="Search Beyond the Qur'an…"
+              placeholder="Search Beyond the Qur&apos;an..."
               value={searchB}
               onChange={setSearchB}
             />
@@ -220,7 +230,7 @@ export function LibraryTabs() {
           >
             <SearchRow
               inputId="searchC"
-              placeholder="Search Lexicon…"
+              placeholder="Search Lexicon..."
               value={searchC}
               onChange={setSearchC}
             />
@@ -287,9 +297,7 @@ interface ItemListProps {
 
 function ItemList({ items, emptyText }: ItemListProps) {
   if (items.length === 0) {
-    return (
-      <p className="small text-body-secondary mt-3">{emptyText}</p>
-    );
+    return <p className="small text-body-secondary mt-3">{emptyText}</p>;
   }
 
   return (
@@ -304,11 +312,4 @@ function ItemList({ items, emptyText }: ItemListProps) {
     </ul>
   );
 }
-
-
-
-
-
-
-
 
