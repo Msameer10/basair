@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 export default function AlGhurfaHighestChambersOfJannahPage() {
   return (
     <div className="container page-intro-seq">
-      <p className="naskh basmalah mt-3 text-center page-intro-e1">
+      <p className="naskh basmalah mt-3 text-center page-intro-e1" lang="ar">
         {"\u0628\u0650\u0633\u0652\u0645\u0650 \u0671\u0644\u0644\u064e\u0651\u0670\u0647\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u0652\u0645\u064e\u0670\u0646\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u0650\u064a\u0645\u0650"}
       </p>
 
-      <article className="doc-page page-intro-e4 article-page article-page-wide">
+      <article className="doc-page page-intro-e4 article-page article-page-wide ghurfa-article">
         <h1 className="doc-title">
           Al-Ghurfa: The Lofty Chambers of Jannah
           <span className="doc-title-sub">
@@ -32,18 +32,16 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
             kind of human being who is granted its highest station: al-ghurfa.
           </p>
           <p className="doc-p">
-            The word ghurfa (غرفة) refers to a lofty, elevated chamber. In Qur&apos;anic usage, it
+            The word ghurfa (<span lang="ar" className="arabic-term">{"\u063a\u0631\u0641\u0629"}</span>) refers to a lofty, elevated chamber. In Qur&apos;anic usage, it
             signifies the highest dwellings of Paradise, a reward given not for lineage, wealth, or
             outward status, but for a specific pattern of character embodied across a lifetime.
           </p>
 
           <blockquote className="doc-verse-block">
-            <p className="ayah doc-verse-arabic text-center">
-              أُولَٰئِكَ يُجْزَوْنَ الْغُرْفَةَ بِمَا صَبَرُوا وَيُلَقَّوْنَ فِيهَا تَحِيَّةً وَسَلَامًا
-            </p>
+            <p className="ayah ayah-ar quran-arabic doc-verse-arabic text-center" lang="ar">{"\u0623\u064f\u0648\u0644\u064e\u0670\u0626\u0650\u0643\u064e \u064a\u064f\u062c\u0652\u0632\u064e\u0648\u0652\u0646\u064e \u0627\u0644\u0652\u063a\u064f\u0631\u0652\u0641\u064e\u0629\u064e \u0628\u0650\u0645\u064e\u0627 \u0635\u064e\u0628\u064e\u0631\u064f\u0648\u0627 \u0648\u064a\u064f\u0644\u064e\u0642\u064e\u0651\u0648\u0652\u0646\u064e \u0641\u0650\u064a\u0647\u064e\u0627 \u062a\u064e\u062d\u0650\u064a\u064e\u0651\u0629\u064b \u0648\u064e\u0633\u064e\u0644\u064e\u0627\u0645\u064b\u0627"}</p>
             <p className="doc-verse-translation">
-              “Those will be rewarded with the highest place (al-ghurfa) because of their patience,
-              and they will be received therein with greetings and peace.”
+              {"\u201cThose will be rewarded with the highest place (al-ghurfa) because of their patience,"}
+              {"and they will be received therein with greetings and peace.\u201d"}
             </p>
             <p className="doc-verse-source">Qur&apos;an 25:75</p>
           </blockquote>
@@ -96,7 +94,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
 
           <h3 className="doc-subsection">The Word in Classical Arabic Poetry</h3>
           <p className="doc-p">
-            The root gh-r-f (غ ر ف) appears in pre-Islamic Arabic poetry with several related
+            The root gh-r-f (<span lang="ar" className="arabic-term">{"\u063a \u0631 \u0641"}</span>) appears in pre-Islamic Arabic poetry with several related
             meanings. The noun ghurfa refers to the elevated chamber itself. However, the verb
             gharafa means to scoop or draw water with cupped hands, and ghurfa can also refer to a
             handful of water.
@@ -104,7 +102,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
 
           <blockquote className="doc-verse-block">
             <p className="doc-verse-translation">
-              “Except for one who scoops a handful (ghurfa) with his hand.”
+              {"\u201cExcept for one who scoops a handful (ghurfa) with his hand.\u201d"}
             </p>
             <p className="doc-verse-source">Qur&apos;an 2:249</p>
           </blockquote>
@@ -147,10 +145,10 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
             its own nuance.
           </p>
           <ul className="article-list">
-            <li><strong>Dar (دار)</strong> - A general word for house or abode, used broadly for the afterlife.</li>
-            <li><strong>Qasr (قصر)</strong> - A palace or fortress, conveying grandeur and magnificence.</li>
-            <li><strong>Khayma (خيمة)</strong> - A tent or pavilion, often mentioned in hadith descriptions.</li>
-            <li><strong>Ghurfa (غرفة)</strong> - A specific elevated chamber, intimate, distinguished, and high above the rest.</li>
+            <li><strong>Dar (<span lang="ar" className="arabic-term">{"\u062f\u0627\u0631"}</span>)</strong> - A general word for house or abode, used broadly for the afterlife.</li>
+            <li><strong>Qasr (<span lang="ar" className="arabic-term">{"\u0642\u0635\u0631"}</span>)</strong> - A palace or fortress, conveying grandeur and magnificence.</li>
+            <li><strong>Khayma (<span lang="ar" className="arabic-term">{"\u062e\u064a\u0645\u0629"}</span>)</strong> - A tent or pavilion, often mentioned in hadith descriptions.</li>
+            <li><strong>Ghurfa (<span lang="ar" className="arabic-term">{"\u063a\u0631\u0641\u0629"}</span>)</strong> - A specific elevated chamber, intimate, distinguished, and high above the rest.</li>
           </ul>
           <p className="doc-p">
             The word ghurfa therefore emphasizes height, honor, and selectivity, rather than merely
@@ -192,7 +190,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           <h3 className="doc-subsection">4. Supplication for Protection from Hellfire (25:65-66)</h3>
           <p className="doc-p">Despite their worship and righteousness, they pray:</p>
           <blockquote className="doc-verse-block">
-            <p className="doc-verse-translation">“Our Rabb, avert from us the punishment of Hell.”</p>
+            <p className="doc-verse-translation">{"\u201cOur Rabb, avert from us the punishment of Hell.\u201d"}</p>
           </blockquote>
           <p className="doc-p">
             Their defining attitude is not self-satisfaction, but humility before divine judgment.
@@ -257,7 +255,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           <h2 className="doc-section">The Unifying Thread: Patience</h2>
           <blockquote className="doc-verse-block">
             <p className="doc-verse-translation">
-              “They will be rewarded with the ghurfa because of their patience.”
+              {"\u201cThey will be rewarded with the ghurfa because of their patience.\u201d"}
             </p>
             <p className="doc-verse-source">Qur&apos;an 25:75</p>
           </blockquote>
@@ -286,7 +284,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           </p>
           <blockquote className="doc-verse-block">
             <p className="doc-verse-translation">
-              “They will be in lofty chambers (ghurafat), safe and secure.”
+              {"\u201cThey will be in lofty chambers (ghurafat), safe and secure.\u201d"}
             </p>
             <p className="doc-verse-source">Qur&apos;an 34:37</p>
           </blockquote>
@@ -371,3 +369,5 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
     </div>
   );
 }
+
+

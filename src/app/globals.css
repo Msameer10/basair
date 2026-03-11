@@ -1,6 +1,7 @@
 /* Fonts (from original css/style.css) */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Lugrasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap");
@@ -21,6 +22,7 @@
   --bs-body-color: #000000;
   --bs-heading-color: #000000;
   --bs-border-color: #dee2e6;
+  --basair-theme: #432dd7;
   --ui-panel-bg: #f7f8fb;
   --ui-panel-border: #d5d9e3;
   --ui-panel-shadow: 0 8px 22px rgba(16, 24, 40, 0.08);
@@ -31,6 +33,8 @@
   --bs-body-color: #f8f9fa;
   --bs-heading-color: #ffffff;
   --bs-border-color: #444444;
+  --basair-theme: #432dd7;
+  --basair-theme: #432dd7;
   --ui-panel-bg: #10141b;
   --ui-panel-border: #2e3642;
   --ui-panel-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
@@ -227,7 +231,7 @@ h4,
   max-width: 860px;
 }
 
-/* Simple “encyclopedia” vibe */
+/* Simple ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œencyclopediaÃƒÂ¢Ã¢â€šÂ¬Ã‚Â vibe */
 .page-title {
   letter-spacing: 0.2px;
 }
@@ -317,7 +321,7 @@ i {
   direction: rtl;
   unicode-bidi: plaintext;
   line-height: 2.2; /* roomy for harakat */
-  letter-spacing: 0; /* don’t space Arabic letters */
+  letter-spacing: 0; /* donÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢t space Arabic letters */
   word-spacing: 0.08em; /* slight mushaf feel */
   font-variant-ligatures: common-ligatures;
   font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
@@ -352,7 +356,7 @@ i {
 }
 
 .hr-double-symbol::after {
-  content: "۞";
+  content: "\06DE";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2232,5 +2236,135 @@ html[data-bs-theme="dark"] .brand-intro-wordmark {
 
   .doc-verse-arabic {
     font-size: 1.3rem;
+  }
+}
+/* Protect Arabic script from inheriting Latin body fonts */
+:where([lang="ar"], .arabic, .arabic-term, .quran-arabic, .ayah, .ayah-ar, .naskh, .amiri) {
+  font-weight: 400;
+  font-style: normal;
+}
+
+:where([lang="ar"], .arabic, .arabic-term, .quran-arabic, .ayah, .ayah-ar) {
+  direction: rtl;
+  unicode-bidi: isolate;
+}
+
+.arabic,
+.arabic-term,
+.quran-arabic {
+  font-family: "Noto Naskh Arabic", "Amiri Quran", "Scheherazade New", serif;
+  line-height: 1.9;
+}
+
+.ghurfa-article {
+  line-height: 1.7;
+}
+
+.ghurfa-article .doc-title {
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+.ghurfa-article .doc-title-sub {
+  margin-top: 0.45rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.ghurfa-article .doc-section {
+  margin: 2.2rem 0 0.95rem;
+  font-size: 1.75rem;
+  line-height: 1.28;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
+}
+
+.ghurfa-article .doc-subsection {
+  margin: 1.65rem 0 0.65rem;
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+
+.ghurfa-article .doc-p,
+.ghurfa-article .article-list li,
+.ghurfa-article .article-ref-list li,
+.ghurfa-article .refs-item {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.ghurfa-article .doc-p {
+  margin-bottom: 1rem;
+}
+
+.ghurfa-article .article-list,
+.ghurfa-article .article-ref-list,
+.ghurfa-article .refs-list {
+  margin: 0.45rem 0 1rem;
+  padding-left: 1.3rem;
+}
+
+.ghurfa-article .doc-verse-block {
+  margin: 1.4rem 0;
+  padding: 1rem 1.15rem;
+}
+
+.ghurfa-article .doc-verse-translation {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  font-style: italic;
+}
+
+.ghurfa-article .arabic-term {
+  display: inline-block;
+  margin-inline: 0.08em;
+  line-height: 1.8;
+}
+
+.ghurfa-article .doc-verse-source,
+.ghurfa-article .refs-note {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.ghurfa-article .refs-subtitle {
+  margin: 1.35rem 0 0.55rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.ayah {
+  font-family: "Amiri", "Amiri Quran", "Noto Naskh Arabic", serif;
+}
+
+.ayah-ar {
+  color: var(--basair-theme);
+}
+
+.ghurfa-article .doc-verse-arabic[lang="ar"],
+.ghurfa-article .ayah-ar,
+.ghurfa-article .quran-arabic {
+  font-family: "Amiri", "Amiri Quran", "Noto Naskh Arabic", serif;
+  color: var(--basair-theme);
+  font-size: 1.55rem;
+  line-height: 2.1;
+}
+
+@media (max-width: 768px) {
+  .ghurfa-article .doc-title {
+    font-size: 1.8rem;
+  }
+
+  .ghurfa-article .doc-title-sub {
+    font-size: 0.98rem;
+  }
+
+  .ghurfa-article .doc-section {
+    font-size: 1.5rem;
+  }
+
+  .ghurfa-article .doc-subsection {
+    font-size: 1.22rem;
   }
 }
