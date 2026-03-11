@@ -9,6 +9,7 @@ import {
   TRADITION_TABS,
   earlySharedExplanation,
   scholars,
+  type PeriodPrimary,
   type ScholarEntry,
   type TraditionPrimary,
 } from "./scholarsData";
@@ -19,7 +20,7 @@ type ChainContext = {
 };
 
 type PeriodSection = {
-  title: string;
+  title: PeriodPrimary;
   scholars: ScholarEntry[];
 };
 
