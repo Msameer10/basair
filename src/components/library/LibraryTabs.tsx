@@ -54,6 +54,11 @@ const quranStudiesItems: LibraryItem[] = [
 
 const beyondQuranItems: LibraryItem[] = [
   {
+    href: "/beyondQuran/divineJusticeHumanCapacity",
+    label: <>Divine Justice, Human Capacity, and the Path to Allah</>,
+    search: "Divine Justice Human Capacity Path to Allah accountability salvation examination",
+  },
+  {
     href: "/beyondQuran/quranAsSufficientProof",
     label: <>Quran as Sufficient Proof</>,
     search: "Quran as Sufficient Proof",
@@ -312,4 +317,7 @@ function ItemList({ items, emptyText }: ItemListProps) {
     </ul>
   );
 }
+
+
+
 

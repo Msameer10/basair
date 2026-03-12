@@ -1,4 +1,4 @@
-/* Fonts (from original css/style.css) */
+﻿/* Fonts (from original css/style.css) */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Lugrasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap");
@@ -231,7 +231,7 @@ h4,
   max-width: 860px;
 }
 
-/* Simple ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œencyclopediaÃƒÂ¢Ã¢â€šÂ¬Ã‚Â vibe */
+/* Simple ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“encyclopediaÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â vibe */
 .page-title {
   letter-spacing: 0.2px;
 }
@@ -321,7 +321,7 @@ i {
   direction: rtl;
   unicode-bidi: plaintext;
   line-height: 2.2; /* roomy for harakat */
-  letter-spacing: 0; /* donÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢t space Arabic letters */
+  letter-spacing: 0; /* donÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢t space Arabic letters */
   word-spacing: 0.08em; /* slight mushaf feel */
   font-variant-ligatures: common-ligatures;
   font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
@@ -2328,6 +2328,34 @@ html[data-bs-theme="dark"] .brand-intro-wordmark {
   line-height: 1.6;
 }
 
+.ghurfa-article .doc-context-quote {
+  margin: 1.15rem 0;
+  padding: 0.95rem 1.1rem;
+  border-left: 3px solid rgba(138, 106, 24, 0.42);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--ui-panel-bg) 68%, transparent);
+}
+
+.ghurfa-article .doc-context-quote .doc-verse-translation {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.ghurfa-article .doc-context-quote .doc-verse-source {
+  margin-top: 0.55rem;
+}
+
+.ghurfa-article .doc-term {
+  display: inline-block;
+  padding: 0.04rem 0.34rem;
+  border: 1px solid rgba(67, 45, 215, 0.18);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ui-panel-bg) 82%, #432dd7 18%);
+  font-size: 0.95em;
+  line-height: 1.35;
+  white-space: nowrap;
+}
 .ghurfa-article .refs-subtitle {
   margin: 1.35rem 0 0.55rem;
   font-size: 1.2rem;
@@ -2368,3 +2396,5 @@ html[data-bs-theme="dark"] .brand-intro-wordmark {
     font-size: 1.22rem;
   }
 }
+
+
