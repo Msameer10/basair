@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -330,6 +330,8 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           </p>
         </section>
 
+        <p className="doc-closing-note">These are my own reflections and remain open to revision. Allāhu Aʿlam.</p>
+
         <hr className="doc-divider" />
 
         <section>
@@ -369,5 +371,8 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
     </div>
   );
 }
+
+
+
 
 

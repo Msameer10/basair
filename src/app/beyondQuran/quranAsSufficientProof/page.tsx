@@ -1,4 +1,4 @@
-export default function QuranAsSufficientProofPage() {
+﻿export default function QuranAsSufficientProofPage() {
   return (
     <div className="container page-intro-seq">
       <p className="naskh basmalah mt-3 text-center page-intro-e1">
@@ -259,6 +259,8 @@ export default function QuranAsSufficientProofPage() {
 
         <hr className="doc-divider" />
 
+        <p className="doc-closing-note">These are my own reflections and remain open to revision. Allāhu Aʿlam.</p>
+
         <h2 className="doc-section">References</h2>
         <div className="refs-subtitle">Qurʾānic References</div>
         <p className="refs-note">
@@ -441,5 +443,9 @@ export default function QuranAsSufficientProofPage() {
     </div>
   );
 }
+
+
+
+
 
 

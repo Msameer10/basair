@@ -87,7 +87,7 @@ export default function DivineJusticeHumanCapacityPage() {
             II. The Spectrum of Capacity and the Prophet&apos;s Life as its Ceiling
           </h2>
           <p className="doc-p">
-            The Prophet Muhammad ﴾﴿ before revelation is one of the most theologically significant
+            The Prophet Muhammad ﷺ before revelation is one of the most theologically significant
             and underexplored subjects in Islamic thought. He is known to have retreated to the
             cave of Hira in extended periods of contemplation, to have rejected the idolatry of his
             society without any external instruction, to have lived with an exceptional moral
@@ -304,7 +304,7 @@ export default function DivineJusticeHumanCapacityPage() {
           </p>
           <blockquote className="doc-context-quote">
             <p className="doc-verse-translation">
-              The Prophet ﴾﴿ — guaranteed Jannah, at the absolute ceiling of human religious
+              The Prophet ﷺ — guaranteed Jannah, at the absolute ceiling of human religious
               achievement — stood in night prayer until his feet swelled. When asked why,
               given his guaranteed status, he said: &quot;Should I not be a grateful servant?&quot;
             </p>
@@ -324,7 +324,7 @@ export default function DivineJusticeHumanCapacityPage() {
           <p className="doc-p">
             Allah&apos;s justice is perfectly individualised. His accountability is proportional to
             genuine capacity and access. His mercy completes sincere effort toward one&apos;s
-            individual ceiling. The Prophet ﴾﴿ represents the maximum possible ceiling &mdash; not
+            individual ceiling. The Prophet ﷺ represents the maximum possible ceiling &mdash; not
             as a standard everyone is measured against, but as the proof that the ceiling can
             reach complete human perfection when capacity, effort, and divine support fully
             converge.
@@ -359,56 +359,47 @@ export default function DivineJusticeHumanCapacityPage() {
         <section>
           <h2 className="doc-section">Conclusion</h2>
           <p className="doc-p">
-            Allah&apos;s justice is perfectly individualised. His accountability is proportional to
-            genuine capacity and access. His mercy completes sincere effort toward one&apos;s
-            individual ceiling. The Prophet ﴾﴿ represents the maximum possible ceiling &mdash; not
-            as a standard everyone is measured against, but as the proof that the ceiling can
-            reach complete human perfection when capacity, effort, and divine support fully
-            converge.
+            Divine justice, in this framework, is neither abstract nor uniform. It operates at the level of the individual — shaped by capacity, access, and sincerity. What emerges is not a system that measures all people against a single standard, but one that meets each person where they truly stand, without excess and without deficiency.
           </p>
           <p className="doc-p">
-            This framework does not diminish the urgency of religious life &mdash; it deepens it. It
-            does not provide comfort to the lazy &mdash; sincerity of direction is the central
-            criterion, and laziness is incompatible with it by definition. It does not reduce the
-            importance of knowledge &mdash; those given more are held to more. But it presents a
-            picture of divine justice that is simultaneously exacting and merciful, perfectly
-            calibrated to the full diversity of human circumstance, and consistently oriented toward
-            the path rather than a destination that human limitation may make unreachable.
+            The path, then, is not toward an abstract ideal detached from human limitation, but toward the highest point one can genuinely reach. In that, both justice and mercy converge — not as opposites, but as expressions of the same reality.
           </p>
-          <p className="doc-p">Precise &mdash; and merciful. Both at once. That is the picture.</p>
         </section>
 
+        <p className="doc-closing-note">These are my own reflections and remain open to revision. Allāhu Aʿlam.</p>
         <section>
           <h2 className="doc-section">References</h2>
-          <div className="refs-subtitle">Qur&apos;anic References</div>
+          <div className="refs-subtitle">Qur’anic References</div>
           <ul className="refs-list article-ref-list">
-            <li className="refs-item">Qur&apos;an 1:6</li>
-            <li className="refs-item">Qur&apos;an 2:286</li>
-            <li className="refs-item">Qur&apos;an 6:160</li>
-            <li className="refs-item">Qur&apos;an 21:47</li>
-            <li className="refs-item">Qur&apos;an 29:69</li>
-            <li className="refs-item">Qur&apos;an 39:9</li>
-            <li className="refs-item">Qur&apos;an 41:53</li>
-            <li className="refs-item">Qur&apos;an 53:39</li>
-            <li className="refs-item">Qur&apos;an 58:11</li>
-            <li className="refs-item">Qur&apos;an 88:17–18</li>
+            <li className="refs-item">Sūrah al-Fātiḥah (1:6)</li>
+            <li className="refs-item">Sūrah al-Baqarah (2:286)</li>
+            <li className="refs-item">Sūrah al-Anʿām (6:160)</li>
+            <li className="refs-item">Sūrah al-Anbiyāʾ (21:47)</li>
+            <li className="refs-item">Sūrah al-ʿAnkabūt (29:69)</li>
+            <li className="refs-item">Sūrah az-Zumar (39:9)</li>
+            <li className="refs-item">Sūrah Fuṣṣilat (41:53)</li>
+            <li className="refs-item">Sūrah an-Najm (53:39)</li>
+            <li className="refs-item">Sūrah al-Mujādilah (58:11)</li>
+            <li className="refs-item">Sūrah al-Ghāshiyah (88:17–18)</li>
           </ul>
 
-          <div className="refs-subtitle">Referenced Statement</div>
+          <div className="refs-subtitle">Prophetic Reports</div>
           <ul className="refs-list article-ref-list">
-            <li className="refs-item">
-              &quot;We will increase them in ranks.&quot; &mdash; referenced throughout the Quran in
-              descriptions of divine reward
-            </li>
+            <li className="refs-item">Ṣaḥīḥ al-Bukhārī; Ṣaḥīḥ Muslim — narrated from ʿĀʾishah:</li>
+            <li className="refs-item">“Should I not be a grateful servant?”</li>
           </ul>
 
-          <div className="refs-subtitle">Prophetic Report</div>
+          <div className="refs-subtitle">Thematic Note</div>
           <ul className="refs-list article-ref-list">
-            <li className="refs-item">&quot;Should I not be a grateful servant?&quot;</li>
+            <li className="refs-item">The phrase “We will increase them in ranks” is retained as a thematic summary of Qur’anic reward language rather than tied to a single verse with full certainty.</li>
           </ul>
         </section>
       </article>
     </div>
   );
 }
+
+
+
+
 
