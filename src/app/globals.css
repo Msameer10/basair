@@ -2336,6 +2336,278 @@ html[data-bs-theme="dark"] .brand-intro-wordmark {
   background: color-mix(in srgb, var(--ui-panel-bg) 68%, transparent);
 }
 
+/* Four Imams long-form study */
+.imams-article {
+  --imams-accent: #735b19;
+}
+
+[data-bs-theme="dark"] .imams-article {
+  --imams-accent: #d8c17a;
+}
+
+.imams-article section[id] {
+  scroll-margin-top: 2rem;
+}
+
+.imams-article .doc-lede {
+  margin: 0 auto 1.5rem;
+  max-width: 74ch;
+  color: var(--doc-text);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.18rem;
+  line-height: 1.85;
+}
+
+.imams-note,
+.imams-contents {
+  margin: 1.75rem 0;
+  padding: 1.1rem 1.25rem;
+  border-left: 3px solid var(--imams-accent);
+  background: color-mix(in srgb, var(--imams-accent) 7%, var(--doc-bg));
+  line-height: 1.7;
+}
+
+.imams-contents ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem 2rem;
+  margin: 0.55rem 0 0;
+  padding-left: 1.35rem;
+}
+
+.imams-contents a,
+.imams-references a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, var(--imams-accent) 65%, transparent);
+  text-underline-offset: 0.2em;
+}
+
+.imams-kicker {
+  margin: 0;
+  color: var(--imams-accent);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.imams-region-grid,
+.imams-profile-grid,
+.imams-survival-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.imams-region-grid > div,
+.imam-profile,
+.imams-survival-grid > div,
+.imams-case {
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--doc-rule);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--doc-bg) 94%, var(--imams-accent) 6%);
+}
+
+.imams-region-grid h4,
+.imam-profile h3,
+.imams-survival-grid h3,
+.imams-case h3 {
+  margin: 0 0 0.55rem;
+  color: var(--doc-text);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.imams-region-grid p,
+.imams-survival-grid p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.imam-profile header {
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--doc-rule);
+}
+
+.imam-profile h3 {
+  margin-top: 0.2rem;
+  font-size: 1.45rem;
+}
+
+.imam-dates {
+  margin: 0;
+  color: var(--doc-muted);
+  font-size: 0.9rem;
+}
+
+.imam-profile dl,
+.imam-profile dl div:last-child,
+.imam-profile dd {
+  margin-bottom: 0;
+}
+
+.imam-profile dl div {
+  margin-top: 0.9rem;
+}
+
+.imam-profile dt {
+  color: var(--imams-accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.imam-profile dd {
+  margin-left: 0;
+  line-height: 1.65;
+}
+
+.imams-development {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 1.5rem 0 2rem;
+  border-top: 1px solid var(--doc-rule);
+  border-bottom: 1px solid var(--doc-rule);
+}
+
+.imams-development div {
+  padding: 1rem;
+}
+
+.imams-development div + div {
+  border-left: 1px solid var(--doc-rule);
+}
+
+.imams-development span {
+  color: var(--imams-accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.imams-development p {
+  margin: 0.35rem 0 0;
+  line-height: 1.6;
+}
+
+.imams-case-stack {
+  display: grid;
+  gap: 1.15rem;
+  margin: 1.5rem 0;
+}
+
+.imams-case h3 {
+  margin-top: 0.25rem;
+  font-size: 1.3rem;
+}
+
+.case-evidence {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--doc-rule);
+  line-height: 1.7;
+}
+
+.imams-rulings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem 1.25rem;
+}
+
+.imams-rulings p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.imams-rulings strong {
+  display: block;
+  color: var(--imams-accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.imams-network {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1.5rem 0;
+}
+
+.imams-network > div {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--doc-rule);
+  text-align: center;
+}
+
+.imams-network span {
+  color: var(--doc-muted);
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.imams-survival-grid > div > span {
+  color: var(--imams-accent);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.35rem;
+}
+
+.imams-survival-grid h3 {
+  display: inline;
+  margin-left: 0.55rem;
+  font-size: 1.15rem;
+}
+
+.imams-survival-grid p {
+  margin-top: 0.65rem;
+}
+
+.imams-references {
+  padding-left: 1.25rem;
+  color: var(--doc-text);
+}
+
+.imams-references li {
+  margin-bottom: 0.65rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .imams-contents ol,
+  .imams-region-grid,
+  .imams-profile-grid,
+  .imams-rulings,
+  .imams-survival-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .imams-development {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .imams-development div + div {
+    border-left: 0;
+  }
+
+  .imams-development div:nth-child(even) {
+    border-left: 1px solid var(--doc-rule);
+  }
+
+  .imams-development div:nth-child(n + 3) {
+    border-top: 1px solid var(--doc-rule);
+  }
+
+  .imams-network > div {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
 .ghurfa-article .doc-context-quote .doc-verse-translation {
   margin: 0;
   font-size: 1.02rem;

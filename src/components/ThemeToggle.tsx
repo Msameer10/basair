@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 
 const THEME_KEY = "basair_theme";
 type Theme = "light" | "dark";
@@ -24,20 +24,18 @@ function applyTheme(theme: Theme) {
 }
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme | null>(null);
-
-  useEffect(() => {
-    const initial = getPreferredTheme();
-    setTheme(initial);
-    applyTheme(initial);
-  }, []);
+  const isClient = useSyncExternalStore(
+    () => () => undefined,
+    () => true,
+    () => false,
+  );
+  const [selectedTheme, setSelectedTheme] = useState<Theme | null>(null);
+  const theme = selectedTheme ?? (isClient ? getPreferredTheme() : null);
 
   const handleClick = () => {
-    setTheme((prev) => {
-      const next: Theme = prev === "dark" ? "light" : "dark";
-      applyTheme(next);
-      return next;
-    });
+    const next: Theme = theme === "dark" ? "light" : "dark";
+    applyTheme(next);
+    setSelectedTheme(next);
   };
 
   const iconClass =

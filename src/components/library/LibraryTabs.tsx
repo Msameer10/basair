@@ -88,6 +88,11 @@ const beyondQuranItems: LibraryItem[] = [
     search: "Scholars of Islam",
   },
   {
+    href: "/beyondQuran/imams",
+    label: <>The Four Great Imams</>,
+    search: "The Four Great Imams Sunni legal traditions madhhabs jurisprudence",
+  },
+  {
     href: "/beyondQuran/docs/predestination.pdf",
     label: <>Understanding Qadr: Predestination</>,
     search: "Understanding Qadr: Predestination",

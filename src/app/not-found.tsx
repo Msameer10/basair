@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <div className="container">
@@ -10,12 +12,11 @@ export default function NotFound() {
       </p>
       <div className="text-center mt-3 p_about">
         Want to go back to{" "}
-        <a href="/" style={{ textDecoration: "none" }}>
+        <Link href="/" style={{ textDecoration: "none" }}>
           Home
-        </a>{" "}
+        </Link>{" "}
         perhaps..?
       </div>
     </div>
   );
 }
-
