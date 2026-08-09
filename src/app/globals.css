@@ -2336,6 +2336,58 @@ html[data-bs-theme="dark"] .brand-intro-wordmark {
   background: color-mix(in srgb, var(--ui-panel-bg) 68%, transparent);
 }
 
+/* Cleaned Scholars of Islam reference */
+.scholars-page-header { max-width: 780px; }
+.scholars-eyebrow { margin: 0 0 0.45rem; color: var(--basair-theme); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+.scholars-page-header .doc-title { text-align: left; }
+.scholars-scope-note { margin: 1.5rem 0 2rem; padding: 1rem 1.15rem; border-left: 3px solid color-mix(in srgb, var(--basair-theme) 55%, transparent); background: color-mix(in srgb, var(--ui-panel-bg) 70%, transparent); color: var(--doc-muted); font-size: 0.94rem; line-height: 1.7; }
+.scholars-page .scholars-toolbar { display: grid; align-items: end; gap: 1rem; }
+.scholars-filter-row { display: grid; grid-template-columns: minmax(0, 2fr) repeat(2, minmax(180px, 1fr)); gap: 0.8rem; }
+.scholars-page .scholars-search-wrap,
+.scholars-field-wrap { display: grid; width: 100%; gap: 0.35rem; }
+.scholars-search-wrap > span,
+.scholars-field-wrap > span { color: var(--doc-muted); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; }
+.scholars-page .scholars-search,
+.scholars-field-select { height: 2.5rem; border-radius: 8px; background: color-mix(in srgb, var(--bs-body-bg) 86%, var(--ui-panel-bg) 14%); color: var(--bs-body-color); }
+.scholars-active-summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 1.5rem; margin: 1.4rem 0 2rem; }
+.scholars-active-summary h2 { margin: 0 0 0.35rem; font-family: "Times New Roman", Times, serif; font-size: 1.45rem; }
+.scholars-active-summary p { max-width: 760px; margin: 0; color: var(--doc-muted); line-height: 1.65; }
+.scholars-count-block { min-width: 90px; text-align: right; }
+.scholars-count-block strong,
+.scholars-count-block span { display: block; }
+.scholars-count-block strong { color: var(--basair-theme); font-family: "Times New Roman", Times, serif; font-size: 2rem; line-height: 1; }
+.scholars-count-block span { margin-top: 0.25rem; color: var(--doc-muted); font-size: 0.78rem; }
+.scholars-period-heading { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 0.35rem; }
+.scholars-period-heading p { margin: 0; color: var(--doc-muted); font-size: 0.9rem; line-height: 1.55; }
+.scholars-period-heading > span { display: grid; place-items: center; width: 2rem; height: 2rem; flex: 0 0 auto; border: 1px solid var(--doc-rule); border-radius: 50%; color: var(--doc-muted); font-size: 0.8rem; }
+.scholar-row-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.scholar-row-heading .scholar-row-text { margin: 0; font-size: 1.06rem; }
+.scholar-row-heading .scholar-row-dates { flex: 0 0 auto; color: var(--doc-muted); font-size: 0.84rem; }
+.scholars-page .scholar-row-summary { max-width: 82ch; margin: 0.45rem 0 0; line-height: 1.68; }
+.scholars-page .scholars-tag-row { margin-top: 0.65rem; }
+.scholars-clear { padding: 0.45rem 0.8rem; border: 1px solid var(--ui-panel-border); border-radius: 7px; background: var(--ui-panel-bg); color: inherit; cursor: pointer; }
+.scholar-relations { margin-top: 0.8rem; border-top: 1px solid var(--doc-rule); }
+.scholar-relations > summary { width: fit-content; padding-top: 0.65rem; color: var(--doc-muted); font-size: 0.82rem; cursor: pointer; list-style-position: inside; }
+.scholar-relations > summary:hover { color: var(--basair-theme); }
+.scholar-relations-body { display: grid; gap: 0.8rem; margin-top: 0.75rem; }
+.scholar-relation-trail { padding: 0.8rem 0.9rem; border-left: 2px solid color-mix(in srgb, var(--basair-theme) 35%, transparent); background: color-mix(in srgb, var(--ui-panel-bg) 62%, transparent); }
+.scholar-relation-trail h4 { margin: 0 0 0.55rem; font-family: "Times New Roman", Times, serif; font-size: 0.98rem; }
+.scholar-relation-trail ol { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
+.scholar-relation-trail li { display: flex; align-items: center; gap: 0.4rem; }
+.scholar-relation-trail li:not(:last-child)::after { content: "→"; color: var(--doc-muted); }
+.scholar-relation-trail li > span { padding: 0.16rem 0.42rem; border-radius: 4px; font-size: 0.84rem; }
+.scholar-relation-trail li.is-current > span { background: color-mix(in srgb, var(--basair-theme) 13%, transparent); color: var(--basair-theme); font-weight: 700; }
+.scholar-relation-trail small { color: var(--doc-muted); font-size: 0.69rem; font-style: italic; }
+.scholar-relation-trail > p { margin: 0.55rem 0 0; color: var(--doc-muted); font-size: 0.76rem; line-height: 1.5; }
+
+@media (max-width: 767px) {
+  .scholars-filter-row,
+  .scholars-active-summary { grid-template-columns: 1fr; }
+  .scholars-count-block { text-align: left; }
+  .scholar-row-heading { display: block; }
+  .scholar-row-heading .scholar-row-dates { display: block; margin-top: 0.15rem; }
+}
+
 /* Four Imams long-form study */
 .imams-article {
   --imams-accent: #735b19;
