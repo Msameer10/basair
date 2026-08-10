@@ -13,7 +13,7 @@ export default function DivineJusticeHumanCapacityPage() {
         {"\u0628\u0650\u0633\u0652\u0645\u0650 \u0671\u0644\u0644\u064e\u0651\u0670\u0647\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u0652\u0645\u064e\u0670\u0646\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u0650\u064a\u0645\u0650"}
       </p>
 
-      <article className="doc-page page-intro-e4 article-page article-page-wide ghurfa-article">
+      <article className="doc-page page-intro-e4 article-page article-page-wide ghurfa-article clean-article">
         <h1 className="doc-title">
           Divine Justice, Human Capacity, and the Path to Allah
           <span className="doc-title-sub">
@@ -22,6 +22,25 @@ export default function DivineJusticeHumanCapacityPage() {
           </span>
         </h1>
 
+        <aside className="article-scope-note">
+          This essay proposes an interpretive framework rather than a definitive ruling on the
+          fate of particular persons. Final judgment belongs to Allah alone; the argument concerns
+          how responsibility, capacity, effort, justice, and mercy may be understood together.
+        </aside>
+
+        <nav className="article-contents" aria-label="Article contents">
+          <p>Contents</p>
+          <ol>
+            <li><a href="#recognition">Natural signs and recognition</a></li>
+            <li><a href="#capacity">The spectrum of capacity</a></li>
+            <li><a href="#revelation">The role of revelation</a></li>
+            <li><a href="#examination">The individualised examination</a></li>
+            <li><a href="#mercy">Mercy and sincere effort</a></li>
+            <li><a href="#path">The path toward Allah</a></li>
+            <li><a href="#principle">A proposed synthesis</a></li>
+          </ol>
+        </nav>
+
         <section>
           <h2 className="doc-section">Introduction</h2>
           <p className="doc-p">
@@ -29,14 +48,14 @@ export default function DivineJusticeHumanCapacityPage() {
             applies to human beings across the full spectrum of circumstance &mdash; those who
             received revelation and those who did not, those born with exceptional intellect and
             those with limited capacity, those with access to knowledge and those without.
-            Classical theological schools addressed parts of this question, but a more complete and
-            Quranically grounded framework emerges when these threads are woven together: that
-            divine accountability is perfectly individualised, proportional to genuine capacity, and
-            ultimately completed through Allah&apos;s mercy for those sincerely on the path.
+            Classical theological schools addressed these questions through several distinct
+            doctrines. This essay brings a number of Qur&apos;anic themes into one proposed framework:
+            accountability is individual, responsibility corresponds to genuine capacity and
+            access, and Allah&apos;s mercy exceeds the limits of human achievement.
           </p>
         </section>
 
-        <section>
+        <section id="recognition">
           <h2 className="doc-section">I. The Natural Signs and the Foundation of Recognition</h2>
           <p className="doc-p">
             The Quran repeatedly draws attention to the natural world as a primary source of
@@ -72,8 +91,8 @@ export default function DivineJusticeHumanCapacityPage() {
             The important distinction here is that the Quran is not merely claiming that natural
             signs confirm what revelation already taught. It presents creation itself as{" "}
             <span className="doc-term">ayat</span> &mdash; signs that, when genuinely engaged,
-            lead toward recognition of their Creator. The signs are the evidence, not just
-            reminders of evidence delivered elsewhere.
+            invite recognition of their Creator. They function as evidence and as reminders, while
+            revelation gives that recognition clearer language and direction.
           </p>
           <p className="doc-p">
             This does not mean natural signs guarantee recognition. They create the opportunity and
@@ -82,28 +101,25 @@ export default function DivineJusticeHumanCapacityPage() {
           </p>
         </section>
 
-        <section>
+        <section id="capacity">
           <h2 className="doc-section">
-            II. The Spectrum of Capacity and the Prophet&apos;s Life as its Ceiling
+            II. Capacity, Disposition, and Human Difference
           </h2>
           <p className="doc-p">
-            The Prophet Muhammad ﷺ before revelation is one of the most theologically significant
-            and underexplored subjects in Islamic thought. He is known to have retreated to the
-            cave of Hira in extended periods of contemplation, to have rejected the idolatry of his
-            society without any external instruction, to have lived with an exceptional moral
-            character, and to have experienced a profound yearning for meaning that conventional
-            Makkan life could not satisfy.
+            Reports of the Prophet Muhammad&apos;s ﷺ life before revelation describe his withdrawal to
+            the cave of Hira, his contemplation, and his distance from the idolatrous practices of
+            Makkan society. They portray moral seriousness and a search for truth before the
+            detailed guidance of revelation arrived.
           </p>
           <p className="doc-p">
-            This pre-revelation state represents the maximum output of unaided human capacity
-            engaging genuinely with the natural and moral world. He arrived at monotheistic
-            yearning, moral uprightness, and a rejection of falsehood &mdash; but not at complete
-            truth. Revelation completed what his extraordinary capacity had brought him to the
-            threshold of.
+            Within the framework proposed here, this pre-revelation period illustrates how far a
+            sincere human disposition may move toward truth while still requiring revelation for
+            complete guidance. It should not be treated as a measurable historical maximum, but as
+            the essay&apos;s clearest example of preparation completed by revelation.
           </p>
           <p className="doc-p">
-            This establishes a spectrum. The Prophet&apos;s pre-revelation life is its highest point.
-            At the other end are those whose intellectual or cognitive capacity is severely limited
+            Human capacity nevertheless exists on a spectrum. At one end are people with unusual
+            moral and intellectual ability; at the other are those whose capacity is severely limited
             &mdash; for whom engagement with natural signs was minimal through no fault of their own.
             The Quran&apos;s principle applies directly here:
           </p>
@@ -123,13 +139,12 @@ export default function DivineJusticeHumanCapacityPage() {
             Classical jurisprudence already applied this principle categorically &mdash; children and
             the insane are not <span className="doc-term">mukallaf</span> (legally responsible)
             because their capacity for rational engagement is absent or incomplete. The extension to
-            gradations of intellectual capacity across the full human population is a natural and
-            consistent application of the same underlying principle. Accountability scales with
-            genuine capacity.
+            gradations of intellectual capacity across the human population is an inference from
+            the same underlying principle: accountability cannot be separated from genuine ability.
           </p>
         </section>
 
-        <section>
+        <section id="revelation">
           <h2 className="doc-section">
             III. The Role of Revelation &mdash; Completing What Capacity Reaches Toward
           </h2>
@@ -148,14 +163,14 @@ export default function DivineJusticeHumanCapacityPage() {
           </p>
           <p className="doc-p">
             The difference is that with revelation, the content of accountability becomes more
-            specific. The Quran establishes a floor of what constitutes a saved life &mdash; genuine
-            faith, righteous deeds, prayer, charity, the avoidance of major wrongs, and sincere
-            repentance when those wrongs occur. This is the bar of salvation. It is genuinely
-            achievable and the Quran presents it as such.
+            specific. The Qur&apos;an repeatedly joins faith, righteous action, worship, moral
+            restraint, and repentance. These are the ordinary means by which it directs believers
+            toward salvation; they are not a formula by which human beings can calculate another
+            person&apos;s final judgment.
           </p>
         </section>
 
-        <section>
+        <section id="examination">
           <h2 className="doc-section">
             IV. The Individualised Examination &mdash; Different Papers, Different Scores
           </h2>
@@ -204,9 +219,9 @@ export default function DivineJusticeHumanCapacityPage() {
           </p>
         </section>
 
-        <section>
+        <section id="mercy">
           <h2 className="doc-section">
-            V. Divine Mercy as Completion &mdash; Sincere Effort and the Multiplication of Good
+            V. Divine Mercy, Sincere Effort, and the Multiplication of Good
           </h2>
           <p className="doc-p">
             The framework would be incomplete without accounting for what the Quran presents as one
@@ -242,12 +257,6 @@ export default function DivineJusticeHumanCapacityPage() {
             abandoned at the point of their falling short. Allah&apos;s mercy elevates them toward the
             rank they were genuinely moving toward.
           </p>
-          <blockquote className="doc-context-quote">
-            <p className="doc-verse-translation">&quot;We will increase them in ranks.&quot;</p>
-            <p className="doc-verse-source">
-              Referenced throughout the Quran in descriptions of divine reward
-            </p>
-          </blockquote>
           <p className="doc-p">
             This principle resolves what might otherwise appear as an injustice in the variable
             ceiling model. The scholar with a harder paper is not disadvantaged &mdash; they are
@@ -259,9 +268,9 @@ export default function DivineJusticeHumanCapacityPage() {
           </p>
         </section>
 
-        <section>
+        <section id="path">
           <h2 className="doc-section">
-            VI. The Path, Not the Destination &mdash; The Central Quranic Orientation
+            VI. Guidance as a Path &mdash; The Central Qur&apos;anic Orientation
           </h2>
           <p className="doc-p">
             Perhaps the most important insight in this entire framework is that the Quran
@@ -310,33 +319,28 @@ export default function DivineJusticeHumanCapacityPage() {
             </p>
           </blockquote>
           <p className="doc-p">
-            The destination question had become genuinely irrelevant to him. He was on the path.
-            That was the point.
+            His certainty did not produce passivity. It produced gratitude expressed through
+            worship: assurance and continued striving were not opposites.
           </p>
         </section>
 
-        <section>
-          <h2 className="doc-section">VII. The Unified Principle</h2>
+        <section id="principle">
+          <h2 className="doc-section">VII. A Proposed Synthesis</h2>
           <p className="doc-p">
             Across both the revelation-less and revelation-present cases, the same underlying
             principle governs. It can be stated as follows:
           </p>
           <p className="doc-p">
-            Allah&apos;s justice is perfectly individualised. His accountability is proportional to
-            genuine capacity and access. His mercy completes sincere effort toward one&apos;s
-            individual ceiling. The Prophet ﷺ represents the maximum possible ceiling &mdash; not
-            as a standard everyone is measured against, but as the proof that the ceiling can
-            reach complete human perfection when capacity, effort, and divine support fully
-            converge.
+            Allah&apos;s justice is individualised; accountability corresponds to capacity and access;
+            and sincere effort is never independent of divine mercy. The Prophet ﷺ is not a score
+            against which every person can be mechanically measured, but the supreme human model
+            of faithful response to guidance.
           </p>
           <p className="doc-p">
-            This framework does not diminish the urgency of religious life &mdash; it deepens it. It
-            does not provide comfort to the lazy &mdash; sincerity of direction is the central
-            criterion, and laziness is incompatible with it by definition. It does not reduce the
-            importance of knowledge &mdash; those given more are held to more. But it presents a
-            picture of divine justice that is simultaneously exacting and merciful, perfectly
-            calibrated to the full diversity of human circumstance, and consistently oriented toward
-            the path rather than a destination that human limitation may make unreachable.
+            This framework does not remove the urgency of religious life. Sincerity must be joined
+            to action, and greater knowledge carries greater responsibility. Its purpose is more
+            limited: to show how exact justice and expansive mercy can be affirmed together across
+            profoundly different human circumstances.
           </p>
           <p className="doc-p">
             The scales of Allah&apos;s justice are, as the Quran promises, perfectly precise:
@@ -351,7 +355,7 @@ export default function DivineJusticeHumanCapacityPage() {
             </p>
             <p className="doc-verse-source">Qur&apos;an 21:47</p>
           </blockquote>
-          <p className="doc-p">Precise &mdash; and merciful. Both at once. That is the picture.</p>
+          <p className="doc-p">Justice and mercy are therefore not competing explanations of divine judgment.</p>
         </section>
 
         <hr className="doc-divider" />
@@ -359,10 +363,15 @@ export default function DivineJusticeHumanCapacityPage() {
         <section>
           <h2 className="doc-section">Conclusion</h2>
           <p className="doc-p">
-            Divine justice, in this framework, is neither abstract nor uniform. It operates at the level of the individual — shaped by capacity, access, and sincerity. What emerges is not a system that measures all people against a single standard, but one that meets each person where they truly stand, without excess and without deficiency.
+            In this framework, divine judgment attends to the individual: capacity, access,
+            knowledge, intention, and response all matter. Human beings cannot reconstruct that
+            judgment for one another, but they can trust that no relevant circumstance is absent
+            from Allah&apos;s knowledge.
           </p>
           <p className="doc-p">
-            The path, then, is not toward an abstract ideal detached from human limitation, but toward the highest point one can genuinely reach. In that, both justice and mercy converge — not as opposites, but as expressions of the same reality.
+            The believer&apos;s responsibility is therefore not to calculate a private score, but to
+            seek guidance, respond sincerely to what has been given, repent when falling short, and
+            rely upon the mercy of Allah without using it as a substitute for effort.
           </p>
         </section>
 
@@ -385,13 +394,10 @@ export default function DivineJusticeHumanCapacityPage() {
 
           <div className="refs-subtitle">Prophetic Reports</div>
           <ul className="refs-list article-ref-list">
-            <li className="refs-item">Ṣaḥīḥ al-Bukhārī; Ṣaḥīḥ Muslim — narrated from ʿĀʾishah:</li>
-            <li className="refs-item">“Should I not be a grateful servant?”</li>
-          </ul>
-
-          <div className="refs-subtitle">Thematic Note</div>
-          <ul className="refs-list article-ref-list">
-            <li className="refs-item">The phrase “We will increase them in ranks” is retained as a thematic summary of Qur’anic reward language rather than tied to a single verse with full certainty.</li>
+            <li className="refs-item">
+              Ṣaḥīḥ al-Bukhārī and Ṣaḥīḥ Muslim, the report from ʿĀʾishah concerning
+              the Prophet&apos;s night prayer: “Should I not be a grateful servant?”
+            </li>
           </ul>
         </section>
       </article>

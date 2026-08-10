@@ -14,7 +14,7 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
         {"\u0628\u0650\u0633\u0652\u0645\u0650 \u0671\u0644\u0644\u064e\u0651\u0670\u0647\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u0652\u0645\u064e\u0670\u0646\u0650 \u0671\u0644\u0631\u064e\u0651\u062d\u0650\u064a\u0645\u0650"}
       </p>
 
-      <article className="doc-page page-intro-e4 article-page article-page-wide ghurfa-article">
+      <article className="doc-page page-intro-e4 article-page article-page-wide ghurfa-article clean-article">
         <h1 className="doc-title">
           Al-Ghurfa: The Lofty Chambers of Jannah
           <span className="doc-title-sub">
@@ -23,17 +23,33 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           <span className="doc-title-sub">A Study of Surah Al-Furqan (25:63-77)</span>
         </h1>
 
+        <aside className="article-scope-note">
+          This study distinguishes lexical evidence from reflective application. The meanings of
+          <em> ghurfa</em> are grounded in Qur&apos;anic usage and classical lexicography; broader
+          observations about humility, elevation, and social meaning are interpretive readings.
+        </aside>
+
+        <nav className="article-contents" aria-label="Article contents">
+          <p>Contents</p>
+          <ol>
+            <li><a href="#meaning">The meaning of ghurfa</a></li>
+            <li><a href="#qualities">The servants of Ar-Rahman</a></li>
+            <li><a href="#patience">The unifying thread</a></li>
+            <li><a href="#usage">Ghurfa across the Qur&apos;an</a></li>
+          </ol>
+        </nav>
+
         <section>
           <h2 className="doc-section">Introduction</h2>
           <p className="doc-p">
             Among the many descriptions of Jannah in the Qur&apos;an, few are as morally precise and
             character-driven as the passage found at the close of Surah Al-Furqan. In these verses,
             the Qur&apos;an does not merely promise paradise in a general sense. Rather, it describes the
-            kind of human being who is granted its highest station: al-ghurfa.
+            kind of human being who is granted an elevated station: <em>al-ghurfa</em>.
           </p>
           <p className="doc-p">
             The word ghurfa (<span lang="ar" className="arabic-term">{"\u063a\u0631\u0641\u0629"}</span>) refers to a lofty, elevated chamber. In Qur&apos;anic usage, it
-            signifies the highest dwellings of Paradise, a reward given not for lineage, wealth, or
+            signifies lofty dwellings in Paradise, a reward associated not with lineage, wealth, or
             outward status, but for a specific pattern of character embodied across a lifetime.
           </p>
 
@@ -61,43 +77,28 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           </p>
         </section>
 
-        <section>
-          <h2 className="doc-section">The Contextual Meaning of Ghurfa in 7th-Century Arabia</h2>
+        <section id="meaning">
+          <h2 className="doc-section">I. The Meaning and Resonance of Ghurfa</h2>
 
           <h3 className="doc-subsection">The Physical Referent</h3>
           <p className="doc-p">
-            In pre-Islamic and early Islamic Arabic usage, ghurfa referred primarily to an upper
-            chamber built above the main level of a structure. It may be compared loosely to a loft,
-            upper room, or elevated chamber.
+            Classical lexicons define <em>ghurfa</em> as an upper chamber: a room in an upper or
+            uppermost storey. The Qur&apos;anic plurals <em>ghuraf</em> and <em>ghurufat</em> likewise
+            describe high dwellings. Elevation therefore belongs to the word&apos;s established sense,
+            not merely to a later metaphorical reading.
           </p>
           <p className="doc-p">
-            Domestic architecture in Arabia during the seventh century was generally modest and
-            ground-level. Most homes consisted of simple single-level structures. Because of this,
-            the presence of an upper chamber carried distinct social meaning.
-          </p>
-          <p className="doc-p">A ghurfa was typically associated with several ideas:</p>
-          <ul className="article-list">
-            <li>Wealth and status - building upward required greater resources and craftsmanship.</li>
-            <li>Privacy and separation - the upper chamber was removed from the activity below.</li>
-            <li>Security and refuge - elevation meant distance from noise, intrusion, and dust.</li>
-            <li>Honor and hospitality - distinguished guests could be accommodated there.</li>
-          </ul>
-          <p className="doc-p">
-            For the original audience of the Qur&apos;an, therefore, the word ghurfa immediately evoked
-            the image of the honored space within a household, a place reserved for those of
-            distinction.
-          </p>
-          <p className="doc-p">
-            When the Qur&apos;an promises al-ghurfa as a reward, it is not merely describing a room. It
-            is invoking a familiar social symbol of elevation, dignity, and honor.
+            The physical image supplies the passage with a natural contrast between lowliness and
+            elevation. The text promises an elevated dwelling to servants whose first named quality
+            is that they walk upon the earth with humility. Dignity in the hereafter is paired with
+            the refusal to seek worldly elevation through arrogance.
           </p>
 
-          <h3 className="doc-subsection">The Word in Classical Arabic Poetry</h3>
+          <h3 className="doc-subsection">The Root and its Related Qur&apos;anic Senses</h3>
           <p className="doc-p">
-            The root gh-r-f (<span lang="ar" className="arabic-term">{"\u063a \u0631 \u0641"}</span>) appears in pre-Islamic Arabic poetry with several related
-            meanings. The noun ghurfa refers to the elevated chamber itself. However, the verb
-            gharafa means to scoop or draw water with cupped hands, and ghurfa can also refer to a
-            handful of water.
+            The root gh-r-f (<span lang="ar" className="arabic-term">{"\u063a \u0631 \u0641"}</span>)
+            also carries the sense of scooping or drawing. In Qur&apos;an 2:249, <em>ghurfa</em> refers
+            to the amount of water taken in the hollow of a hand:
           </p>
 
           <blockquote className="doc-verse-block">
@@ -107,26 +108,18 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
             <p className="doc-verse-source">Qur&apos;an 2:249</p>
           </blockquote>
 
-          <p className="doc-p">Both senses share a conceptual link: something is lifted upward from below.</p>
-          <ul className="article-list">
-            <li>Water is drawn upward from a well.</li>
-            <li>A chamber is built above the ground.</li>
-            <li>A person is elevated to a higher place.</li>
-          </ul>
           <p className="doc-p">
-            This linguistic relationship adds richness to the Qur&apos;anic expression. The believer, in a
-            sense, is raised upward, drawn from the level of ordinary existence to a higher station.
+            These are established uses of the same root, but the connection between “scooping” and
+            “upper chamber” should not be turned into a certain etymological theology. At most, the
+            shared vocabulary permits a reflective association with taking up or elevation.
           </p>
 
-          <h3 className="doc-subsection">The Social Contrast the First Audience Would Have Felt</h3>
+          <h3 className="doc-subsection">The Passage&apos;s Moral Contrast</h3>
           <p className="doc-p">
-            Arabian society in the seventh century possessed a clear awareness of social
-            stratification, reflected even in architecture. The ground level of a house was associated
-            with daily labor, animals, and ordinary activity. The upper chamber was associated with
-            authority, privacy, and honor.
+            The strongest contrast comes from the passage itself, without requiring a reconstruction
+            of seventh-century domestic life. Those promised <em>al-ghurfa</em> are not introduced
+            through wealth or social power, but as people who:
           </p>
-          <p className="doc-p">Against this background, the Qur&apos;an presents a striking reversal.</p>
-          <p className="doc-p">Those who are promised al-ghurfa are described not as socially powerful individuals, but as people who:</p>
           <ul className="article-list">
             <li>walk humbly on the earth,</li>
             <li>respond to insult with peace,</li>
@@ -134,9 +127,8 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
             <li>exercise restraint and patience.</li>
           </ul>
           <p className="doc-p">
-            The rhetorical force of the passage would have been immediately understood. Those who
-            lower themselves in humility in this world are raised to the highest chambers in the next.
-            Humility in life becomes elevation in eternity.
+            The moral movement is clear: humility in worldly conduct is answered by elevation in
+            the hereafter.
           </p>
 
           <h3 className="doc-subsection">Distinction from Other Qur&apos;anic Terms for Dwelling</h3>
@@ -151,18 +143,19 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
             <li><strong>Ghurfa (<span lang="ar" className="arabic-term">{"\u063a\u0631\u0641\u0629"}</span>)</strong> - A specific elevated chamber, intimate, distinguished, and high above the rest.</li>
           </ul>
           <p className="doc-p">
-            The word ghurfa therefore emphasizes height, honor, and selectivity, rather than merely
-            size or luxury.
+            <em>Ghurfa</em> therefore emphasizes an elevated dwelling. In the setting of reward,
+            elevation also conveys honor; claims beyond that should remain interpretive rather than
+            lexical.
           </p>
         </section>
 
-        <section>
-          <h2 className="doc-section">The Qualities of the Servants of Ar-Rahman</h2>
+        <section id="qualities">
+          <h2 className="doc-section">II. The Qualities of the Servants of Ar-Rahman</h2>
           <p className="doc-p">
             Surah Al-Furqan then describes the people who will receive this reward. The passage
             outlines a series of moral characteristics that together form a portrait of the &apos;Ibad
-            al-Rahman. Scholars of tafsir have identified between ten and thirteen qualities within
-            these verses.
+            al-Rahman. The number varies according to whether closely related descriptions are
+            counted separately; the sequence matters more than a fixed total.
           </p>
 
           <h3 className="doc-subsection">1. Humility in Walk (25:63)</h3>
@@ -251,8 +244,8 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           </p>
         </section>
 
-        <section>
-          <h2 className="doc-section">The Unifying Thread: Patience</h2>
+        <section id="patience">
+          <h2 className="doc-section">III. The Unifying Thread: Patience</h2>
           <blockquote className="doc-verse-block">
             <p className="doc-verse-translation">
               {"\u201cThey will be rewarded with the ghurfa because of their patience.\u201d"}
@@ -275,8 +268,8 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           </p>
         </section>
 
-        <section>
-          <h2 className="doc-section">A Note on the Word Ghurfa in the Qur&apos;an</h2>
+        <section id="usage">
+          <h2 className="doc-section">IV. Ghurfa Across the Qur&apos;an</h2>
           <p className="doc-p">The term appears in multiple forms in the Qur&apos;an.</p>
           <p className="doc-p">
             In Surah Al-Furqan (25:75) it appears in the singular form, al-ghurfa, suggesting a
@@ -315,12 +308,11 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
             character across a lifetime.
           </p>
           <p className="doc-p">
-            In the society in which the Qur&apos;an was first revealed, the ghurfa represented the
-            elevated chamber of honor within a household. The Qur&apos;an takes this familiar image and
-            projects it onto eternity.
+            The word <em>ghurfa</em> names an upper chamber, and the Qur&apos;an carries that image of
+            elevation into its description of eternal reward.
           </p>
           <p className="doc-p">
-            Those who lower themselves in humility in this world are raised to the highest chamber
+            Those who lower themselves in humility in this world are raised to a lofty chamber
             in the next. The ghurfa is the dwelling of the honored, reserved for those who lived
             their lives in quiet, steadfast devotion to their{" "}
             <Link href="/lexicon/rabb" className="doc-link">
@@ -353,6 +345,12 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
             <li className="refs-item">Al-Baghawi, Ma&apos;alim al-Tanzil</li>
           </ul>
 
+          <div className="refs-subtitle">Language References</div>
+          <ul className="refs-list article-ref-list">
+            <li className="refs-item">Edward William Lane, <em>Arabic-English Lexicon</em>, root gh-r-f.</li>
+            <li className="refs-item">Quranic Arabic Corpus, Qur&apos;anic Dictionary, root gh-r-f.</li>
+          </ul>
+
           <div className="refs-subtitle">Works on Jannah and the Afterlife</div>
           <ul className="refs-list article-ref-list">
             <li className="refs-item">Ibn al-Qayyim, Hadi al-Arwah ila Bilad al-Afrah</li>
@@ -360,10 +358,8 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
             <li className="refs-item">Al-Suyuti, Al-Budur al-Safira fi Umur al-Akhira</li>
           </ul>
 
-          <div className="refs-subtitle">Contemporary and Accessible Works</div>
+          <div className="refs-subtitle">Modern Translation and Commentary</div>
           <ul className="refs-list article-ref-list">
-            <li className="refs-item">Nouman Ali Khan, lectures on Surah Al-Furqan</li>
-            <li className="refs-item">Yasir Qadhi, lectures on tafsir of Al-Furqan and descriptions of Jannah</li>
             <li className="refs-item">Muhammad Asad, The Message of the Qur&apos;an</li>
           </ul>
         </section>
