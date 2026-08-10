@@ -65,7 +65,6 @@ export default function DivineJusticeHumanCapacityPage() {
             those who have not yet recognised their Creator:
           </p>
 
-          <h3 className="doc-subsection">Qur&apos;anic Citations</h3>
           <blockquote className="doc-verse-block text-center">
             <p className="ayah ayah-ar quran-arabic doc-verse-arabic text-center" lang="ar">
               أَفَلَا يَنظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ وَإِلَى السَّمَاءِ كَيْفَ رُفِعَتْ
@@ -124,7 +123,6 @@ export default function DivineJusticeHumanCapacityPage() {
             The Quran&apos;s principle applies directly here:
           </p>
 
-          <h3 className="doc-subsection">Qur&apos;anic Citation</h3>
           <blockquote className="doc-verse-block text-center">
             <p className="ayah ayah-ar quran-arabic doc-verse-arabic text-center" lang="ar">
               لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا
@@ -182,7 +180,6 @@ export default function DivineJusticeHumanCapacityPage() {
             identical because no two human beings have identical endowments and situations.
           </p>
 
-          <h3 className="doc-subsection">Qur&apos;anic Citations</h3>
           <blockquote className="doc-verse-block text-center">
             <p className="ayah ayah-ar quran-arabic doc-verse-arabic text-center" lang="ar">
               قُلْ هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ وَالَّذِينَ لَا يَعْلَمُونَ
@@ -229,7 +226,6 @@ export default function DivineJusticeHumanCapacityPage() {
             achieved, but what was genuinely attempted:
           </p>
 
-          <h3 className="doc-subsection">Qur&apos;anic Citations</h3>
           <blockquote className="doc-verse-block text-center">
             <p className="ayah ayah-ar quran-arabic doc-verse-arabic text-center" lang="ar">
               وَأَنْ لَيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَى
@@ -279,7 +275,6 @@ export default function DivineJusticeHumanCapacityPage() {
             times daily &mdash; is not a request for arrival:
           </p>
 
-          <h3 className="doc-subsection">Qur&apos;anic Citations</h3>
           <blockquote className="doc-verse-block text-center">
             <p className="ayah ayah-ar quran-arabic doc-verse-arabic text-center" lang="ar">
               اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ
