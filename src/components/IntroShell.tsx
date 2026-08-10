@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 type IntroPhase = "playing" | "revealing" | "done";
 
@@ -12,27 +13,30 @@ const INTRO_TIMING = {
 };
 
 export function IntroShell({ children }: { children: ReactNode }) {
-  const [phase, setPhase] = useState<IntroPhase>("playing");
+  const pathname = usePathname();
+  const [phase, setPhase] = useState<IntroPhase>("done");
   const wordmarkRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    const shouldPlay =
+      pathname === "/" && window.sessionStorage.getItem("basair_intro_seen") !== "1";
+
+    if (!shouldPlay) return;
+    window.sessionStorage.setItem("basair_intro_seen", "1");
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     let revealTimer: ReturnType<typeof setTimeout> | null = null;
     let doneTimer: ReturnType<typeof setTimeout> | null = null;
     let raf: number | null = null;
+    let animationRaf: number | null = null;
 
     if (prefersReduced) {
-      raf = requestAnimationFrame(() => {
-        setPhase("done");
-      });
-
-      return () => {
-        if (raf !== null) cancelAnimationFrame(raf);
-      };
+      return;
     }
 
     raf = requestAnimationFrame(() => {
+      setPhase("playing");
+      animationRaf = requestAnimationFrame(() => {
       const logoTarget = document.querySelector<HTMLElement>("[data-intro-logo]");
       const wordmark = wordmarkRef.current;
 
@@ -80,14 +84,16 @@ export function IntroShell({ children }: { children: ReactNode }) {
       doneTimer = setTimeout(() => {
         setPhase("done");
       }, INTRO_TIMING.total);
+      });
     });
 
     return () => {
       if (raf !== null) cancelAnimationFrame(raf);
+      if (animationRaf !== null) cancelAnimationFrame(animationRaf);
       if (revealTimer) clearTimeout(revealTimer);
       if (doneTimer) clearTimeout(doneTimer);
     };
-  }, []);
+  }, [pathname]);
 
   const showIntro = phase !== "done";
 

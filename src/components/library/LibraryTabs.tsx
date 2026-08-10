@@ -1,328 +1,123 @@
-﻿'use client';
+"use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
-type TabId = "A" | "B" | "C";
-const LIBRARY_TAB_KEY = "basair_library_tab";
-
-const SURAH_AL_FATIHAH_AR =
-  "\u0633\u064f\u0648\u0631\u064e\u0629\u064f \u0671\u0644\u0652\u0641\u064e\u0627\u062a\u0650\u062d\u064e\u0629\u0650";
-const SURAH_AR_RAHMAN_AR =
-  "\u0633\u064f\u0648\u0631\u064e\u0629\u064f \u0671\u0644\u0631\u064e\u0651\u062d\u0652\u0645\u064e\u0670\u0646\u0650";
-const ALAYHI_AL_SALAM_AR =
-  "\u0639\u064e\u0644\u064e\u064a\u0652\u0647\u0650 \u0671\u0644\u0633\u064e\u0651\u0644\u064e\u0627\u0645\u064f";
-const RABB_AR = "\u0631\u064e\u0628\u0651";
-const AR_RAHMAN_AR = "\u0671\u0644\u0631\u064e\u0651\u062d\u0652\u0645\u064e\u0670\u0646\u0650";
-const AR_RAHEEM_AR = "\u0671\u0644\u0631\u064e\u0651\u062d\u0650\u064a\u0645";
-const ALHAMDU_LILLAH_AR = "\u0627\u0644\u062d\u0645\u062f\u064f \u0644\u0644\u0647\u0650";
-
-function getInitialTab(): TabId {
-  if (typeof window === "undefined") return "A";
-  const stored = window.localStorage.getItem(LIBRARY_TAB_KEY);
-  return stored === "A" || stored === "B" || stored === "C" ? stored : "A";
-}
-
-interface LibraryItem {
+type LibraryItem = {
   href: string;
-  label: React.ReactNode;
-  search: string;
-}
+  title: string;
+  description: string;
+  meta?: string;
+  arabic?: string;
+};
 
-const quranStudiesItems: LibraryItem[] = [
-  {
-    href: "/quranStudies/001alFatihah",
-    label: (
-      <>
-        1. Al-Fatihah&emsp;
-        <span className="arabic">{SURAH_AL_FATIHAH_AR}</span>
-      </>
-    ),
-    search: "1. Al-Fatihah",
-  },
-  {
-    href: "/quranStudies/055arRahman",
-    label: (
-      <>
-        55. Ar-Rahman&emsp;
-        <span className="arabic">{SURAH_AR_RAHMAN_AR}</span>
-      </>
-    ),
-    search: "55. Ar-Rahman",
-  },
-];
+type Collection = {
+  id: string;
+  number: string;
+  title: string;
+  description: string;
+  items: LibraryItem[];
+};
 
-const beyondQuranItems: LibraryItem[] = [
+const collections: Collection[] = [
   {
-    href: "/beyondQuran/divineJusticeHumanCapacity",
-    label: <>Divine Justice, Human Capacity, and the Path to Allah</>,
-    search: "Divine Justice Human Capacity Path to Allah accountability salvation examination",
+    id: "quran-studies",
+    number: "01",
+    title: "Qurʾān Studies",
+    description: "Close readings of individual sūrahs, language, structure, and meaning.",
+    items: [
+      { href: "/quranStudies/001alFatihah", title: "Al-Fātiḥah", arabic: "سُورَةُ ٱلْفَاتِحَةِ", meta: "Sūrah 1", description: "The opening, its grammar, divine names, praise, and prayer." },
+      { href: "/quranStudies/055arRahman", title: "Ar-Raḥmān", arabic: "سُورَةُ ٱلرَّحْمَٰنِ", meta: "Sūrah 55", description: "A study of mercy, balance, signs, and the repeated question of gratitude." },
+    ],
   },
   {
-    href: "/beyondQuran/quranAsSufficientProof",
-    label: <>Quran as Sufficient Proof</>,
-    search: "Quran as Sufficient Proof",
+    id: "beyond-quran",
+    number: "02",
+    title: "Beyond the Qurʾān",
+    description: "Essays in theology, intellectual history, scholarship, and the life of ideas.",
+    items: [
+      { href: "/beyondQuran/divineJusticeHumanCapacity", title: "Divine Justice, Human Capacity, and the Path to Allah", meta: "Theology", description: "Accountability, capacity, revelation, and the reach of divine mercy." },
+      { href: "/beyondQuran/quranAsSufficientProof", title: "The Qurʾān as Sufficient Proof", meta: "Revelation", description: "Divine signs, miracle-demands, moral agency, and enduring proof." },
+      { href: "/beyondQuran/fromMusatoRome", title: "From Mūsā to Rome", meta: "History", description: "A historical outline following communities, empires, and transmission." },
+      { href: "/beyondQuran/alGhurfaHighestChambersOfJannah", title: "Al-Ghurfa: The Lofty Chambers of Jannah", meta: "Eschatology", description: "The Qurʾānic image of the lofty chamber and the lives associated with it." },
+      { href: "/beyondQuran/scholars-of-islam", title: "Scholars of Islam", meta: "Reference", description: "A chronological, cross-traditional guide with selected teacher–student relations." },
+      { href: "/beyondQuran/imams", title: "The Four Great Imams", meta: "Legal history", description: "Formation, method, relationships, and the survival of the Sunni legal schools." },
+      { href: "/beyondQuran/docs/predestination.pdf", title: "Understanding Qadr: Predestination", meta: "PDF", description: "A document-length introduction to divine decree and human responsibility." },
+    ],
   },
   {
-    href: "/beyondQuran/fromMusatoRome",
-    label: (
-      <>
-        From Musa
-        <span className="amiri" style={{ fontSize: "0.6em" }}>
-          {" "}
-          ({ALAYHI_AL_SALAM_AR})
-        </span>{" "}
-        to Rome: A Historical Outline
-      </>
-    ),
-    search: "From Musa to Rome: A Historical Outline",
-  },
-  {
-    href: "/beyondQuran/alGhurfaHighestChambersOfJannah",
-    label: <>Al-Ghurfa: the highest chambers of Jannah</>,
-    search: "Al-Ghurfa: the highest chambers of Jannah",
-  },
-  {
-    href: "/beyondQuran/scholars-of-islam",
-    label: <>Scholars of Islam</>,
-    search: "Scholars of Islam",
-  },
-  {
-    href: "/beyondQuran/imams",
-    label: <>The Four Great Imams</>,
-    search: "The Four Great Imams Sunni legal traditions madhhabs jurisprudence",
-  },
-  {
-    href: "/beyondQuran/docs/predestination.pdf",
-    label: <>Understanding Qadr: Predestination</>,
-    search: "Understanding Qadr: Predestination",
-  },
-];
-
-const lexiconItems: LibraryItem[] = [
-  {
-    href: "/lexicon/rabb",
-    label: (
-      <>
-        Rabb <span className="arabic">{RABB_AR}</span>
-      </>
-    ),
-    search: "Rabb",
-  },
-  {
-    href: "/lexicon/arRahman",
-    label: (
-      <>
-        Ar-Rahman <span className="arabic">{AR_RAHMAN_AR}</span>
-      </>
-    ),
-    search: "ar Rahman",
-  },
-  {
-    href: "/lexicon/arRaheem",
-    label: (
-      <>
-        Ar-Raheem <span className="arabic">{AR_RAHEEM_AR}</span>
-      </>
-    ),
-    search: "ar Raheem",
-  },
-  {
-    href: "/lexicon/alhumdulillah",
-    label: (
-      <>
-        Alhamdu lillah <span className="arabic">{ALHAMDU_LILLAH_AR}</span>
-      </>
-    ),
-    search: "alhamdu lillah",
+    id: "lexicon",
+    number: "03",
+    title: "Lexicon",
+    description: "Key Qurʾānic words studied through roots, usage, grammar, and theological resonance.",
+    items: [
+      { href: "/lexicon/rabb", title: "Rabb", arabic: "رَبّ", description: "Lordship, nurture, mastery, and care." },
+      { href: "/lexicon/arRahman", title: "Ar-Raḥmān", arabic: "ٱلرَّحْمَٰنِ", description: "The divine name of encompassing mercy." },
+      { href: "/lexicon/arRaheem", title: "Ar-Raḥīm", arabic: "ٱلرَّحِيم", description: "The divine name of continuous and particular mercy." },
+      { href: "/lexicon/alhumdulillah", title: "Al-ḥamdu lillāh", arabic: "ٱلْحَمْدُ لِلَّٰهِ", description: "Praise, gratitude, and the grammar of belonging." },
+    ],
   },
 ];
 
 export function LibraryTabs() {
-  const [activeTab, setActiveTab] = useState<TabId>(getInitialTab);
-  const [searchA, setSearchA] = useState("");
-  const [searchB, setSearchB] = useState("");
-  const [searchC, setSearchC] = useState("");
-
-  useEffect(() => {
-    window.localStorage.setItem(LIBRARY_TAB_KEY, activeTab);
-  }, [activeTab]);
-
-  const filteredA = useFilteredItems(quranStudiesItems, searchA);
-  const filteredB = useFilteredItems(beyondQuranItems, searchB);
-  const filteredC = useFilteredItems(lexiconItems, searchC);
+  const [query, setQuery] = useState("");
+  const [activeCollection, setActiveCollection] = useState("quran-studies");
+  const normalized = query.trim().toLocaleLowerCase();
+  const collection = collections.find((item) => item.id === activeCollection) ?? collections[0];
+  const visibleItems = useMemo(() => normalized ? collection.items.filter((item) =>
+      `${item.title} ${item.description} ${item.meta ?? ""}`.toLocaleLowerCase().includes(normalized)
+    ) : collection.items, [collection, normalized]);
 
   return (
-    <>
-      <ul className="nav nav-tabs library-tabs" id="topicTabs" role="tablist">
-        <li className="nav-item" role="presentation">
+    <section className="editorial-library" aria-label="Library collections">
+      <div className="library-category-tabs" role="tablist" aria-label="Library sections">
+        {collections.map((item) => (
           <button
             type="button"
-            className={`nav-link ${activeTab === "A" ? "active" : ""}`}
-            id="tab-a-btn"
             role="tab"
-            aria-controls="tab-a"
-            aria-selected={activeTab === "A"}
-            onClick={() => setActiveTab("A")}
+            aria-selected={activeCollection === item.id}
+            aria-controls="library-active-panel"
+            className={activeCollection === item.id ? "is-active" : ""}
+            key={item.id}
+            onClick={() => { setActiveCollection(item.id); setQuery(""); }}
           >
-            Qur&apos;an Studies
+            {item.title}
           </button>
-        </li>
-        <li className="nav-item" role="presentation">
-          <button
-            type="button"
-            className={`nav-link ${activeTab === "B" ? "active" : ""}`}
-            id="tab-b-btn"
-            role="tab"
-            aria-controls="tab-b"
-            aria-selected={activeTab === "B"}
-            onClick={() => setActiveTab("B")}
-          >
-            Beyond the Qur&apos;an
-          </button>
-        </li>
-        <li className="nav-item" role="presentation">
-          <button
-            type="button"
-            className={`nav-link ${activeTab === "C" ? "active" : ""}`}
-            id="tab-c-btn"
-            role="tab"
-            aria-controls="tab-c"
-            aria-selected={activeTab === "C"}
-            onClick={() => setActiveTab("C")}
-          >
-            Lexicon
-          </button>
-        </li>
-      </ul>
-
-      <div className="tab-content library-panel" id="topicTabsContent">
-        {activeTab === "A" && (
-          <div
-            className="tab-pane fade show active library-pane"
-            id="tab-a"
-            role="tabpanel"
-            aria-labelledby="tab-a-btn"
-          >
-            <SearchRow
-              inputId="searchA"
-              placeholder="Search Qur&apos;an Studies..."
-              value={searchA}
-              onChange={setSearchA}
-            />
-            <ItemList items={filteredA} emptyText="No results found." />
-          </div>
-        )}
-
-        {activeTab === "B" && (
-          <div
-            className="tab-pane fade show active library-pane"
-            id="tab-b"
-            role="tabpanel"
-            aria-labelledby="tab-b-btn"
-          >
-            <SearchRow
-              inputId="searchB"
-              placeholder="Search Beyond the Qur&apos;an..."
-              value={searchB}
-              onChange={setSearchB}
-            />
-            <ItemList items={filteredB} emptyText="No results found." />
-          </div>
-        )}
-
-        {activeTab === "C" && (
-          <div
-            className="tab-pane fade show active library-pane"
-            id="tab-c"
-            role="tabpanel"
-            aria-labelledby="tab-c-btn"
-          >
-            <SearchRow
-              inputId="searchC"
-              placeholder="Search Lexicon..."
-              value={searchC}
-              onChange={setSearchC}
-            />
-            <ItemList items={filteredC} emptyText="No results found." />
-          </div>
-        )}
+        ))}
       </div>
-    </>
+
+      <div className="library-search-bar">
+        <label htmlFor="library-search">Search the library</label>
+        <div className="library-search-control">
+          <span aria-hidden="true">⌕</span>
+          <input id="library-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search titles, subjects, and themes" />
+          {query && <button type="button" onClick={() => setQuery("")}>Clear</button>}
+        </div>
+      </div>
+
+      <section className="library-collection is-open" id="library-active-panel" role="tabpanel">
+        <header className="collection-header">
+          <div><h2>{collection.title}</h2><p>{collection.description}</p></div>
+        </header>
+
+        {visibleItems.length === 0 ? (
+          <p className="library-empty">No entries match “{query}”.</p>
+        ) : (
+          <div className="collection-list">
+            {visibleItems.map((item) => (
+              <Link className="collection-entry" href={item.href} key={item.href}>
+                <div className="entry-meta">{item.meta ?? collection.title}</div>
+                <div className="entry-main">
+                  <h3>{item.title}</h3>
+                  {item.arabic && <span className="entry-arabic" lang="ar">{item.arabic}</span>}
+                </div>
+                <p>{item.description}</p>
+                <span className="entry-arrow" aria-hidden="true">↗</span>
+              </Link>
+            ))}
+          </div>
+        )}
+      </section>
+    </section>
   );
 }
-
-function useFilteredItems(items: LibraryItem[], query: string) {
-  const q = query.trim().toLowerCase();
-
-  return useMemo(() => {
-    if (!q) return items;
-    return items.filter((item) => item.search.toLowerCase().includes(q));
-  }, [items, q]);
-}
-
-interface SearchRowProps {
-  inputId: string;
-  placeholder: string;
-  value: string;
-  onChange: (value: string) => void;
-}
-
-function SearchRow({
-  inputId,
-  placeholder,
-  value,
-  onChange,
-}: SearchRowProps) {
-  const handleClear = () => onChange("");
-
-  return (
-    <div className="search-row mb-3">
-      <label className="sr-only" htmlFor={inputId}>
-        {placeholder}
-      </label>
-      <input
-        id={inputId}
-        className="form-control search-input"
-        type="search"
-        placeholder={placeholder}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-      />
-      <button
-        type="button"
-        className="btn btn-outline-secondary search-clear"
-        onClick={handleClear}
-      >
-        Clear
-      </button>
-    </div>
-  );
-}
-
-interface ItemListProps {
-  items: LibraryItem[];
-  emptyText: string;
-}
-
-function ItemList({ items, emptyText }: ItemListProps) {
-  if (items.length === 0) {
-    return <p className="small text-body-secondary mt-3">{emptyText}</p>;
-  }
-
-  return (
-    <ul className="list-group library-results">
-      {items.map((item) => (
-        <li key={item.href} className="list-group-item library-item">
-          <Link href={item.href} className="library-item-link">
-            {item.label}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-
-
-

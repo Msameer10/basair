@@ -2,13 +2,16 @@ import { LibraryTabs } from "../components/library/LibraryTabs";
 
 export default function HomePage() {
   return (
-    <section className="content-narrow mx-auto mt-4 list-container home-library">
-      <h1 className="h4 mb-4 home-library-title" id="library">
-        Library
-      </h1>
-      <div className="library-shell">
-        <LibraryTabs />
-      </div>
-    </section>
+    <div className="home-page">
+      <section className="library-hero" aria-labelledby="library-title">
+        <p className="library-eyebrow">A growing library of study and reflection</p>
+        <h1 id="library-title">Reading revelation with care.</h1>
+        <p className="library-intro">
+          Qurʾānic studies, theological essays, and a developing lexicon—written
+          for thoughtful reading, patient inquiry, and return.
+        </p>
+      </section>
+      <LibraryTabs />
+    </div>
   );
 }
