@@ -96,10 +96,6 @@ export function LibraryTabs() {
       </div>
 
       <section className="library-collection is-open" id="library-active-panel" role="tabpanel">
-        <header className="collection-header">
-          <div><h2>{collection.title}</h2><p>{collection.description}</p></div>
-        </header>
-
         {visibleItems.length === 0 ? (
           <p className="library-empty">No entries match “{query}”.</p>
         ) : (
@@ -112,7 +108,6 @@ export function LibraryTabs() {
                   {item.arabic && <span className="entry-arabic" lang="ar">{item.arabic}</span>}
                 </div>
                 <p>{item.description}</p>
-                <span className="entry-arrow" aria-hidden="true">↗</span>
               </Link>
             ))}
           </div>
