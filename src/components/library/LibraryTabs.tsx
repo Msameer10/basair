@@ -42,7 +42,7 @@ const collections: Collection[] = [
       { href: "/beyondQuran/alGhurfaHighestChambersOfJannah", title: "Al-Ghurfa: The Lofty Chambers of Jannah", meta: "Eschatology", description: "The Qurʾānic image of the lofty chamber and the lives associated with it." },
       { href: "/beyondQuran/scholars-of-islam", title: "Scholars of Islam", meta: "Reference", description: "A chronological, cross-traditional guide with selected teacher–student relations." },
       { href: "/beyondQuran/imams", title: "The Four Great Imams", meta: "Legal history", description: "Formation, method, relationships, and the survival of the Sunni legal schools." },
-      { href: "/beyondQuran/docs/predestination.pdf", title: "Understanding Qadr: Predestination", meta: "PDF", description: "A document-length introduction to divine decree and human responsibility." },
+      { href: "/beyondQuran/predestination", title: "The Paradox of Knowing: Predestination and Human Choice", meta: "Theology", description: "Divine foreknowledge, human agency, and why life must still be lived." },
     ],
   },
   {

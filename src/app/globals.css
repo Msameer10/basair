@@ -2901,8 +2901,8 @@ body {
 .home-page { width: min(100%, 1120px); margin: 0 auto; }
 
 .library-hero {
-  max-width: 680px;
-  padding: clamp(2.6rem, 5vw, 4.5rem) 0 clamp(2.4rem, 4vw, 3.5rem);
+  max-width: 780px;
+  padding: clamp(1.9rem, 3.5vw, 3rem) 0 clamp(1.8rem, 3vw, 2.6rem);
 }
 
 .library-eyebrow,
@@ -2918,21 +2918,21 @@ body {
 
 .library-hero h1 {
   max-width: 620px;
-  margin: 0.45rem 0 0.8rem;
+  margin: 0.35rem 0 0.65rem;
   color: var(--bs-heading-color);
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(2.15rem, 4vw, 3.25rem);
+  font-size: clamp(1.8rem, 2.7vw, 2.35rem);
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.02;
 }
 
 .library-intro {
-  max-width: 610px;
+  max-width: 760px;
   margin: 0;
   color: var(--doc-muted);
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 0.96rem;
+  line-height: 1.68;
 }
 
 .editorial-library { border-top: 1px solid var(--bs-border-color); }
@@ -3044,7 +3044,7 @@ body {
   .site-header .container { padding-left: 1.25rem; padding-right: 1.25rem; }
   #site-nav-links { padding: 0.8rem 0 0.4rem; border-top: 1px solid var(--bs-border-color); }
   .header-link { padding-left: 0; }
-  .library-hero { padding-top: 4.5rem; }
+  .library-hero { padding-top: 2.5rem; }
   .library-search-bar { grid-template-columns: 1fr; gap: 0.55rem; }
   .library-category-tabs button { padding: 0.95rem 0.25rem; font-size: 0.72rem; }
   .collection-list { margin-left: 0; }

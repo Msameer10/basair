@@ -7,8 +7,11 @@ export default function HomePage() {
         <p className="library-eyebrow">A growing library of study and reflection</p>
         <h1 id="library-title">Reading revelation with care.</h1>
         <p className="library-intro">
-          Qurʾānic studies, theological essays, and a developing lexicon—written
-          for thoughtful reading, patient inquiry, and return.
+          Basaʾir is a personal, evolving research space for careful inquiry
+          into Islam and its intellectual tradition. It brings Qurʾānic themes,
+          language, history, theology, and law into conversation—treating each
+          entry as part of an unfinished process of reading, reflection, and
+          revision rather than a final judgment.
         </p>
       </section>
       <LibraryTabs />

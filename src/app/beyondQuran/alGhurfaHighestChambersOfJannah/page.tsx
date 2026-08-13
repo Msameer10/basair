@@ -362,6 +362,34 @@ export default function AlGhurfaHighestChambersOfJannahPage() {
           <ul className="refs-list article-ref-list">
             <li className="refs-item">Muhammad Asad, The Message of the Qur&apos;an</li>
           </ul>
+
+          <div className="refs-subtitle">Video Lectures</div>
+          <ul className="refs-list article-ref-list">
+            <li className="refs-item">
+              Yasir Qadhi, {" "}
+              <a
+                href="https://www.youtube.com/watch?v=ypxk_7BuQTk"
+                className="doc-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                “The Palaces, Tents &amp; Mansions of Jannah”
+              </a>
+              , <em>The Descriptions of Jannah</em>, episode 9.
+            </li>
+            <li className="refs-item">
+              Yasir Qadhi, {" "}
+              <a
+                href="https://www.oneislam.tv/the-descriptions-of-jannah"
+                className="doc-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <em>The Descriptions of Jannah</em> video series
+              </a>
+              , 12 episodes.
+            </li>
+          </ul>
         </section>
       </article>
     </div>
