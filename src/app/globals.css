@@ -635,46 +635,71 @@ footer:not(.site-footer) {
    Beyond the Qur'an: "From Musa to Rome"
 ---------------------------------------- */
 
-.timeline-list {
-  font-size: 1.1em;
-  padding: 0 2em;
-  font-family: "Noto Serif", "Times New Roman", serif;
+.musa-page { --timeline-accent: #6c54e8; max-width: 1120px; margin: 0 auto; padding: 0 2rem 5rem; }
+.musa-hero { min-height: min(760px, 83vh); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 5rem 1rem 4rem; text-align: center; }
+.musa-hero .basmalah { margin: 0 0 2.5rem; color: var(--basair-theme); font-size: 1.35rem; }
+.musa-kicker, .musa-era { margin: 0; color: var(--timeline-accent); font-family: "Inter", sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.musa-hero h1 { max-width: 900px; margin: .8rem 0 1.25rem; font-family: "Cormorant", Georgia, serif; font-size: clamp(1.35rem, 3vw, 2.5rem); font-weight: 500; line-height: 1; letter-spacing: -.035em; }
+.musa-hero h1 .amiri { display: inline-block; font-size: .24em; font-weight: 400; letter-spacing: 0; vertical-align: middle; }
+.musa-deck { max-width: 590px; margin: 0; color: color-mix(in srgb, var(--bs-body-color) 68%, transparent); font-size: clamp(1rem, 2vw, 1.2rem); }
+.musa-scroll-cue { display: flex; flex-direction: column; gap: .3rem; align-items: center; margin-top: 3rem; color: inherit; font-family: "Inter", sans-serif; font-size: .68rem; letter-spacing: .12em; text-decoration: none; text-transform: uppercase; }
+.musa-scroll-cue b { color: var(--timeline-accent); font-size: 1.15rem; animation: musa-drift 1.9s ease-in-out infinite; }
+
+.musa-timeline { position: relative; max-width: 940px; margin: 0 auto; padding: 5rem 0 3rem; }
+.musa-line { position: absolute; z-index: 0; top: 5rem; bottom: 3rem; left: 50%; width: 2px; overflow: hidden; background: color-mix(in srgb, var(--bs-body-color) 13%, transparent); transform: translateX(-50%); }
+.musa-line i { display: block; width: 100%; height: var(--timeline-progress); background: linear-gradient(#9e8fff, var(--timeline-accent)); transition: height .65s cubic-bezier(.22,.7,.25,1); }
+.musa-moment { position: relative; display: grid; grid-template-columns: 1fr 5.5rem 1fr; min-height: 58vh; padding-bottom: 5rem; opacity: .32; transition: opacity .5s ease; }
+.musa-moment.is-active, .musa-moment.is-past { opacity: 1; }
+.musa-moment:nth-of-type(even) .musa-content { grid-column: 1; text-align: right; transform: translateX(-16px); }
+.musa-moment:nth-of-type(even) .musa-visual { grid-column: 3; transform: translateX(16px); }
+.musa-moment:nth-of-type(odd) .musa-content { grid-column: 3; transform: translateX(16px); }
+.musa-moment:nth-of-type(odd) .musa-visual { grid-column: 1; transform: translateX(-16px); }
+.musa-moment.is-active .musa-content, .musa-moment.is-past .musa-content,
+.musa-moment.is-active .musa-visual, .musa-moment.is-past .musa-visual { transform: none; }
+.musa-content, .musa-visual { grid-row: 1; align-self: start; transition: transform .65s cubic-bezier(.2,.75,.2,1); }
+.musa-point { position: sticky; z-index: 2; top: 48vh; grid-column: 2; grid-row: 1; display: flex; align-self: start; justify-content: center; height: 2.75rem; }
+.musa-point span { display: grid; place-items: center; width: 2.55rem; height: 2.55rem; border: 2px solid color-mix(in srgb, var(--bs-body-color) 22%, transparent); border-radius: 50%; background: var(--bs-body-bg); color: color-mix(in srgb, var(--bs-body-color) 42%, transparent); font-family: "Inter", sans-serif; font-size: .65rem; font-weight: 750; box-shadow: 0 0 0 8px var(--bs-body-bg); transition: border-color .35s ease, background-color .35s ease, color .35s ease, transform .35s ease; }
+.musa-moment.is-past .musa-point span { border-color: var(--timeline-accent); color: var(--timeline-accent); }
+.musa-moment.is-active .musa-point span { border-color: var(--timeline-accent); background: var(--timeline-accent); color: white; transform: scale(1.15); box-shadow: 0 0 0 8px var(--bs-body-bg), 0 0 0 10px color-mix(in srgb, var(--timeline-accent) 18%, transparent); }
+.musa-content h2 { margin: .35rem 0 .8rem; font-family: "Cormorant", Georgia, serif; font-size: clamp(2.15rem, 4.3vw, 3.4rem); font-weight: 600; line-height: 1; letter-spacing: -.025em; }
+.musa-content > p:not(.musa-era) { margin: .45rem 0; color: color-mix(in srgb, var(--bs-body-color) 78%, transparent); line-height: 1.75; }
+.musa-visual { margin: 0; overflow: hidden; border: 1px solid var(--ui-panel-border); border-radius: 5px; background: var(--ui-panel-bg); box-shadow: var(--ui-panel-shadow); text-align: left; }
+.musa-image-button { position: relative; display: block; width: 100%; padding: 0; overflow: hidden; border: 0; background: none; color: white; cursor: zoom-in; }
+.musa-image-button img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: saturate(.76) contrast(1.03); transition: filter .5s ease, transform .7s ease; }
+.musa-image-button > span { position: absolute; right: .7rem; bottom: .7rem; padding: .35rem .55rem; border: 1px solid rgba(255,255,255,.32); border-radius: 999px; background: rgba(0,0,0,.68); font-family: "Inter", sans-serif; font-size: .62rem; letter-spacing: .06em; opacity: 0; transform: translateY(4px); transition: opacity .25s ease, transform .25s ease; }
+.musa-image-button:hover img, .musa-image-button:focus-visible img { filter: saturate(1); transform: scale(1.018); }
+.musa-image-button:hover > span, .musa-image-button:focus-visible > span { opacity: 1; transform: none; }
+.musa-image-button:focus-visible { outline: 3px solid var(--timeline-accent); outline-offset: -3px; }
+.musa-visual figcaption { display: flex; flex-direction: column; gap: .2rem; padding: .65rem .8rem; color: color-mix(in srgb, var(--bs-body-color) 60%, transparent); font-family: "Inter", sans-serif; font-size: .68rem; line-height: 1.45; }
+.musa-visual figcaption a { width: fit-content; color: var(--timeline-accent); font-size: .62rem; text-underline-offset: .15em; }
+.musa-footer { max-width: 940px; margin: 0 auto; padding: 2.5rem 0; border-top: 1px solid var(--ui-panel-border); text-align: center; }
+.musa-footer p { margin: 0 0 .8rem; color: color-mix(in srgb, var(--bs-body-color) 50%, transparent); font-family: "Inter", sans-serif; font-size: .68rem; letter-spacing: .15em; text-transform: uppercase; }
+.musa-footer a { color: var(--timeline-accent); font-weight: 650; text-underline-offset: .22em; }
+.musa-lightbox { position: fixed; z-index: 1100; inset: 0; display: grid; place-items: center; padding: 4.5rem 2rem 2rem; background: rgba(0,0,0,.91); backdrop-filter: blur(8px); animation: musa-lightbox-in .22s ease-out; cursor: zoom-out; }
+.musa-lightbox figure { display: flex; flex-direction: column; max-width: min(94vw, 1500px); max-height: calc(100vh - 6.5rem); margin: 0; cursor: default; }
+.musa-lightbox img { display: block; max-width: 100%; max-height: calc(100vh - 9rem); object-fit: contain; border-radius: 4px; box-shadow: 0 20px 70px rgba(0,0,0,.55); }
+.musa-lightbox figcaption { padding-top: .75rem; color: rgba(255,255,255,.76); font-family: "Inter", sans-serif; font-size: .78rem; text-align: center; }
+.musa-lightbox-close { position: fixed; top: 1.1rem; right: 1.3rem; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; padding: 0 0 .15rem; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; background: rgba(20,20,20,.65); color: white; font: 300 2rem/1 "Inter", sans-serif; cursor: pointer; }
+.musa-lightbox-close:hover, .musa-lightbox-close:focus-visible { border-color: white; background: rgba(70,50,205,.85); outline: none; }
+@keyframes musa-drift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+@keyframes musa-lightbox-in { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 700px) {
+  .musa-page { padding-inline: 1.2rem; }
+  .musa-hero { min-height: 72vh; padding: 4rem 0 3rem; }
+  .musa-line { left: 1.2rem; }
+  .musa-moment { grid-template-columns: 2.5rem 1fr; gap: .9rem; min-height: 55vh; }
+  .musa-point { top: 48vh; grid-column: 1; }
+  .musa-moment:nth-of-type(even) .musa-content, .musa-moment:nth-of-type(odd) .musa-content { grid-column: 2; text-align: left; transform: translateX(14px); }
+  .musa-moment:nth-of-type(even) .musa-visual, .musa-moment:nth-of-type(odd) .musa-visual { grid-column: 2; grid-row: 2; transform: translateX(14px); }
+  .musa-moment.is-active .musa-content, .musa-moment.is-past .musa-content, .musa-moment.is-active .musa-visual, .musa-moment.is-past .musa-visual { transform: none; }
+  .musa-point span { width: 2.2rem; height: 2.2rem; box-shadow: 0 0 0 6px var(--bs-body-bg); }
 }
 
-.timeline-markers {
-  font-size: 1.5em;
-}
-
-.pdf-article h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
-}
-
-.pdf-article h4 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
-  margin-top: 1.25rem;
-}
-
-.pdf-figure {
-  margin: 1.25rem 0;
-  text-align: center;
-}
-
-.pdf-figure img {
-  max-width: 70%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.pdf-caption {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  opacity: 0.85;
-}
-
-.pdf-article ul {
-  margin-top: 0.75rem;
+@media (prefers-reduced-motion: reduce) {
+  .musa-moment, .musa-content, .musa-line i, .musa-point span, .musa-content figure img { transition: none; }
+  .musa-scroll-cue b { animation: none; }
+  .musa-lightbox { animation: none; }
 }
 
 
