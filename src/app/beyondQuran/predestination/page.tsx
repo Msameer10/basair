@@ -153,7 +153,7 @@ export default function PredestinationPage() {
           </blockquote>
         </section>
 
-        <p className="doc-closing-note">These reflections remain open to revision. Allāhu Aʿlam.</p>
+        <p className="doc-closing-note">These are my personal reflections, grounded in our Islamic traditions, and are not the final word. Allāhu Aʿlam.</p>
 
         <hr className="doc-divider" />
 
