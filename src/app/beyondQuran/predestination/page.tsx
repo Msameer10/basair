@@ -132,6 +132,9 @@ export default function PredestinationPage() {
             Allah did not create life so that He might know. He created it so that we might learn who
             He is, who we are, and why His judgment is true.
           </p>
+          <p className="doc-p">
+            As <a className="doc-link" href="https://yaqeeninstitute.org/read/paper/the-divine-wisdom-in-allowing-evil-to-exist-perspectives-from-ibn-al-qayyim" target="_blank" rel="noopener noreferrer">Ibn al-Qayyim observed</a>, one wisdom in creation&apos;s unfolding is that Allah&apos;s names and attributes (<em>asmāʾ wa ṣifāt</em>) become manifest to His creatures, in accordance with His wisdom.
+          </p>
         </section>
 
         <section id="paradox">
