@@ -43,7 +43,7 @@ const collections: Collection[] = [
       { href: "/beyondQuran/scholars-of-islam", title: "Scholars of Islam", meta: "Reference", description: "A chronological, cross-traditional guide with selected teacher–student relations." },
       { href: "/beyondQuran/imams", title: "The Four Great Imams", meta: "Legal history", description: "Formation, method, relationships, and the survival of the Sunni legal schools." },
       { href: "/beyondQuran/predestination", title: "The Paradox of Knowing: Predestination and Human Choice", meta: "Theology", description: "Divine foreknowledge, human agency, and why life must still be lived." },
-      { href: "https://neocyclopedia.sameerion.com/misc/why-were-there-jews-in-yathrib.html", title: "Why Were There Jews in Yathrib?", meta: "History", description: "An exploration of the Jewish communities of Yathrib. Opens on Neocyclopedia." },
+      { href: "https://neocyclopedia.sameerion.com/misc/why-were-there-jews-in-yathrib.html", title: "Why Were There Jews in Yathrib?", meta: "History", description: "Read it on Neocyclopedia ↗" },
     ],
   },
   {
@@ -102,7 +102,7 @@ export function LibraryTabs() {
         ) : (
           <div className="collection-list">
             {visibleItems.map((item) => (
-              <Link className="collection-entry" href={item.href} key={item.href}>
+              <Link className="collection-entry" href={item.href} key={item.href} target={item.href.startsWith("https://") ? "_blank" : undefined} rel={item.href.startsWith("https://") ? "noopener noreferrer" : undefined}>
                 <div className="entry-meta">{item.meta ?? collection.title}</div>
                 <div className="entry-main">
                   <h3>{item.title}</h3>
