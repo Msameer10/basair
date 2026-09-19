@@ -36,6 +36,7 @@ const collections: Collection[] = [
     title: "Beyond the Qurʾān",
     description: "Essays in theology, intellectual history, scholarship, and the life of ideas.",
     items: [
+      { href: "/beyondQuran/baniIsraelMisr", title: "Bani Israel, Miṣr, and the Memory of the Old Life", meta: "Reflection", description: "Qurʾān 2:61, gratitude, and remembering old comforts while forgetting old hardships." },
       { href: "/beyondQuran/divineJusticeHumanCapacity", title: "Divine Justice, Human Capacity, and the Path to Allah", meta: "Theology", description: "Accountability, capacity, revelation, and the reach of divine mercy." },
       { href: "/beyondQuran/quranAsSufficientProof", title: "The Qurʾān as Sufficient Proof", meta: "Revelation", description: "Divine signs, miracle-demands, moral agency, and enduring proof." },
       { href: "/beyondQuran/fromMusatoRome", title: "From Mūsā to Rome", meta: "History", description: "A historical outline following communities, empires, and transmission." },
